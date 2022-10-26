@@ -1,0 +1,25 @@
+https://en.wikipedia.org/wiki/Scanning_tunneling_microscope
+
+A scanning tunneling microscope (STM) is a type of microscope used for imaging surfaces at the atomic level.
+
+STM senses the surface by using an extremely sharp conducting tip that can distinguish features smaller than 0.1 nm with a 0.01 nm (10 pm) depth resolution.
+
+STM is based on the concept of quantum tunneling. When the tip is brought very near to the surface to be examined, a bias voltage applied between the two allows electrons to tunnel through the vacuum separating them. The resulting tunneling current is a function of the tip position, applied voltage, and the local density of states (LDOS) of the sample.
+
+GENERAL PROCEDURE
+
+1. Bring tip close to the sample (with coarse and fine positioning)
+
+2. Apply bias voltage between the sample and the tip, and gradually elongate the scanner until the tip starts recieving the tunneling current.
+
+3. The tip should then be kept in the 4-7 angstrom (0.4-0.7nm) range slightly above the height where the tip would experience repulsive interaction (l<3 angstrom), but still in the region of attractive interaction (3<l<10 angstrom).
+
+4. Tunneling current is amplified from the sub nanoampere range as close to the scanner as possible
+
+5. The tip is moved across the surface in a discrete x-y matrix, with the changes in surface height and population of the electronic states causing changes in the tunneling current. There are 2 modes, constant height and constant current (both self explanatory)
+
+6. In constant current mode, feedback electronics adjust the height by a voltage to the piezoelectric height control mechanism. If at some point the tunneling current is below the set level, the tip is moved towards the sample, and vice versa. This mode is relatively slow as the electronics need to check the tunneling current and adjust the height in a feedback loop at each measured point of the surface. When the surface is atomically flat, the voltage applied to the z-scanner will mainly reflect variations in local charge density. But when an atomic step is encountered, or when the surface is buckled due to reconstruction, the height of the scanner will also have to change because of the overall topography. This means that changes in current requiring height changes come from topographical or electron density changes (and sometimes it is not clear which one they are from).
+
+IMPORTANT TO KNOW
+
+important to know: where tip is, need it to be nanometers from the surface, so we need to do some manual stuff to make sure this actually happens
