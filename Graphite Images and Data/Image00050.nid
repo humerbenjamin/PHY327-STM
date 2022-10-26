@@ -1,0 +1,1038 @@
+[DataSet]
+Version=2
+GroupCount=2
+Gr0-Name=Scan forward
+Gr0-ID=0
+Gr0-Count=8
+Gr1-Name=Scan backward
+Gr1-ID=0
+Gr1-Count=8
+Gr0-Ch0=DataSet-0:0
+Gr0-Ch1=DataSet-0:1
+Gr1-Ch0=DataSet-1:0
+Gr1-Ch1=DataSet-1:1
+SetInfos=DataSet-Info
+InfoSetCount=3
+InfoSet0=DataSetInfos
+InfoSet1=Calibration
+InfoSet2=Parameters
+
+[DataSet-Info]
+-- Scan --=--------
+Image size=1nm
+Scan direction=Up
+Time/Line=200ms
+Points=128 
+Lines=128 
+X-Slope=0 ┬░
+Y-Slope=0 ┬░
+Rotation=0 ┬░
+X-Pos=-2.56nm
+Y-Pos=5.72nm
+Z-Plane=0 m
+Line mode=Standard
+Date=25-10-2022
+Time=12:15:59
+-- Approach --=--------
+Setpoint=3nA
+P-Gain=1000 
+I-Gain=2000 
+D-Gain=0 
+P-Gain2=0 
+I-Gain2=0 
+D-Gain2=0 
+Tip voltage=50.1mV
+Feedback mode=Free
+Feedback algo.=Adaptive PID
+Error range=50nA
+Ampl. Ctrl. mode=Const. Drive
+-- Global --=--------
+Op. mode=STM
+Head type=STM
+Scan head=Uncal_STM.hed
+Software ver.=3.10.0.20
+Firmware ver.=3.8.1.0
+Controller S/N=061-20-222
+-- Module --=--------
+Controller Board=2
+USB Module=4
+Scripting Interface=1
+Spectroscopy Module=1
+Lithography Module=1
+
+[DataSet\DataSetInfos]
+SubSectionCount=4
+SubSection0=Scan
+SubSection1=Approach
+SubSection2=Global
+SubSection3=Module
+
+[DataSet\DataSetInfos\Scan]
+SubSectionCount=0
+Image size=1nm
+Scan direction=Up
+Time/Line=200ms
+Points=128 
+Lines=128 
+X-Slope=0 ┬░
+Y-Slope=0 ┬░
+Rotation=0 ┬░
+X-Pos=-2.56nm
+Y-Pos=5.72nm
+Z-Plane=0 m
+Line mode=Standard
+Date=25-10-2022
+Time=12:15:59
+
+[DataSet\DataSetInfos\Approach]
+SubSectionCount=0
+Setpoint=3nA
+P-Gain=1000 
+I-Gain=2000 
+D-Gain=0 
+P-Gain2=0 
+I-Gain2=0 
+D-Gain2=0 
+Tip voltage=50.1mV
+Feedback mode=Free
+Feedback algo.=Adaptive PID
+Error range=50nA
+Ampl. Ctrl. mode=Const. Drive
+
+[DataSet\DataSetInfos\Global]
+SubSectionCount=0
+Op. mode=STM
+Head type=STM
+Scan head=Uncal_STM.hed
+Software ver.=3.10.0.20
+Firmware ver.=3.8.1.0
+Controller S/N=061-20-222
+
+[DataSet\DataSetInfos\Module]
+SubSectionCount=0
+Controller Board=2
+USB Module=4
+Scripting Interface=1
+Spectroscopy Module=1
+Lithography Module=1
+
+[DataSet\Calibration]
+SubSectionCount=2
+SubSection0=Scanhead
+SubSection1=Cantilever
+
+[DataSet\Calibration\Scanhead]
+SubSectionCount=0
+Version=6
+HeadTyp=STM
+SerialNo=uncal STM
+RevisionNo=1
+ScanFit=None
+CtrlInPol=Positiv
+Main1InPol=Positiv
+Main2InPol=Positiv
+SignalUserADC0Pol=Positiv
+SignalUserADC1Pol=Positiv
+SignalUserADC2Pol=Positiv
+AnalogOut2Pol=Positiv
+AnalogOut3Pol=Positiv
+XAxisPol=Positiv
+YAxisPol=Positiv
+ZAxisPol=Positiv
+ZAxisAnalogOut2Pol=Positiv
+ZAxisAnalogOut3Pol=Positiv
+Ch0Corr=Sub
+SetPointCheck=Equal
+InCount=24
+In0=0,Channel0,Tip Current,A,1e-07,0
+In1=1,Channel1,Z-Axis,m,1e-07,0
+In2=2,Channel2,Not defined,V,35,0
+In3=3,Channel3,Not defined 1,V,10,0
+In4=4,Channel4,Not defined,V,10,0
+In5=5,TipSignalDC,Tip Current,A,1e-07,0
+In6=6,TipSignalAC,Not defined,V,10,0
+In7=7,TipPhase,Not defined,V,90,0
+In8=8,Lever Current,Not defined,V,10,0
+In9=9,User Input0,User input 1,V,10,0
+In10=10,User Input1,User input 2,V,10,0
+In11=11,HeadSig2,Not defined 1,V,10,0
+In12=12,Channel5,User input 1,V,10,0
+In13=13,Channel6,User input 2,V,10,0
+In14=15,Dissipation,Dissipation,V,5,0
+In15=16,TipSignalDC1,Deflection,V,10,0
+In16=17,TipSignalDC2,Deflection,N,1,0
+In17=18,SensorSignal1,SensorSignal,W,0.005,0
+In18=19,SensorSignal2,SensorSignal,A,0.0005,0
+In19=20,Channel7,Z-Axis,m,1e-07,0
+In20=21,XAxisSensor,X-Axis Sensor,m,0.0001,0
+In21=22,YAxisSensor,Y-Axis Sensor,m,0.0001,0
+In22=23,ZAxisSensor,Z-Axis Sensor,m,1e-05,0
+In23=24,User Input2,User In A,V,10,0
+OutCount=9
+Out0=0,ScanAxis0,X-Axis,m,2.5e-07,0
+Out1=1,ScanAxis1,Y-Axis,m,2.5e-07,0
+Out2=2,ScanAxis2,Z-Axis,m,1e-07,0
+Out3=4,AnalogOut0,Tip voltage,V,10,0
+Out4=5,AnalogOut1,Not defined,V,10,0
+Out5=6,AnalogOut2,User Output 1,V,10,0
+Out6=7,AnalogOut3,User Output 2,V,10,0
+Out7=8,DriveAmp,Not defined,V,1,0
+Out8=9,MixedOut4,User Output C,V,10,0
+ScanCorrCount=1
+ScanCorrA=0
+ScanCorrB=0
+ScanCorrC=0
+ScanCorrD=0
+ScanCorrE=0
+ScanCorrF=0
+ScanCorrG=0
+ScanCorrH=0
+ScanCorrI=0
+ScanCorrJ=0
+ScanCorrK=0
+ScanCorrL=0
+ScanCorrM=0
+ScanCorrN=0
+ScanCorrO=0
+ScanCorrTableRot=0
+ScanCorrRotX=0
+ScanCorrRotY=0
+ScanScaleZ=3276.8
+ScanScaleXY=256
+ZRangeFit=None
+ZRangeCorrCount=1
+ZRangeCorrA=1
+ZRangeCorrB=0
+ZRangeCorrC=0
+ZRangeCorrD=0
+ApproachStartPos=-1
+MaxApproachSpeed=0.8
+ManualMoveSpeed=1
+DefaultDynRefAmp=0.05
+DefaultDynRefAmpLiquid=0.2
+DefaultDynRefAmpVacuum=0.005
+DefaultForceModRefAmp=1
+DetectorABGainAC=3.5
+CompDcSourceWithX=0
+CompDcWithX=0
+CompDcSourceWithY=0
+CompDcWithY=0
+CompDcSourceWithZ=0
+CompDcWithZ=0
+VideoSupport=1
+HasLaserOnOffCtrl=0
+XYCLPIDGainsX=1.000000;1.000000;1.000000
+XYCLPIDGainsY=1.000000;1.000000;1.000000
+XZeroVoltage=0
+YZeroVoltage=0
+ZZeroVoltage=0
+ScanAxis0FilterCoeff0=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis0FilterCoeff1=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis0FilterCoeff2=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis0FilterCoeff3=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis1FilterCoeff0=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis1FilterCoeff1=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis1FilterCoeff2=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis1FilterCoeff3=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis2FilterCoeff0=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis2FilterCoeff1=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis2FilterCoeff2=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis2FilterCoeff3=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+HasXPositionSensor=0
+XPositionSensorPol=Negativ
+HasYPositionSensor=0
+YPositionSensorPol=Negativ
+HasZPositionSensor=0
+ZPositionSensorPol=Negativ
+ApproachStatusMode=1
+ApproachStatusPol=Positiv
+ApproachStatusMeterRange=-1;-0.9;0.9;1
+SensorStatusMode=1
+SensorStatusPol=Negativ
+SensorStatusMeterRange=0.0866142;0.102362;0.102362;0.811024;0.811024;0.913386
+LaserWavelength=0
+
+[DataSet\Calibration\Cantilever]
+SubSectionCount=0
+Version=2
+GUID={7C725C17-AB98-465d-AADA-D6D453C769DA}
+Manufacturer=STM Tip
+PropCount=14
+Prop0=D[0]*[N/m]
+Prop1=D[0]*[Hz]
+Prop2=D[0]*[m]
+Prop3=D[0]*[m]
+Prop4=D[0]*[]
+Prop5=D[0]*[Hz]
+Prop6=D[0]*[]
+Prop7=D[0]*[]
+Prop8=D[0]*[┬░]
+Prop9=D[0]*[m]
+Prop10=D[0]*[]
+Prop11=D[0]*[Hz]
+Prop12=D[0.3]*[]
+Prop13=D[1]*[]
+
+[DataSet\Parameters]
+SubSectionCount=8
+SubSection0=Approach
+SubSection1=ZFeedback
+SubSection2=Lithography
+SubSection3=Imaging
+SubSection4=SignalIO
+SubSection5=Spectroscopy
+SubSection6=SPMSystem
+SubSection7=Stage
+
+[DataSet\Parameters\Approach]
+SubSectionCount=0
+ApproachSteps=L[10000]*[]
+WithdrawSteps=L[20]*[]
+AutoPeriode=D[0]*[s]
+MovePeriode=D[0]*[s]
+StepSlope=L[6]*[]
+AutoStartScan=B[1]*[]
+ApproachSpeed=D[0.700122]*[%]
+AFMApproachMode=L[0]*[]
+AFMMotorSource=L[0]*[]
+AFMStepByStepSpeed=D[1]*[]
+AFMStepByStepSlope=D[1e-06]*[m/s]
+AFMStepByStepFineStepSizePercentage=D[5]*[%]
+AFMStepByStepCoarseStepSizePercentage=D[90]*[%]
+AFMStepByStepMode=D[0]*[]
+
+[DataSet\Parameters\ZFeedback]
+SubSectionCount=0
+PGain=L[1000]*[]
+IGain=L[2000]*[]
+DGain=L[0]*[]
+PGain2=L[0]*[]
+IGain2=L[0]*[]
+DGain2=L[0]*[]
+SetPoint=D[3.00302e-09]*[A]
+SetPointForce=D[2e-08]*[N]
+SetPointDC=D[3.00302e-09]*[A]
+SetPointAmp=D[50]*[%]
+SetPointPhase=D[1]*[V]
+SetPointForceUnitMode=L[2]*[]
+SetPointForce_V=D[2e-07]*[]
+SetPointForce_m=D[2e-15]*[]
+SetPointForce_N=D[2e-08]*[]
+SetPointDeltaF_Hz=D[0]*[Hz]
+SetPointUserDefined=D[0]*[A]
+ChGainRegError=L[2]*[]
+FeedbackMode=L[0]*[]
+Algorithm=L[1]*[]
+RefFrq=D[170000]*[Hz]
+RefAmplitude=D[0.0499893]*[V]
+RefPhase=D[90.022]*[┬░]
+CoarseSweepStartFrq=D[350]*[Hz]
+CoarseSweepEndFrq=D[650]*[Hz]
+CoarseSweepStepFrq=D[100.002]*[Hz]
+FineSweepStartFrq=D[130000]*[Hz]
+FineSweepEndFrq=D[210000]*[Hz]
+FineSweepStepFrq=D[100]*[Hz]
+ManualSweepStartFrq=D[130000]*[Hz]
+ManualSweepEndFrq=D[210000]*[Hz]
+ManualSweepStepFrq=D[100]*[Hz]
+AutoCalFrqPeak=B[1]*[]
+AutoCalPhase=B[1]*[]
+DynamicAmp=D[0.199744]*[V]
+CalRefPlotGraph=B[0]*[]
+ForceModFrq=D[20000]*[Hz]
+ForceModAmp=D[0.800012]*[V]
+AutoFrqSweepRange=B[1]*[]
+AmpCtrlMode=L[0]*[]
+FrqPeakReduceAir=D[20]*[%]
+FrqPeakUpperSideAir=B[1]*[]
+FrqPeakReduceLiquid=D[5]*[%]
+FrqPeakUpperSideLiquid=B[0]*[]
+FrqPeakReduceVacuum=D[20]*[%]
+FrqPeakUpperSideVacuum=B[1]*[]
+RegMoveMode=L[0]*[]
+DynamicMeasureBW=L[6]*[]
+RegOutputSel=L[0]*[]
+FrequencyLockRange=L[1]*[]
+PhaseCtrlPGain=D[0.3]*[]
+PhaseCtrlIGain=D[2.5]*[]
+AmplCtrlPGain=D[2.5]*[]
+AmplCtrlIGain=D[20]*[]
+UserOpModeInputSel=L[3]*[]
+UserOpModeInputPol=L[0]*[]
+UserOpModePIDGainCorr=D[1]*[]
+UserOpModeDCOffsetMode=L[0]*[]
+UserOpModeDCOffsetAutoGain=D[10000]*[]
+CantileverExcitationMode=L[0]*[]
+
+[DataSet\Parameters\Lithography]
+SubSectionCount=0
+ModuleLevel=L[1]*[]
+OpMode=L[1]*[]
+InactivePenMode=L[0]*[]
+AutoChartSettings=B[1]*[]
+AutoCapture=B[1]*[]
+XYMoveSpeed=D[1e-05]*[m/s]
+ZMoveSpeed=D[1e-06]*[m/s]
+LiftTipAbsZPos=D[0]*[m]
+
+[DataSet\Parameters\Imaging]
+SubSectionCount=0
+ModuleLevel=L[1]*[]
+ScanRange=V[1e-09,1e-09,0]*[m,m,m]
+ScanOffset=V[-2.55864e-09,5.72279e-09,0]*[m,m,m]
+ScanRotation=V[0,0,0]*[┬░,┬░,┬░]
+ScanTime=V[0.200025,0.200025,0]*[s,s,s]
+Datapoints=V[128,128,0]*[,,]
+ScanMode=L[0]*[]
+OverScanSize=D[0]*[%]
+FirstScanlineRep=L[1]*[]
+SyncOutMode=L[0]*[]
+LineScanning=L[0]*[]
+RelTipPos=D[5e-09]*[m]
+ContourEnabled=B[0]*[]
+AutoReadjustProbeEnabled=B[0]*[]
+ReadjustLiftHeight=D[0]*[m]
+SndScanDynamicAmplitude=D[0]*[V]
+SndScanDynamicAmplitudeEnabled=B[0]*[]
+SndScanForceModulationAmplitude=D[0]*[V]
+SndScanForceModulationAmplitudeEnabled=B[0]*[]
+SndScanEnableDarkMode=B[0]*[]
+SndScanEnableKPFM=B[0]*[]
+SndScanSndLockInExcitationAmplitude=D[0]*[]
+SndScanSndLockInExcitationAmplitudeEnabled=B[0]*[]
+XYMoveSpeed=D[5e-05]*[m/s]
+AutoSlopeCorrection=B[0]*[]
+AutoDeleteBuffer=B[1]*[]
+AutoChartSettings=B[1]*[]
+AutoCapture=B[1]*[]
+SpikeGuardEnable=B[0]*[]
+PrescanSpeedup=L[0]*[]
+
+[DataSet\Parameters\SignalIO]
+SubSectionCount=0
+UserDAC0=D[0]*[V]
+UserDAC1=D[0]*[V]
+EnableUserADC0=B[0]*[]
+EnableUserADC1=B[0]*[]
+EnableUserADC2=B[0]*[]
+TipSignalMode=L[0]*[]
+ExcitationMode=L[0]*[]
+MonitorOut0=L[0]*[]
+MonitorOut1=L[0]*[]
+EnableUserADC1ZSensor=B[0]*[]
+User0CtrlMode=L[0]*[]
+User0InputPol=L[0]*[]
+User0OutputFlag=L[0]*[]
+User0SetPoint=D[0]*[V]
+User0IGain=L[1000]*[]
+
+[DataSet\Parameters\Spectroscopy]
+SubSectionCount=0
+ModuleLevel=L[1]*[]
+OutputType=L[0]*[]
+Repetition=L[1]*[]
+RepetitionMode=L[0]*[]
+FwModTime=D[12.7996]*[s]
+BwModTime=D[0.1]*[s]
+ModRelValue=B[1]*[]
+FwModDatapoints=L[32767]*[]
+BwModDatapoints=L[256]*[]
+SyncOutMode=L[0]*[]
+FeedbackActive=B[0]*[]
+AutoChartSettings=B[1]*[]
+AutoCapture=B[1]*[]
+SpecEndMode=L[1]*[]
+FwModRange=D[1.27996e-07]*[m]
+BwModRange=D[-1e-08]*[m]
+XYMoveSpeed=D[2.5e-07]*[m/s]
+StartOffset=D[-1e-08]*[m]
+StartOffsetMoveSpeed=D[2e-08]*[m/s]
+FwModMode=L[1]*[]
+BwModMode=L[0]*[]
+FwModStopValue=D[1.25126e-09]*[A]
+BwModStopValue=D[0]*[A]
+FwModStopMode=L[1]*[]
+BwModStopMode=L[1]*[]
+FwPauseTime=D[0]*[s]
+BwPauseTime=D[0]*[s]
+FwPauseDatapoints=L[0]*[]
+BwPauseDatapoints=L[0]*[]
+FwPauseMode=L[0]*[]
+BwPauseMode=L[0]*[]
+AutoRecalibrateProbeInterval=L[0]*[]
+PressurePulseValue=D[0]*[bar]
+PressurePulseDuration=D[0]*[s]
+PressurePulseRelative=B[0]*[]
+PressurePulseActive=B[0]*[]
+PressureActionId=L[0]*[]
+ModulationStopValueBandwidth=L[0]*[]
+
+[DataSet\Parameters\SPMSystem]
+SubSectionCount=0
+AOut0=D[0.0500504]*[V]
+AOut1=D[0]*[V]
+SPMMode=L[1]*[]
+VideoFPSControlValueMin=D[1.5]*[]
+VideoFPSControlWindowSize=L[5]*[]
+VideoTopLight=D[100]*[%]
+VideoSideLight=D[100]*[%]
+VideoTopBrightness=D[80]*[]
+VideoSideBrightness=D[80]*[]
+VideoTopContrast=D[70]*[]
+VideoSideContrast=D[70]*[]
+FlexVideoTopExpTime=L[60]*[]
+FlexVideoSideExpTime=L[60]*[]
+FlexVideoTopGain=L[8]*[]
+FlexVideoSideGain=L[8]*[]
+FlexVideoTopADCLevel=L[2]*[]
+FlexVideoSideADCLevel=L[2]*[]
+FlexVideoTopRatioR=D[1]*[]
+FlexVideoSideRatioR=D[1]*[]
+FlexVideoTopRatioG=D[1]*[]
+FlexVideoSideRatioG=D[1]*[]
+FlexVideoTopRatioB=D[1]*[]
+FlexVideoSideRatioB=D[1]*[]
+FlexVideoTopRatioGamma=D[1]*[]
+FlexVideoSideRatioGamma=D[1]*[]
+FlexVideoTopAutoLevels=B[1]*[]
+FlexVideoSideAutoLevels=B[1]*[]
+FlexVideoTopPositionMarkerX=D[0]*[]
+FlexVideoSidePositionMarkerX=D[0]*[]
+FlexVideoTopPositionMarkerY=D[0]*[]
+FlexVideoSidePositionMarkerY=D[0]*[]
+HighResVideoTopExpTime=L[60]*[]
+HighResVideoSideExpTime=L[60]*[]
+HighResVideoTopGain=L[25]*[]
+HighResVideoSideGain=L[8]*[]
+HighResVideoSideADCLevel=L[2]*[]
+HighResVideoTopRatioR=D[1]*[]
+HighResVideoSideRatioR=D[1]*[]
+HighResVideoTopRatioG=D[0.8]*[]
+HighResVideoSideRatioG=D[1]*[]
+HighResVideoTopRatioB=D[0.8]*[]
+HighResVideoSideRatioB=D[1]*[]
+HighResVideoTopRatioGamma=D[0.9]*[]
+HighResVideoSideRatioGamma=D[1]*[]
+HighResVideoTopAutoLevels=B[1]*[]
+HighResVideoSideAutoLevels=B[1]*[]
+HighResVideoTopADCLevel=L[2]*[]
+HighResVideoTopPositionMarkerX=D[0]*[]
+HighResVideoSidePositionMarkerX=D[0]*[]
+HighResVideoTopPositionMarkerY=D[0]*[]
+HighResVideoSidePositionMarkerY=D[0]*[]
+ImSoVideoTVConfiguration=S[]*[]
+ImSoVideoSVConfiguration=S[]*[]
+ActiveSensorByGUID=S[{7C725C17-AB98-465d-AADA-D6D453C769DA}]*[]
+MeasEnv=L[0]*[]
+SystemStateIdleZAxisMode=L[0]*[]
+SystemStateIdleMixOut4Mode=L[3]*[]
+SystemStateIdleXYAxisMode=L[0]*[]
+SystemStateIdleZAxisValue=D[0]*[m]
+SndOpModeEnabled=B[0]*[]
+SndOpMode=L[0]*[]
+ZClosedLoopMode=L[0]*[]
+ZClosedLoopSpeed=D[1000]*[]
+XYClosedLoopEnabled=B[0]*[]
+XYClosedLoopSpeed=D[1000]*[]
+
+[DataSet\Parameters\Stage]
+SubSectionCount=0
+
+[DataSet-0:0]
+Version=2
+Points=128
+Lines=128
+Frame=Scan forward
+CurLine=127
+Dim0Name=X*
+Dim0Unit=m
+Dim0Range=1e-09
+Dim0Min=0
+Dim1Name=Y*
+Dim1Unit=m
+Dim1Range=1e-09
+Dim1Min=0
+Dim2Name=Tip Current
+Dim2Unit=A
+Dim2Range=2e-07
+Dim2Min=-1e-07
+SaveMode=Binary
+SaveBits=16
+SaveSign=Signed
+SaveOrder=Intel
+
+[DataSet-0:1]
+Version=2
+Points=128
+Lines=128
+Frame=Scan forward
+CurLine=127
+Dim0Name=X*
+Dim0Unit=m
+Dim0Range=1e-09
+Dim0Min=0
+Dim1Name=Y*
+Dim1Unit=m
+Dim1Range=1e-09
+Dim1Min=0
+Dim2Name=Z-Axis
+Dim2Unit=m
+Dim2Range=2e-07
+Dim2Min=-1e-07
+SaveMode=Binary
+SaveBits=16
+SaveSign=Signed
+SaveOrder=Intel
+
+[DataSet-1:0]
+Version=2
+Points=128
+Lines=128
+Frame=Scan backward
+CurLine=127
+Dim0Unit=m
+Dim0Range=1e-09
+Dim0Min=0
+Dim1Unit=m
+Dim1Range=1e-09
+Dim1Min=0
+Dim2Name=Tip Current
+Dim2Unit=A
+Dim2Range=2e-07
+Dim2Min=-1e-07
+SaveMode=Binary
+SaveBits=16
+SaveSign=Signed
+SaveOrder=Intel
+
+[DataSet-1:1]
+Version=2
+Points=128
+Lines=128
+Frame=Scan backward
+CurLine=127
+Dim0Unit=m
+Dim0Range=1e-09
+Dim0Min=0
+Dim1Unit=m
+Dim1Range=1e-09
+Dim1Min=0
+Dim2Name=Z-Axis
+Dim2Unit=m
+Dim2Range=2e-07
+Dim2Min=-1e-07
+SaveMode=Binary
+SaveBits=16
+SaveSign=Signed
+SaveOrder=Intel
+
+[SetView]
+ViewWidth=638
+ViewHeight=526
+ViewCount=4
+View0=SetView-View0
+View1=SetView-View1
+View2=SetView-View2
+View3=SetView-View3
+
+[SetView-View0]
+ViewTyp=1
+LineOp=2
+Channel=1
+Frame=0
+ViewSize=256
+ViewMode=0
+GraphMode=1
+AspectRatio=0
+AutoZRange=1
+ZRange=-142,135
+ParCount=6
+Par0=1,Shading,0
+Par1=1,DeltaGain,5
+Par2=1,Smooth,0
+Par3=1,DriverInstanceNo,0
+Par4=1,RangeMin,0
+Par5=1,RangeMax,95
+
+[SetView-View1]
+ViewTyp=0
+LineOp=1
+Channel=1
+Frame=0
+ViewSize=256
+ViewMode=0
+GraphMode=1
+AspectRatio=0
+AutoZRange=1
+ZRange=-168,128
+ParCount=3
+Par0=0,ReverseLine,1
+Par1=0,XAxisMin,0
+Par2=0,XAxisMax,1e-09
+
+[SetView-View2]
+ViewTyp=1
+LineOp=2
+Channel=0
+Frame=0
+ViewSize=256
+ViewMode=0
+GraphMode=1
+AspectRatio=0
+AutoZRange=1
+ZRange=-136,217
+ParCount=6
+Par0=1,Shading,0
+Par1=1,DeltaGain,5
+Par2=1,Smooth,0
+Par3=1,DriverInstanceNo,0
+Par4=1,RangeMin,0
+Par5=1,RangeMax,95
+
+[SetView-View3]
+ViewTyp=0
+LineOp=1
+Channel=0
+Frame=0
+ViewSize=256
+ViewMode=0
+GraphMode=1
+AspectRatio=0
+AutoZRange=1
+ZRange=-261,367
+ParCount=3
+Par0=0,ReverseLine,1
+Par1=0,XAxisMin,0
+Par2=0,XAxisMax,1e-09
+
+[ProcessorSet]
+ProcessorCount=0
+
+
+#!щъ▒╫┤█╔─╤╪╬┌┌╩╬╟├╧╫┼╬└л╘├Ўё Ї╒┤┌╞╦┘╒┘╚р╟┐╬╒║▀╦эЁэGв╪┘▐▐┤╬╚тщ╬┼╘╘╡╦╩┌╩╬╫╞╘╔ы╔┌┘╓╩ру╔х╓╙╧┐┼┌▌Єэу^▐├╬ш╟╬╙╧┘╨╔╬╦╙╤╞├┐фў▐╦юЭї╙┼╞╫╬╒╞╙╬╪4Нх▐╘╫┌╧╤┐║┬╫╬ч╓┼╙╠ы╓╥├¤Y╥╘╙ф╫у┼╨╚╫╦╫Ў╪ї═╘Щр╤╓═║╣╒║╬╠шт╪█╧▄└╙▒т╓┴╫╓╘▀г╥─╩╥╛├═└╥┼┘┼─я╪°┐╒▌I▀л╔═╟╙╞╬╟╛▌╝╫╤ё╥┴╓р╤╔с,╙ю╓╛╓╨─┼┐──NqЛ·╤╞╦╓█щ╒╚у╚цьщ╪╥┘╠└┼*╓╫╫╒╓└╬▐┼╠╔╨╪▌т╩▌
+═╦I▐┐ю│┐╝▌юыЫ╥х╞╩╤°сш╪э╓╜▌╬╞▐в╣╦╩ся╥┐█в┴уЄ▐ьцх┼╕╟╒╡Ї═ ╫▀░╛щф╜╖╤Ў	ч
+╦▀─щф╥ц╠╛▒╨╘щ╜─ь╟═╩▌т┬╗╫¤▒╚╙╘╟╥╤▌N2Жс┌ф╔т╥Ї▀╞╒╬─▐╧╬PС╨═╟┼└¤·╒п┘┘╫╘┐╠▀Ї╩─╬е╠┌яW┤╠┐╞╧╟р╟╘╤┬╙ї╒╩▀ъёу─╪Є&╚│╟=╟У╫╬╦┌╦▌┘╤┴╦╘╬╥ь╙ъ╚╘╞у┐╧─╔╠▄┼сч╧╧╨цес5═╔╘╨╣╥╬┴┴╤╘сэ)&╬╤▐╘╙Єу═р┬╚╣╨┌ў╙╫╪╥╤х6╢╬╛┘╫╔╪▄╖ш╬╩╟▀──┴╤╤┐╧-ур█г┼╫▐╠╦┌▀╨█▀▀щ┘╥╪еЇ√D╟└Ё╒├┘Ы╖╤╞╙╓·╢╚▐№ф╤╫╕■7╦░╒╦═╣╣╟┼р╨▐╦├▄╔╫╠╥ь╥фту▄▌╢ык▄╫├╨"їц╙┘═─╢╙╙┌┌─╓щ┘╜╩є╫░Ў╒5]╙▐┘╖ю╔╨╠╕╒┐╩═┐╥т╔█ы█1п╠▀ы╩╟▄┬щ▓╨╢┐╢╟т┘▀├╫┘Ёы║ч┼└╙■╒╦╣╔╬┴▀с╦╒╔╥╓·══╔█∙╙╧╧ю╚╡р╥┼╬ш╔▒Ы}▀╒╬╒╒ё╤├╙│╡╥═┬╟х╠Ц─я╟╞c╣║╡рч╚▄р├ух┌*э┘┼├╛╬╦▄хэ╓Є╙╟∙╓╫▀├╛р┌4у╜╔╙╥─╨╔┌Ї╚└фв▐╩┌фшЄFч╡ыэ┐щ░╔╖╜│я╪к╚╧ч╜╫╬┐╦ь.7╞┴╥╩├║╗┌╬└╠ч┘╝═D▀й├ЯЯ┐э▀┐║Ёчяр╖╖─╬u└ш▌╗└╥╤╛Є█╘э╨┬▐╓ Ї╧╓╜▓╙┬▀┤▌╪╫┌═┐■█╗┘╕ц DxэЎ╓╔Е╪─╦╠т\=Бцос╔┤їх╙╞╬┐╚╩╟║х╘╩╤┤ў┬щф╓ц╜╓Ў┼██╛╨─╟└╙┴╦є╧╩║▀Ў╙╩╧┌╪с
+─С╜╪■фї╔х╛╞╥▄└─╝ыю╠√щ╤▄╟╪█шф┼├@╪л╛╖└л╔т╤╫р┌╗╓№у▐$>╤P╕┼╘д╢ц╣х╔╥▐є▓▌╘┬╘їЁш■ё╞б╛╥╩├╓┐┌╛■т┘ь╛є ╨рОЧ├р▓┤╕╒├ ├┼╫┘▒╫ш╒╣╟ъ┘╗╘╫╒ъ5/f┤─єт╞└ЁчМгщ╠╙╜╔║ўЎЦ▐р╚╜у▄п"р&Фё─╩п╛╠┤╥┼щХ·щ·¤╚нїш╬пм╔{ г╡Ж·█╬усущ│А╚"Ё^о┘▒kх└шфа╦╩╘№ф▀▐съ╝╝┼╤╔ъ╞5энЭ├ус▌ъкзэ╬├Ж╛Є╪╒мэ√&┬╪Ь╙║б▐ДЮ^ї╧└х▌╤┤╣жт╙╣╚╥╒Ё▀╘╒√ёЁ├р┴сц▌╒ёЄчZj╝╪б┼н╨╪╫й│Y╒Й╞щ%▐єч#┼┤чїц╓╡Ъ█Ю╤╞╘▀╫р╥╩ш─ч1├╜═╤└╝v┌╦╜ЁК(тэ┬уыц╬╠Ї╘╘хь╓╥▐╧√╤
+@Ф├ЦЯ╚-╔╤├╠Ищ┐яС╛╪╨#SG╬Гшк├╝█╒╨╦э┌л5ш▒█чяцхюущ ╥У╢─╣╞┘т╤╔M╒ї╘╙█■0▄~ф▓╒╜f ╬╠▓№╘┘╬▄╚нс√цъ3╥╨пп╤╥ЖхуН█┬╒ўьшє  ┤╔√╡┴№╘═С╦├┬╓Єэ╥╪э¤╩З├╚╩╓▄эш╞ы╘хєM░╒▌╚z ╧╗▀┤Iп╤╨┤▀4╘╤┌╪	╡~и┴7═╜╬╓╨╡█╞─╪яЇ°№4║Їє╟ЁЪ▓iч├═д║3ў╪ы·=уЬ╤╓╫╥ЇщcЦф╨ф╙тю┘Ёмж┌▄╘│▒┌о╖
+ B╗▓Ж│Тль▄╤┘═┬у│╬╔═▓▐╫╥┤х╠сЎ")═Во╟`╦▄║л@┘╥т33пПфсЁ└ин└┴н╤╧:ръЧ╩чш║ч9╣Ё╢ў╦╘╤╞ъб╖╓┘цОэ№¤шКx┘└ъ┬▀в╫╞╕╤Є╙█яє╧ы▄З╨є╩├╞у╦зЗЎЄр┌ту▀HЯ╞╬┌┴Эї╩╧чш╫╦ц┤╜─╡{ЭЦaоa╫═┼╥╥ш┌Ъ┴╣╣╞╤шэё┘1А╬╦║╡├╤╚цьНжй╤▐╨Ўя█цv╕█№╟█┘╒╚с╧рё√гижТ▐╣Ї¤№▒ т╫╙╔ж├▐х╧▌¤Ї┌╙─▓┼┤┬╫┴тЄ0┌╤╧╒═╩▐ГгйЎ.╫╨█ч╫┐Яб┘х┼╧%┴─мы├╤╪й¤щ╥╚√┬Яе╓╛√Ї▀╩щКjp╣·╤╩▀▌┬хч╫└╦─Н▀╟ьш╞бдыр∙┤Їь╘Ч╓йНЪЄP╔║|т█╬┼╓╫ъ╤6X└╙╬▐╛▌▄╩о╠┤хр╧уЁЁ┬└	╧х╣▒З║╛┐╤▐╔╠└╘╘с╓═┼╒·Є6╡╙Ю╢Ї╫┘бяч╘крюхО┤щдсг╪▓╫╒╒║╬ы	Ї┼╖√┴╧╤Х┴╨╙oвбф╟&▐┬═шч▄╓¤(▄,ч╛█╕┬?▓р╧зво╢▒-┌╥╟╙р╨╓╔╚┐╟ч0╤┼ю1╓╧Тє╬Гф╫╦цр╟╧юEдХ]┌╞╙┐б╧ум╞╟
+у╫╪№╖т╧▄У╬╜ф╙║Н$в╒┘▀ЫЮ╡├╟√╟у╒╔¤т-╒╩┤{═єт╦─щ╤р°╘╫┼ёв╛┬╙─▐╤╔с╪╒ю┴уМЧ▌ї▌тўЇ▌mЛa┘▄ё╡╤─юъ┬█╬┼┬╒╛╡▀╞╝└╪ъ■┬д╙╡(┌╔╬╫▌ы■М╒чТй╡√Э▌ь╣ ў╚╬с╦╞╠э√┤╬Шкф··б}Ъ├шхш╫▌А╣▀╫B╟┘╬╝▀╟┐█Чэ╫ёчьщЁщ>┴Ш└─е0╤└∙╒▄╘Х▌╨ЎЄы╫Ж╜╬├▄┬═Е╡№r╜╥Ц╖STт╫┴▒╪╕ў╔╚╢Кы╧щ╔╤╒ц╟╩#Цмт╫у┘щў╓шЎ'─╚╝т┘єНQВё∙╦щ┌П'ёИЯм▒ш╜╛╦▌цЄяхЇ╖┐щрїЇ═ў╤	╥#░┤a├╝╘╟Н╤╟╞т№ю╠Є╗┐гё╨╞╗оў╘├╓╠║х█▄рЎ└Є ■Р╣╪┌╝┘ёUЮ╘Пєч┐х─▄чыь▌╪╜рцч	/у╥╕√┌цр╨╗┼УЭзЁт╦▄)▄╔х╘╒▄Ша╨╒└уя╓╛╓¤▓рAьo╡иLРё├█╥╬#AЪ╙└╓LвЩ█▌+юНп▒▓╧░│╠щ┘у╘╩бц┌╖4╒╤▀╙╒шт уЯи╒═╩╟▐╓л╞╞│Я╨▐┴р▐╓ьэфщщ6Бї╜╪т╟╞╧╕╥dв╔╟╢┼▀t╧АЎю╡ю ╙·▄┌╕яя ┬╚qhе╦┐а┐юч╢зо╨╩╪Э█╓ыт╫эўчЇ▒╧ыь┴┐╞─шжВр╙Ї█·ЦA°йИ┴я╤х"Чомп▒с ╛╣J╤й▓▒ыф│╙╞░>┘Рч~жъє╓╡Є┘хї╫╜Ы▀╛г└▀ї╠╔щ∙╩├·Щ╤х╪╙ю	╝┐°u─╝#ЧС╘#╢нЛ╣т┐╓Ю╜ж¤╟n▓┬√ых┌╦ч╙═q╤Т╥╗=чї?oЎЭfу┌┬a/┼╙ЦХХлрc?щ╓╛cщi∙^К┬├єу╠╡┌╡┘╬Э╜┌>╠цЖтЕю▒═ДАї═шЪь╩╨)2┬юб┼┐╗─П\нр╛■╨╗▌щЇўй╫ўXp╜▄░╩╥,╞┘▓╔▀╡╓┴м┘ця№^Ёаче┘╚л∙│▐╞o
+╞т┘┘
+@эmг├╝
+Mщ╦╝*ш├ю▒╗а"v╪┤└]Єb╗,чЁ╗фс┴єЫясc▐Д║р▄┐Ё├╘чи$╩╒пО(bv█╤ъЕ╬╨─╚оЖэ║ї√╫┌м┘sЖ+║Б┘▀╞┘о┴K ╫─Ыzд┐с¤"'ёя▄фЖПu║╥║├▐┌к▌╠утюЁ%▒╦юЁу╫ц╓├╣┘ЁЁUЪЫ║ъгб║х╜Тя -wЦ@т╔иeс╛╗╘ЗЮЯЦ╗ ▌№█╚Вк╟╧ШчЎ╧╞╫ЄМ╬░М═цЁфё╤╕їCТ╘МЩг6ип╜╡ЪрИа%[╙╕б╞╧┘╬я╢╩Ї╓Н╬?┤ЮюR°▀R╘Л╚ъиЦ└ьР oм,кй╓╠╤╝╩├а▀рЄЩ╖ц╙╒Б╥/ьxч╬с├¤╙Юж└╕╝└3╞ыюь┐E└╣╢┐╧└ю╬й▐│офэ┐╧─╝° =Ru▌═╜─ц·o▒э┌├╒╞╬╟╘╬ч`r▌▄╩╞╞╠ф╙┼╙Х╜х▀├╠ч╛Ї▌Fy╓╤х╚ф"Єо░ч╓┼╘╦┬╨╛╩▄█╪╬▐╥ї╬с╫ч╨эы.┤ч├╪╟ж┴ї▓║ыу╚╓╝┘╒╪╓╗х▀╞╙с ф╚▌╛с│┼╧╔█╤┴у╒─╝▄ш╔─╟№S∙╝╣▒─╤╒╛╧╓ц▐╫┌╝╙╥╓▀юыh█Учф▄╗╜┴ц▀ф┼√╞╜ся╒ўї ╞ЎЄ┬▐╩╫╛╠╬╙╜█р╚╖оЎ╤░┌╙╟╓╓ф╞┘╙ъ├▌ъ+F╒╦▒е▌║┐╧╒╘┬╙╥▐╟чр╣ч╪х╫╒п╫┌ъНм┬╧ь╧╤╟╙р╒у╪¤YШ╦▒у▐┌│ш╬┐╘╫└═╔├ф┐╕╨╪╘╟▄▀█Єў┘уH═╚ь├╬┼╧╤█╫╒Э╜╤╧╦═╢░▒ж▐╘B┬┘▌f,Ї┼Єb┴5ю╛Ш┬	▐╟╒╩
+Є╙╬╫█└║Єk╩┘№ЛJ╔ї═├┼6Фдj:яэ╢▓·QЯ╙██м╕╓∙ф▌┬й╖╪╚чт╖хя╦─щЄ╞▌ью╪Є╪цЗУч яБ▀:╫▄┬m°ц╔Ъєч■¤■?╚╟╖oЧ,щ╤╞█р▐╨╪{рю╣й╢Eс╨╧╠╔╞╕┐▄че─╦█ё╕╤╖┐╥═ш╞ъ═╫ює$═л╟╨с╦┌HЗ▓й├┬°у╫|ръ!ЧкЪЮєхє╫╤б╦ЧЛ
+▌eрЦ╦√╤╘┘╪ысЁъK╣Ж┴к╝}╨ЎРд─рх~╤╦Х╤╤╦═╬┴▄¤┐7╞└╕═╠╦╫л╪}╕Ь╠╔╬тш█├╩║┼ ╙╪атю┤┘▄┌ц┌xГюЇЧ╓┴╤ш┬╤╩▌┬╤┌х┌т┌╘╖╣▌Ь║╪╥¤┘т╬╗╞╢▓ы█ч│┘я┬╒уї┬├╛╣┌ый╔q╥·■,ч╞у╛р╓╙╔ы═▌╦█╒╔б┌╫▄сж─╙ык╔╔╬╩їaq╪├╘с╔╨ышз|ег╪▄╚М╜╤х▄м├╠эс√ю#Л2├{╪╟┐▌╝█р╙╩┌зчкм2└╗ы┌╘
+х~й╩gУ╗╞═├╥╙┼с,є╝Р╩Х╡╕Я╒╧о┌h	═▄╟к╔═я╡л╦И╩▀ъ█ДЕ╟щ╒Уъ▄╝╠сЄцт┴╥р╙╤╛╡¤┘я∙╬╧█ц╫й╩╗─╚╥┼╦╦╧╦╤┬╙┴╪т┬╟├d╢┼╥┐┬╥╔╚ч╤└р╛╒тте╘ш╔╩▌ы│├┐╨у╡╥я═╝╪эШ┐Ў р█.╚├у╥╕╬рн╨у█▒╒╝├нв┐╘¤╙я╬яD╖▀╒╝╫┌╠╔ч╧щ┼сф!▒╣╨╛╩│╧Ї╪╙█п┴╜┬т┘█Цаїе╩уё%╖╔сЧ╢є┼┤├ы┼шЄ!▓║▀╣г╥┌█╡р▓╧╘┘╚╠╙▒дп·╦┌╕╙ё╖ЁT╗┴хя▀╢┌Ўшъшэ╩╤фф╥╗─╟г╢┌╧┘УВ╤ ╬╢╧┘√┘чF╢╦г╖ф▄Ё█╛╕НЮ╦ж╡╙ы╙Ёб╧м▌╥Ў╘╤
+╛п╛▒╣╞┴▒ыЮю┤─ЭЎ▌╤╥бп░э╜Є╠╫█яэ╫╟┤╓╦╔╠║╠▄ы╥ф╔Єч'Цй╪╒╠╖В║ ╦╛ю╙╙╘╓█црх
+║═п╔цп╞█╜	╥к╬╨ц█∙╒сувў█╤▐╓Е╩ь┌╬╕Їщ╪р-╪Зт╣°(┤╡╝╨т╟╨н╨7I°С╥{╡╚▀■═юч╥▒с▀╞║╗L╒╒Є<~в╡╬№тeко┬ч╜нєц╨с¤j╧▀║║╫ъ┼У╜ч╣т╫Э╘╪╤т╧с╟┴╬№*9ай║─Э┴╙┐Ў╢┌▌┌з╥╛-ръ└╨╬╧Яш█Ўн╤о╜ц╪╕▄№°чг╚╜ЁЎЁлЭйУЇ▌┘╧─щТЬ╥ ╤╫р┌╜╝╤Нк х√∙∙╜Ь╡№Фя┌╬╡╙╔├╤я▀лЬт╬╛╒пу╙═╜╔Ъ█├╛▒4$Oы╒д╫╬█╬к╞╨─╔╢╦╓╦┌╜ф┬с╫ъых└╙ь┴╫╢╠Їф╓╒╘╫╥їэ┼┬▐╙ї°╨╜╘╠╬▄═Уф2у│═╞┌▌╬╖╓╣╟хЎ╔ў▌╩│ю╠╫	S╪б╢░╫Є╢╗┌▀Ц╡╕╟╧▓ ╥┌▄▐╧▀я├╘яф┴╛╫╗чес├┘тю▄╤°·╠╢tз▄ц╠¤▀╨█к╦╜╤Ю┼с╬┌$иЦх╚╙├я}╚фэ╥├┼ч┌Жц╛╣°╣O╦и┐ш>▓Нг─║┘═ъ╥
+┐Ге°┘'║╬р╒╖└гх┘фЄ┌▄└╩╒╘¤ЯМЄ■╥т╬э∙ш∙╓Ю·Zв&я└╤╫╢ ▄ь╜▄─▄о∙╦╒╧с╣╫╨э┘Й2ц╨╗╬┬дЄ·чуЄЭ═┬▀╥╧∙╠╬юў╓╡╩╗─╚рс╨ъ└щ╧╞╘╧╓╢Є┴ч╔фР╬╙╣ч├│╠
+цйз╜▌█т╙╧═┬uЗ╣▐╦╞║▀┬пи╒╒┌тя╨╪ш┬▀ь▌═Ё- ц╤╩еЮ╣а┘╧Ї╟╤┘рЄx▓ц╘┘├░ улн╚▓┘р╥┼щ┼ц╤щ├╩їю!hв╟└░й╟╬╙╟▓╤ц╒┌у,Леъ╓т─╒┌╘╬к╟═┌ь╚ярч┐ъ░▓╤Ё╙▒┼╦█░╝╠щVУў}С√╩У╠└╤╠╚═
+Ье├єьа╛╓─ц┼═┬∙э╡▒ф°╞ў┬┐┘╠єiЁ╜▓█╬ыиЬт╓╨╕ ╚Шл╝╒╪═┼╒аф╢╙д╩╤┘┘)уо╫┬┘╗█▄╩╜с╧■■▌m╬юё╓їЁ√0╫╛╞├ц┤а┐╚┌═ч╞ъу┘─х▀┌╡╧┘ь╗╪ўї░╝▓рх╗мцЧ╚╬щ╫╠╫ю]Э╚╠║▌ц╣цн╪╔╝├кяё╙ц╦═─╒├л▌┬фЁьLь╪Щ▐╢ю╒╪■&W▐╢С╨пу├╨┼╪╞╢╚шкЛъус└у¤ф+└╣╬╠╜├╒├/ЛП╨█щ╥╙├┌║╗╛╫╝║ї╜╪√I╒╛крпб├п
+╟
+ ╥╛╟ў,к╩т╞▐ро║т┌╫╓╕▄╘gеО╓└ло╥їK╒м╙├г$╣▐▒┘р╬╓╔ца▐┌л╗г┴╓Ц╢║р╘┤▀т╘├ц╚┌╘╜╟ ■4ў▓┐╨╟┴╢ъ║▓ц╙▀└┘х╠н╧┬░╬─╒┤╕вИЁ╒∙о╬М▓·йЁ┌╦╒╙╙╘э╤¤░╫┴╗т┴╛нЄЮк│║ь╥ВТ6└┴╚╔лчщ╒Ш╩ю┌╛Щ─Уэ╣╬▐╒я█ЁЇые╞╪└┘╨╣│╟═╖э-╖╡╡со╘л╨╢▌▌╞■▀ц/Ч╧╘┬╧┘╧¤Ъш╫║Ъб╣Эё╤┬│чух╨╩Є╟j┴ю▌╤р▀iЗь╦╙ь╚╒и╔▄╦С┼╛╙Р·╜▐╘═с╣╫ёFв╞и▄я_╚j╤╨Я╙╦┬╥╪ю└є`К╨╫░┴Ёдє╞Я║т▒╫╖╘▀ту%Шк╣╪▀щ┼щ┬О┴Ъ╙є┐ц╞┘б▌╟╤│ы╝╠│¤{цЦЎ╟╝убГ▄<л╖р╙┘с┤Во"х└╩ыё]є7╜╩╡.Чхе▌фоЮ█╕э║▌.єЩ╩я─└Ёщїъч°╓Д╤╙╨CыЙЪ ЪУ№═╙╢ё╚ь▄эч┼пЬ┌Є├│ю┘╩║ы(f═╚─╟н[╬└-╨х│н¤У═∙р╩┴ё╪▐:f╚┴╔┴╦Шя░┴▌╥рп╢└╡ъхк▓║┴╢ыЇ qвп┼"┌ны╗ю▒ кГ}$╚┐Ї/и╧░ся├ф▌уїкъо█Ю╦з╥я┘1pу┘№x╢й║┴╦┬╔)·╘э┬ъ╪╞Ч╔э°Kс┴╡┼С}Є╝╗¤▐ы─ПJв╔/ы°0╚├aКЪИ╢ю╦зб№╘в─╞х╡ў┘н┴б╒╤┐├┴╞я╙т▌╫·┘═х╘№╥їц╥ю╪t░Ч%ий╕▀нч┴А╩Ш┐╫сфщ┘╤ЎЁ╘┐[.╒^RзY╖(к╔║Єв╜WД└О5┴╩▀;┐sжщ{т╤├╔█ ╞°щУs╜┼ос▐$2ўЫo┐╬▐▐╧цЇ▐¤╤Я■ц┐▐╜╝╞╜╡╥╚┬фПЭу╫б─Ї■╬╗╧╒╓╬юї╤┬╒ЯеЭЪ▄╗╢5щ╤╦╚Ю┤ ╘┐╬ы═▐╙╠ ▄%ы%╞zъп┌╝╞ ▐╔╔¤lру╣lв╧╞║╦╬╫ к╙╨ь▄фх╘╦╟├└└╔╠ч╩хаЮї╓6щ@о┬ш╔їий╘S╔▒╡╫ъ┘└╜╗╝╧┬│кЄ═Ё╫ ╙є╩·═-э╖╔гт╙ф╟j█оы╒т░ ╠р╥╧╟┐сь	E╜│зw╣	┴╬┬ю╤╟╒ш╓▄╘∙3╒╙ёё╪║5▄yЄ┘еъ╘╣Е√Сгиpо№я╔■Bи╓л╙ф├ю╩ы▌┘┬я┬	сГ╚Ф╘щНъл(╘<∙┐Ю═∙юл╘├═щ╔Ьл╬ц5>┤┘√г▐ёф╟x╗■ ╗	┌ф╖ЁЧ╛╧чн∙╨є╧┘╣вт╥o╖н▒─║■ьк*З╞М╔─У╨с║╣а╤╫BТг√▐▌э"Ю┌ц╙█├╠ящ<├▀я╗ц╝╞Въ╖╪-ШЄ┼╩о╨%вFХ√йЧ
+╥тх╜╥вe╥w■К╦╖н∙ эш╕№в═т∙ о¤╜┼┐ с▒ЬфпГ═J$у╞ў:Єчў╬ш╡э╤┐┘┌╨б┬жГьHб╠№щ╙О╗╧╚╣н¤_ФЁ┼вЯM▒╗щ·╟°┐┴╦ь╡Т═пб╧эЬЮ┤цї╫╟┼ ╪╬┬ч█ Ь╧▌┬з╛й┬├у┴ёИжМ╬ ┤ 6г═u╤Я╧┬╠├роF)@нd╣куУё╢wёЛщИ╚╤щЯTtл т╞█┼1═М╦░х╢рф3К▌Р╒╟├п└э9╚┴╞с╞р╬╤я╣фрпиАп!wАф4eтэ┐├═┐схО╣╛Cт╜эWл╡╬зПы▄╩▐s╗уб╣s╡╠┼┴жтуЪ╣·з║▓ЇmhМ╛╒т№│ьnм┤╣ёХ╡%└╣:L╞╒╫╠ШЯлSЧ╪э╚#йцЖЫшьи╗Ь╣Ї┐х?'╦┘┐╗Жт║7═██░їЩ┘╜ю╣╥┘кМфча░яя╩╔┼▄ тЭ╢с╜"жM╡▀с╕єу■0ЁВЮ├╤╡с├└о+╓нн┐ЗOї└─Ї╝р█╪·╧∙тг╝╒╨и№ПЁ│"╣ы■зю╬Р╕╘ьяг┤■}хe═чч▄ЇО█┌╩╚Й└╙у┐╤йЧн▓╘с╠√зўЬт№╨ЯЬ√ьфчт·╝╫┘╬д╪╠╡║aїП╦┘▄ў╛║ц║┼ч¤$╞-л╡╤н╢└╬║╙°ъшЙ▄▒О╪▒┼мъщзЁ╖=	ь7╔ї╞╧┌╤╡d╞╔ъм▓Ью╖¤ЇїШNB(▄+═│у$░┤╞╟фэш╘╘╟чЄ╘Э]╓Щчй╥67Ж═╫╝Эй═сї╖╝┬▀▒ш╪▀ы╤Z╦в╟Ь░uЎу▄║┐ЇлсЇO╓╒╡п╧н╖л║╟Я╕|щў▀т2╟зя┤╙е╝╙э┼ю├╝┴╬кп∙#с│ў╡ч┌╞╕ю╪╛╛╠╒▌╓┘─	\Р╟╪╚╟└╢╔лї▌╒▄ ╦лЩ▓Фб╡Ц║р╗Їу│╨▌┬╥╘╞
+╩°╥┤Їпу-▒¤т╡╛цйєвї╘'█!┌┌ы═ √б╣┤ш░╨т╝ышЇ║т█╙о№╔▐╞с ъ╢╔В┼╬╬╓╓╥Ю╔Р&▄▐│▓Єн├к0ШПh	╞╦║┐├╩їvсс■╓╩█═╒╦┼рГMм╥┐╩5З╕╓Ь╦╧╞╩╨улгЪр┘хк╛╥┬Нч┴╔y╩╫╩ц▀┼)∙шN▌ё╦у┴╓√╒ЁєН@╡╙╟▄[┼ 9ж%└╡црЮ╡о╡Н╣з ┌Л▀ця*ъюЪ■├ЇЭды{░п╫яеў┴╛╥№▀оў╗ Zз╬╦ШўхЗ┤▌рйхшЯжр]nук/√╝▌с╪╞╝ў╢╗╓┬бШЁ╙╦з╤й┼xп╩╓═■Чї╨єЫ═╔Щя╘	И░╖┐oы╩o║╝х▀╨еэ░╖pЗЭрпф╟└╫╚OОи┬╬ЇдЮезj¤╛ф№▐ш╬d╣х▌│$╝╒UС║у[уУ╘є¤╤╫Є╗▌∙├Тж^ш╙Ши║╪╓п+фв╕!фю─юг9┌▓ъ|╨█ї▓║пmр║&╚rA┘жMЖ═"t}░ВbЙК хоЎ;#√ў:лпhцтЁЪР╕┤х╓┘[Чш^НV╦▓!Щ╓┘┴╨¤Ы╣╡┬ЯЛ╞М╔═▄Бь╢ябт═>ЯўЮ║vЇЕ╘╬·Aэ¤▐╜¤√├╧П╪жк╪т▐▒╓╛чM┬Ўє╚╨ен&▌ф▄м╥▌╞╜ёр▌г▐р╪"▌┘▓вч╔─▌Ф╓ж─-╦єь╨╥Р╬э єЁю─╞╢ц║k█▀╥+█Ў╩
+CF╞╜┘┼▓╖╢░дmг┬ь"Є╧в╤╫▒╫▄─▀ъ╤ЮЩЦУї╣╥╓╫Їp▄■┘М╨юЎ┌▌№ЧНЄЄ╜/m ▌иЄРоЮ├┌╘╙с▒й├╥ёЎc╞╕юъЮъ╖ЧнЪ╜F╕╧╢62ЬЁє╧├├╪ёёгФш▐┌э─┐э═п▀ў.┴Є┬л╡▌ыс╤С╞IЄФ█└╖▒у╛0Шт╠╨ 8╢я╘ы┼Єп┬Dв╪Ь╤Ю╪▀Ў~w╥Єд_я'?╘л║╓пы■╠ЧлPО6Ё│Э·┬зЯф├∙+░е C.╝e╧.╓}дэd╘ шЇч┌├╞Уй╝╩√╔∙и╫ #┘э╨чў╚Эпс$ЙЛюф║#аСэ┘╬─з█-ЯW'╫Фэ╩╝Бlюь▀┤░╤┘╥▌я■╟ущ╕ьЇ°П┤я╜┤═├╛гш/[єГ╓╧∙√░╩╤у■╫мщI~▒╗и·юИ╛ч┼с╠┼с▒└╠Z∙╓╣рю╔∙&Пu■*∙+╜├█┐╖╩─Счу╖0Ак┬'╓╡ю│зяи~┴╖Qы╚б-pЩ╤╧│	Г╤╘щ▌щН╢Шф┴║°╣╝нє╖р#╘╚─█%я░╡╖фЬ╠ї┼т═╜┌ч╔╞ ъQ1чoрьз╒╠╒Hа╙═ц╦пw¤╖щ┼└ИЦ╤▌%2▀ж▀┼╚№
+╞н╟╠∙Ч▌▀Uч}j%V╪▌╟▐х╘е╫╔▒х	╥╕т1	(л└Ў╚еэ═▒пуй╛ё∙√─╔щ~(%█фжПтqй┘°№ю▀╧c╦╥ж╨ў╢╤t╨╬лъ╔╗ч
+нc·┐Ть┌╒щ├ш┬║╓й■чКмє°░є╢єЧ└м┬в╘╣ыH┬╦р6a╩иШ┐┬▒Эї┐┐ЫK═zв╜0╠╧п<╥х	Й╒√╦9 (н╤╡ к╟═с─у═цюї╒╒│Тг╪э ╞╫╒└┘	╠ччэяз╖╔п┐┬┘Є╘¤єс╔цїЇє╗│Б╥м▄╒щ╒ с╡╨╘▓╦ю─╪■ы▐Є°ТЗ│Ь°∙╤чєЭ╓ЁG▀┼▀Ї\▒┌█┘─║н┼бч╚╒┴Є╧+╕╨┴юЭ╧▌ъ ┘▐╦╓╛┴ё╧╝╦┴╨╞ЦЎ┼FМщ▄█▀н╒ ├Я╪┤а■%╜цЇЮ╧ы╒Гз▒╡Ё║░▀бЫ╦ъ╨╤░\nЯ▌■  ь─═те╜
+у█√>╞╬3ю├┴кз╠ЖиRыЦї№Ч╕╓Ф╥░М<▀й╗▒вCB2д╦я╧╗ш▐ю▄╙▒╣╞╒С┘х▄═┬ц╞╠┤Нуї│Ё╙ў└щ├рR╓┼Ш╣║ц╨▓їъў;┐Ып╠%═├╔╓ч▐эелE║╩°√цфнь7▓ь╥z8╔╡╚щ▀Пэ├ь╛ш3╙м╪хук╦█▓х░╟ъ¤╨▒╜┬╧Ьъш╫╞╒╬╟╧┘═9╧╧▄╙╧м9╡ь╬╫сюЮ│с═ц╕¤ш═B#~u█ь╗╬╝╔┘№▒╛▄Ё│щ─╙╬яsа╣╫%xЬ╩√╤┤▌nч╒ ┼№ЪыVФ▓┐г╣т╦╘▌╔тсцн╗╙╞╝╖еУ■╧Ю╚╒Є┌┌М╘▒∙▌Щ╦┼╟е╠╔ф═тщ▒╫л╗╒Тщч╚╚╩╕╖Ь▓эщРа ∙└є▒ў╝с▒~сзцДи∙L╟┤┬k╖╝хч▄─╫╣∙├╖ї╙╪╗┴Ёц┘ў ╦█╖╨╠к▄╥╤▒╚Ь╠ЎЄ╗┼╟шы┼╩╥╞┘╒▀нзб№Ў▐гЄ7
+▌∙ю╥╜хЮяу╧▓ы╩║в╝+LСц▌Ж▄ї╬╢╟├┘█ф°чЩ╕╡є╓╞┤╔╨фё╞к╣р╣.∙йьє╜╔и╨╬]╒с╙░#╗╨╩╛║Y7╦╔?∙░NшД╠У╝▀т┴рс┤а"╖ьїЄт"Э┼ц╫▀з┼Щї┐√Ъ▐п█Ыс╚м╦█ [Л╪ыф█О■┬╕┬·пПь╬Б╕▄Х╘∙ъ■д╛═э═Ыв╥╞╙┴%▓ўї╩╢ъ╙┤┴ъ╨┤е╚Ым¤рB√Їоў┌╚┴┘─▄╙╓└ъж▌вышщ╩╕лтpАЁ╒╚╥о╛▒хашўАс╨Ч┴xццш╓хЇь║╟╞╖Уъ?ч╦%╚╔-SЖ╛▀╣ч▓Z\а╡░n▄█╫┼╙╪&Щ╚п╥╩Нйв╒╡▌+Zж▒┘м·┤╓в╢)н░С┘Єрт┘├│Ї┘т├хV├ТЇЦП┘l╥~╩╒╝ц╜┼ й╥№ХА╢╔╧┘─го╩яbчo▌ї╚┴yЇ▓└дN▓4╝М╪ї
+┐Щ╩╟Эс═╗█Р╜ш пфю│яJ
+╒ш│└√шьэёНЩфчО╓"■═╬ъ▌аў╝он║бНс╫K∙ч┴╥┬┘№╟╔╩┼ъ╞ы■■а¤╨.G╖ьЬ├ ╚ЇЛтЗ╓┴т╞╟у▐┌┐╥И╘Йт╒Ё8╗╢й─└Лў■р╖ю■╘█д┐ыjЎ▌ьётС═тЎгжшу╕КУ░щщ╖═m║'@░█wцц╒Ьчя ╥ЄЫк▌щ└ы╣▓╟ ╞ищэ■├у
+С╓╙в╛л╣∙┘·┤▌к│Їэ╔тT#Ф╚qРz╢х╨+<н└Яї╥╨╕■┤хЄ▌╒ещХЫ┬╢╓╔╖╦╩├┘чЪє"ж╤═├─┐{x╥ф╘╫╧·┌║═├їех
+║╕╫П▓╣Ц
+└╙°ёЧсЫ nнлO╘м╓┌ёБРёб╜э▒3o┌)╗є╬7═╪ьЦ╤t√я╥▒ус╙(о ╣|└Мтш╤сX▄¤ўф╠╝Ё√f~t■ ыё╢╪¤ф╬хх╞ЖёД▐+╕T╢╘┌╗▀·╙╚.'р ▐▓лнЩКТ╩╠ъї░║9∙°▄╧ йэ╢╛╤√ў╩кя└Є"хЫ├╜▀┘ъРg╬╕рл╩╪╜Ш─Ёф;С▀╝┘}Cхеэ╥д═о╨у└╠ю▌з╞ ь╫╝▄ПЭ└■°┘ШмЧ╛т░Яё╔яу╕сйвЮ■У┤╛Ж╙▄╠у╔╥Єуюэ0╘м¤▄яо┌╨╣лєФх┌у█х╟ц∙╫╫Цш╓ы▄Ї╖╥║уы/▐її╕╒╠▐┴▒╜ц╒▐°у█▌>║щ╚т▌─г║╛╨р╫█д┐╤▀√╣ тЁ╤╒├∙▄й╔┤р█°жщъ├▌│ с4╤╞╠ /╝╠╟╖▀┼коЬ╛╘╫бї
+ъ║ё&x■╪е╬РУ~щ▐┴╘ч┴╦┐$Є√Y╓ъР╠ю┴╠)╞МNы╬и╔╦ь═■╛Ийй╨┘┘▐▌┼╤┐нРхє╨¤
+є╤Щл╘╚ю┤█╙█р█▒└╫▐┐хинщ▀▓╙▄╙╟Їрё%Я║╘├╗╧№╓╩Єўў#╥шХ╣жЎ█ь▓щ╠─ър╧╗о╖╓╘х╚лъ╩$▐Ю╥р'╩єЪ┤║ї▐ъ╜Є82╙Мзыч¤ы5╞▌ц╓╟╟Юї╘ём╬╗З░▐ч├труя╠ц╞╔ш╡ЄЁЛыфЩд▒тў╕ф┐:6╘╜╟№└▌░╨╧└▌Бq·┘┐╬шфшжў╪╚:╨л╙╨╣▓├е╢ф╚ут┌ц▌,╛╦╘щ┬▌Є╒░╫╩щ╙╩щ╙▄╫ъь╧█╡╩н▄╒бм∙√Ў┴Я╬м▐░Ўю▓╢пё┘╨эєыЁ▀щ═у√9╠┴∙Ъ╞Еп°8Щ╖ї└▐╛╫┤оэЭ└жЄй░нх╥╝┌╫ю╣рЄ╙╣о╙╣┴зА┌щ№IЯ╒╤╜╥бЁ√▌├▐|╜┌╠·чю┴▓я▌═ ╙Эуя░╨¤╤┼ц╔ЇГв▌╔т╠╢ы┼├Ёхс ╥w┼╚ЛЇЕ╧ ╪═╞oO╬ ╞э╟▒в╖{ъч█┌х▐е,▌╤ї■┐┴х▐ф╤се╓╠╛╬ьЄ╤х╛╟┼╝Єч╥═┐чєчдртс═│а├╒к┘┤╔╡╔▐╫рш╩╕╧▀Ї┘▐ьы▌╞R Єф┘їє╫√╧bр║фЎ┼█▒ ▒╔ж╜-╜╡>о╣б╓╒Ь╟Ї╬п╩#╧ъ╜ щ╣┬├к┴цх▐цЫ╬∙┘╜┬╧·▐╛┐╣¤ю╝
+╫█л╛╫└Ёв╧Ў▓╬╬ЇDрЫЬХющ║}├оЫШШ¤Й╖И╗╥┐	╟╙▀цщ╦Є∙┬Ъкў╓у╘┐ч1┼х╥┌└~╫фпUе╧эєўё╬q┬мщўы│б╠█ўrЄх╣╧~f ┬║єЖ╜М╔╞╢▐╒эь¤╘	З═йрС╤╛э╜№[Uй╥╦╥х╔╥ф─╨фуЄ▓їfж╙╥╚ьм╨■▐╧╣ю ╫∙ы╕Ш·├ю.,Т▐їтя╫▐┬їп█║ВFфЩЄ╥╧└эШу█ДзMy▌▄з┌хК0ЖФ№б╛°в╔k0ЬЫ┐╧с╦И▀╜╟N╠щ╒╙а@'  H·═╖яс║╢бЗтЎфШъ■┬┌Л▐╫■ч¤▓┬5UhщЇ═├ИФМЇ└Їс╘ЛЄфЁ├qЫ ▓э┘╜'шхИ╪╨ф╙═Є█╢╓╓▄	ДP*Ду╟ХЎ№╫о┴ф¤ўс╚╘ї7¤к░ъiЗм╓╪Сjvi╓Й╝п╚жЎ╙╪╘И
+03н╢г╦╒ь│╥Ї╜я╣█╕╛х╫н╪█·╝┘чq╕═W┴▄не┬╝з╞Ё)вх┐√ь┐м╩бщь╬жьк╢▐║V█лЯ═}ъ╟@Яё╫ўш╞╟Єрь█╗╪зИ╔└╓╣■╛Н│▄─[·bЯ╞ъўшїНую▐╢▐╣·№ъЫЁС┌Г╣█э┐╠┌╕╗А╖╗щ╩п▐Р┌╤ц┘ш╛├┬▌эю╙щ┴ЄъqЧ¤╔╦┼Ьш╗╙Ў┌ц█ЖафН▒хсююСЇя└╝'4╗a╞╓О├╩х┐Щч╢┘╤р╗б╢╙о╬╢гЮ╞╦ё╙╚ №Ї▒╧#¤Дє╦╛┌рР╙Ч╟·─├с╔─▀│с·Oу╧┬h°Н┴°ФЮ∙
+Мtн╜ф╞ЇєйЬ№▄╦┼╬▓°ч█╜█мn┐ёxч▐Л▀╚a╦ъю╞ фr╚ы╩о┘э·лKзц╟х╟c┌рRЫ·Є─о▀ъдA┐ц─Э╟╠╨Ф"╛оУ▐└ь$иаЮ3ё▌Й_t┴ф8п╬▐'║╖╤╖!лФ╤╞╞╙п╥э╘y┴█Ў▓щ┬о╝Ш╩∙╫ъ▌ч┌╒─╠╩
+ыш╨кб+ocо-Ш╛╨!u▌єхИ╓	ї%в╟∙╢ц╖№│ь╜╦У█Н■к╜╪ё╩╨╕▀ею▀у╞нє╟═╒=╛╖(Ъ╚&ё▒фмзй╬жI╬┤д░╟йх╞╬╟Я░╫ыж│▐╝}-l╛┐д
+▌╞їно"м┬║Цф█ 1▌:╫╙┼в╖Ч7╖╪▒┤╫║чнч▌╞1Е╚Ж>У╔▐т╪ЇЯ▒Їф▌В█▀╙╖╩│Й╔╠Ть╘╞ч┼█╩╖┤Шcъ╦▓ф№└сГЮТ─╘▐░ц╢╥╣фыw█╞╬√┘шр▄шч√ШжмўЫ┴ёя╩╟╬ъБ┘┌╙╩▐┼╩#╬╩Ш ╛▓щ╥╟╙м{В╓■╤╡м▐√я$╛с╤■е╦о°	щ├йЄ╖!╕┐Їхл╬ш√ч┘йЬЎЯу╛╣╟&Щwш┐з╧п:├╖╘яро·ыфьЕьi\ц╣Ў┬й▄·╜е╫▀░╕┼цю	▌╟╦Ї@ЙУф═╦ж╥╒▓╠▌■л╦хс ?нўЭт═┘M╖╒я╫ж╦$╘┤■Є┌▌▐─	═лШщ╓├▐╖╗╛╕ВюяиУўФє▌н╩г├│╝▄Э╞╗╨┘h┴╦╔Ц╣ця▐╘тЮЎЇт$╖╘╩┘▄3яУЇтя№┘╟л╗ё╫╓╒█▐╡8н╩┬ ╨└├кё╗─ДяТ▄s╪K╙Ё╡╒-поё╒├╩╧╣6%иЁ╫╢яи▒╔╠┤6∙╟■г╢5√╢╨й├Л
+ │&Ёю╬т╨р╤К╖а╓ег▒╓└Ё╥╞╥╚∙╩ъУ
+8ефъЦТ╗с═с╧┴ъщ═ш╡ЯPС╘п╓╩╛╬─ятёЇХ╬├╠╪┼╧╨╬Ьс╒╩▓9ё╩м╔ ╙╘═гл╨▌ц▌к╕'еїъё)Хъ▓├╡бє─╘╪¤Ь╓х╢┴Её╚о╛▒─зтЁы╓╤╙·╤й%У█0яа╫╩╠√╩┴╔о├ї╟$┌╤ ь╛├═╜ск╠▌п│сЎС│═щщ°у╤юфш┬к║╔▐┤л╢▄Р┘оф╣┼┤╕я┬ЎЇ░╘к▐О╤рщеб┘╬╣╡╦х╓п┐╙р╨ш╪▓эю═j¤Ь║К╘ф щп╔Aв┌╕	▄╖y╟u╦╜Fс╬Ў─╔╘╩╗с▄├╓▌р┌жъОЄєч─▓┼╒┘╛шф╖╣┬м╔ыюз█'╠├∙▓ ╫╤░■├╞Юш┌ху'кУї╘┐╚(рДХ╛▓│ж╬лшШ┘▌Ч═{╚√ьiыз┴┌╨╕·iмз╤╫╔у┐!ж·у╜╖кЯюй╬ъЭ▐Т▀ц┐я╓Ё╔└о╦L╜ьТвЄq═у┼q┐╨█╫#╟°╔ьк▄╤
+═√║─┌п┤▐экЪ╠╢ЄЛ1їпўП┬ш┼ёЬ╟ўs░я─чъ┤╣█▌шЦч4'┼ь(ХэЦmЇ╕х╬е╣▄э▄лЁ▐ф№ьЩ█Вe'П│╧┐▐є█SбGзЛ=ЁЙлЎ▄╖╣Ї┌жл─їЄ▐╧═┴&о0K╗┤ цЯ│ь╨ ┼ъ╨jьич?*:гр<Цс∙чф╢рЄ├Ўу╘┴ълё·╚╜ыє█сц~╒Ёrw4Ю▐-жЬЗ▄ 'dуХ╣х√ЗmїМv╩ ╞╟╛ь╚├╫┴╝hч╓╠"│┼Ёўы╩Э╛╜кОO-ї─ф╩Ў▓п═│Ё╞є°в╩>╢pK;┬▐╢┘▀╦е╓фЫ╣╤%J░╬╦Ў╙ф╠-;╦юРж╕Жф├у═┤ё╓█ZP┐U▀└п\└╙ї·▒Ь=я╤╒ФЁ╛Ўр╝ЛЫ-▀Т╟▄6╜ц╙#ш╔╨╘фД╡ъВ╦▐▒Tг╔ш,▌вЬъ╬¤юы[▌╟ї╙╞У║№!ъ╪╚Ўx╬С0	▀ЙюсЁ°ч"bZр╖ог┘Eє└ ╣шв╣╤ш╪╪╔лЇjx╖ФK╪ё╧╝■ж╔ш6гўуЁ╗Т╒о	Д▀э9 О0П╠╓ух╪╙ыНк╟0┬╘Р└Ж╦ЎяУ┌╚╚─╙╟├╦ЇxФБЫ╦╤ьvп▄▌еЧЙ╡)с╛Цч■ь╠╠Є╞┐╥╔пЧС╬в▒Їр·ЬтЎ╝ЦГ╨тўи┴ёщ·т╧ЗуЙИ┬ЎЎ┌╪ьж!┌
+╗Т·ф▄√Д╟╦╚ън╢ц я▓и"ён ╔╘▓б├┘ў╨▒уыщэ┴Ї╓"·юТ▄┘xш■▀ў╩уЖx┴№.─є_ещ]ы▌╧■ї╫r╔╦╓скФ▐И╟┴└A┤┌▓╛ятК╥Ы	цr╡ц╨╝ NН'┬ЯФ┴╘Sцt╕-яq╕√╢е╟э╬J∙Rў▌Ї√Ф┐╝ЛЄп║┌ч│╙3Ця╙╠═ё╞
+▀╜jЗЭ╪яZ╬У╒┬шЄя▒эЄд╫╦╦┤╘р─╕╙с╨╡ж▀╬╜ыЇ─О╛жё	╣▐З╢ф═╢¤м╛Цўцш┴╠ц Ё√▐Ы╣Ї║щ╝╞a┴ЇТХр┴ггЇ─╬ч╞▓п¤├Ў╔рр│▀║)└4~  ╫щз┌Є╕д┬т ЇЫщх╖v╚╩х
+┬ЁоЗнзкHХ┬Ў╦╒▌к╜║╓╬сфоaЎ╕х▌└┌╞є╒я█Хч╟╝г°╫─░╓+ї╥╜·7:╒╕╜╡╟╗▓├ш╦п╙╕╪╗G╒┼┼└╕╤Ъ═╡с┴═╒ьЕ╠═Eфтя╒╖╒И╙╛╕┼еч7┘╬ъьА╒╙s/╚╧ЄИ╦╚└╠РuюЭ
+╫┌┼ъuўЩ┌б°├ж■щсыь№└ь╫P╕▌█╔╤√ВУ╒╛ю╔└э╔¤т▐lыТ╝└жвзл█эхщ▓╤╦Ъ╪R░ў▒б║б╗0їыкє┐└╟*кё┼╚╟│╩ЯYхс╓·/й4╡с╖╜ръоЫ`╘▄╔єё├у"о╠сбэP╗ў╓Я·u╟	Пчъ╓▄о╟оZцФсг┴▒ЄЫЁ√ч─жч╓єгъЎ#░Ч╡╩Ъ═мъю,  √╗ял╣╒┐?_╒╡╩№└╕о╝°╬╦ў┐╫з▄╬╝╗│ц╨╗╠╠(╬┼├Эпя░хыч╞щ┘▓о╝╤╗_Гх╥╥и`Ш
+╨╡чёдойзqаТ╣▒ш╙╒╔╓╣я╛√л╩яр▒є~╖∙Ё┌ф┴з)└═ЪГЮЄк)l╤╛▓╬╝юЇ▒▀пЬ┘┘у╤╥рў0хфн╤K╦р┼г▀╛т┘▌ #щВ °IЮцН║╤УЇ╤╞тg·к┘пнjхЁхь№ў┌╕█л╞Эдй№P█┌┘┤$(бт▓╠хTВ╦(WF┬~;с┌█╟ОЕ╓║Р╛·╙N╗4┬gхл▀░№╒b┐▌в╝╦▐√%╥ЄtW╘Фт┌√ ┴╛Я╔░УЮН
+╒ж	║┬tўMчYf╣ЄъkTЁ▐┴ ▐}щ╜╨╔─4єnкХю■ю┌ж═╫Ц'┬Эщ▌╔└╧╧╝у╢%)╒i═пF╩═∙═▒╙║ ейч7Е╗╨Ы│ш░а#y┴╩M┴u╒┴┌┤ю т╩о·Ї┼╒)Ь ╦√Х╖╩┘икб▐╢и√╠┘Р,ЇЮ°ъ╦╣╥9╪Х ╧ю░єхЇ╤Ї╕МОЭ╥м╙E/▀┼┬у°Хд╘ь┐№Ї╢бЗп═niВП╙_├Я▌┌ут═│▐╜ЁЇ╕╜╬НцЮ0Лв┐ё┼Я╞r9:ф║╕Ё6╛ЗsЕ√э┌чТє┴╔ууY╤╟уиэЭ├пK╙)мJч╢╙╟╥▀╟╥Ы╖<∙╚╒ V▀┘Ўч!▐ч▀╞рЁТпю┌╪О(п╥S:щ2Э╗у║ды?Aw╝╣Й!Q╒Х╨┌Яh╒	▄юяЩ█═┼┘▌OЬЮк╒▀Т├&╦╟%╓й┌│в┴>ш▄╫╖╨ЧЩищ╚╞w5╔│╘НВ!╓┘Ь╢Ьл╜т.▀р┘п ╕4Та∙╔п╥┤hэ┤7╩Бэ║─√"зд▒┴З∙╩▀║Ё╩╩Є▐═н ╦Eш╣'╩ПЇЫ╦Э┼Ю╝ющў'Юъ╟>Т╦Р├ўн╖╧2r ш▌░
+╩╬▒Тщ╙░╩▌.Ц╓р├╦п╙▀·iн╣═╛┴┬єу█╡м╕╣─Ю╒╓▐+▀╥GM}·═R╥▓ ╖Єш°╔╕ри╤ф ╞▀эOф─║Їє█╢╒°°╨д╠∙Ч─┐К Zт╠▐║у╢■фф√┤╘▌╪║▀╛╩▄█╩№ї%═╒хыТ╒Тэ╬╠╗╧╕┬╙·╙С	╜№╫я▌╔р┐╓╒ь┐╪Ы.╡Cц▐Н═ш▀╧ Eю0Г╒ц║х∙╓╣═№└з╬щПх┴s┼╚┤y╩╕D ▓пН╓─Ь╜ЎРк┐Ф╦╫щ<ь╛PА¤Ёй╣ь▐@┴Ю╓У┴╢ЇмцЇKК╓Ь╙╘єв&lQ╞▒Ё┬▒╔╫┘х├я╔МЪ╩║╦─╒мЦInСЮХЎйч▐▐Ю╤╨Є▓єт║е%7ц╗шюї╙╤┤─ Д┴Б╪░▄╗°э ╦uy'qзс└┐'╢╤в╢╒Л
+╪▓┌┘Ё╣х╙рэ;╚¤╞рё╤┌▌ь╡З@ЦфV╠─╛■шх│╨брр°Fєў$q<у┤{Ч*мй║Б╣$▐┘░мх█7yьФ▀╩▐ю╫┼▐Є■пяD/└^¤ўй▄¤╫╒ПЭ¤ччИ├Эз╗д▐╬╠пщ~├ыє┘▐╨┬▄хфЯ6ъ'╪фя╝╚╨еUпс┴д╨╤╩дA╪ЦЪмЦ┐д▐╩шА}Х¤╛о}YЦ√й!┼╜·х7┴+╥╖п∙гЁЕ╧+тxтў▀o└cЪё~aЎьў║#╘╛з╞║├ъ¤Yщ┐╟╟╛ие▓══	%▒фыЭч-2Сг°и╞┴·ХС╔╥онQщ┴ЄbXAв▀╨╜пw╜█╫+o─╨╧$Ь╒╚А╪эВ▒й╔├4╓К ╩▄ ▄═	╟╪|╖ЭЧ"Ш┬Ф▐ юЇЬЇф╝H>╩м╤пр╓╜3╠ЦФ%е┌└┼^╪x░ц╪уяёг|А7√х╣Вг'Ўб;╠){╬ы-┐═ж.╜╞Єъ┼?─кф├·ёї│Я┬!ц╥а▓хE╛▒ты╒<╘╘л░А╒яЄ╔с═╟╘Io╢ї4╝╦к╦\t╓╝jФъ│т╕ц┴╝&╚AсНё╒ FЙNЖ)╤╬я(ъч╗Й╢хF│бИЎ┴└+╒П■╚}┘╟Э▄цч;▒▀╦J█Н ┼э╚╨ ъ}хє╟в
+Н?▐ЦйБпсї∙├ГЁfЄD╢▄л┤╙єО═╦╒р╤и║є╔з╫$UеЩУ═·┘╧ы╦├╛╬■еТ∙╧¤ф▒╣╟╦j╚ЩБ╩.{╜тёO╬M╥╔╓╙шБ▐ї}─г с▌н╣бў┴я{щ┘╥
+▄pЙ╙└ы╖│┤╤Їь)ёй¤к&П╜хY║Єў╢5╞▒Ы"╚оb╣╢ё╙¤ ┬╨╞╧╓ё┐┴╨ж╠┬╥ёР╕"Ю║║█Ўє╞7бтТ╝Ч╢ї┤┘БL├	╖*Гm╒╩ю#═╩┌╤йї╔╬╕░├╬╚╦▌╡Ў╟╝─╘Л╪▐╩╕сч▄СЇяЯ╞ъЫМ╟,├рД┴▒Ї▒л╤№┴┴╢цчОв┐[A╞╬┴R
+¤5╘э╣╔я┬y╥Ў╗:с░д#ў└н┤Ў24╦рэк╜╥CЮ┘╧ц╗■╖╬╖╠Ё╠╙▒╕
+▒е@├ў·:Сn╬Є+№4ЧТ─щх┴╥▐┘╒DСу┴╓р─*9щ~╝■у ИЦчпП│├й╠°4╓Ў√TЪ╬ь█єсШе╢╝Є╩#└┼░г├·▄╜┌└Ю╜╝■▀Ї╤Ёф╚╠ч┬╠x┼с═▌з▀┴▓▀Є╨√▒№еЮ┌ниъ№сршф╣ш°щщ┬╧·ч#¤Ж~╨╚╘┐╞Н█╕┘╟х╒Юх═╬╘╝╢▄╘ф°сE	I█╢Тэ╩ч╦с┴Юt▓ф░╞ою═!р╞▌┌╢П.═┼m╝з┘]▀╜┐∙ZЧ▐║Х^╗█улєшь█є╦▀╖яюэт╕░с 	▀ж┌t4z╫Я°┼┼Ыkя·+зФ╜═ь░Ьж╫╤╔.╒аё∙·┐мн
+ў║т╦эў╤∙с╬рб■з╦д╬Е╘ ┬о├цф╞▌єкRй°2╧т╣╞┬ЕчмФ-С∙зрє╫╪д╟┴╨8█╘ЎD	¤Я@╫
+Ид╩╢╔╔еH▓И▄ОыЮ+▌┘ЎУъФз║2Р бх╕┐╩╫и9Ч√0 ┘ы№Ш▄╧┴-№▒бЩшм├╦Ьх┼4┐С╖З№щЧйPЫ┘ьV.╙6Ф?┌╚╜я┤├к~Д>▌╬m╨#╫К7Ню╚ ╙е8╙╩Ывъ┌┬л·би╫▌┬
+▐цК╝g╫┐К;Ё╒┤Е╬∙▓╓╩=∙T▌▄╒┼■r╔╥рж╢┐Б▄ЩвдвжвЫвЩвСвФвОвМвНвСвПвЛвЗвЖвЖвzвtвtвsвlвfв`вTвHвDвNвUвrвЫвЪвПвНвЛвЖвВвyвrвjвdв`вWвPвLвBвFв4в7вFвcвдвавЬвФвСвФвТвСвЙвКвЖввuвsвnвbвdвUвMвKв?в8в0в4в>вpвХвНвКвЕввqвlвcв]в\вTвRвNвBв;в<в:вFвRвXвПвЫвПвИвЗвЕвБв~вzвtвsвlвhв_вTвMв?в;в0в-в:в8в1в>вЖвЩвФвМвЕвГв~в{вЦвРвМвЗвев├вБвwвsвoвoвoвmвiвgвeвcвbв_вbв[вTвOвJвLвMвCвCв[вУвФвСвЛвНвКвИв~вzвwвuвmв_в^вZвTвWвYв?в8вТвЯвФвЗвtвnвlвiв`вcвhвgв`вZв\вUвUвFвRв^вXвWвTвVвTвЭвзвЬвПвНвЕвzвoвdв^вUвPвIв=вAвHв^вdвNвEвVвМвйвЩвФвНвАв|вsвnвkв`в\вSвVвQвQвQвMвGвGвKвKвIвfвгвЬвгвавЪвЦвРвЗв~в▓в░вовшв├вЮвввЯвЧвПвКвЗвЖвДв{вwвoвtв~вЛвСвЙвДв~вЧв╞в╛в▓впвдвевбвавЬвПвЗвБвvвpвkв\вXв\в_вSвOвXвTвRвiвввжвЬвавЦвСвЖвБвВвДвnвgвjв_в_в[в]в]вhвqвСв┤в▓вЩвЭвЭвТвТввqвkв`вpвmвjвeв[в\вIв@вCвDвNвRв]вzвzвvвhв]вaвVв^вUвiвtвrв]вTвbвlвdвWвSв]вwвПв▒вЯвввЯвавЮвавбвСвЗв}вЮвЭвЬвЯвавввввЬвЪвЦвУвАвqвmвrвbв\в]вTвJвEв>вCвАв╗вивввгвевнвввдвЫвЭвХвВвxвuвzвyвvвuввЪвщв╫в╬в╦в┴в╣в┤в╜в┼в╣вХвЖвЖввzвsвqвqвrвiв`вZвFвHвEвVвЬвХвПвЕвАвpвqвГв}в}вwвqвqвvвsвmвjвrв{вИвДвЖвШв╡вовЭвФвов░в}вwвsвtвsвpвkвhвhвaв`вYвJвEвLвGвfвХвНвЛвГвГв}вxвnвgвdвcв_вйв░вивбвавввЕвБвЦвПв}вwвnв_вYвYвQвLвGвSвTвYвГвнвнвовлвлвввевзвЦвФвКвyвlвjвgвcв`в_в^вXвWв\вzвовпвивЮвЪвЯвШвТвУвМвСвНвЕв}ввxвrвdвcв\вPвTв~вЯвЯвЫвЙвЕвв|вvвqвrвtвrвhвjвmвjвhвhвfвWвdвsвВв▒вжвХвШвУвНвИвkвoвuвkвaв]вfв_вZв`вfв`в^вhвtвГв░в░вЯвХвПвГвwвnвaвRвOвJвHв│вввШвМвЙв|вtв{в}вyв{вzвrвzвlвrвoв{вtвnвwвгв┴в╕в▓вовевЧвИвЕввxвqвhвbв`вfв_вYвZвVвdвhвiвПв╟в└в╣в║вквмвЧвЛвЙвyвqвgв`в\вJвFвLвBвEв=вGвvв╖в╡впвлвпв▒вжвбвХвЦвПвЧвАвuвhвPвLвHвFвCвFвRвbввРвГвЛвИвв~вЬвЦвХвЛвЖвБвzвrвvвoвfв[вUв[вuвФвдвЬвЦвУвТвНвМвЗвИвЖвАвЕв|вuвqв╨в╨в╧в╨в╕вЖвКвЛвЕв|в{вБв~вjвbв`вHв,в)ввв,в&вв№б
+ввв#вyвЙвДвtвqвpвmвjвuвuв^вVвWв^в|вйв▒влвавЭвТвЛвБвГв~в|вxвВвwвtвpвsвtвrвuвhвaвnвлв┼в╕вйвдвЯвСвНвЗвДвИвАвvвxвcв`вaв^вeв`вnвзв╣вов╕в╛в░в▓вквзвбвШвТвФвУв~вoвaвaв]в]вVвPвJвYвБв╢в╖вгвЧвРвОвДв{вxв|вqвnвtвvвqв╘в╬в█врв┘в╩вевУвбвзв┤вдвввевмв╢в╪в¤вггггг▌в├в╗в╖впвбвШвЩвТвХвЦвФвЫвевзвов╢в╣в├в╨в╓в▀в╘в┬в╡вивЯвЧв│в═в┬в╒в╬в╧в╦в╚в╬в╝вввЯвФвЩвбв╒в╗в╝в┴в╜впвзв╢в║в╜в┬в╟вПвИвsвoвkвiвgв_вtвПвзв├в╜в╡вйвХвМвЛвЗвzвzвzвzвsвcвrвiвsвtвoвzвtв|вЭв╕в│внвнвевЮвФвОвБв|вqвnвqвpвjвbвНв╧в╤в┘в┌в╥в╓в█в▄в█вЁвюв╔в▓вев─в╧в╒в┌врв╘в╟в┬в└в║в┤вдвбв╖в╛в╢в┴в╩в┼в╚в┬в┴в╟в┘вщвг0г*гЁвчвг
+г√вЁв█в╜вввдвгвавввавСвЦвгв▓в└вчв!г#г№вгг┌в╧в┴в╖в┐в╕в╟в┴в╗в│в╝в▒в▒вйвЪвЯв░в╛в╥вївгггїв╛вдвквйвЯвЬвШвФвКвУвУвУвТвПвив╜в╪вьвшвшвчв╘втвЇв╒в╜в│в░в├в╟в┬в┬в├в╝в║в┴в╣вфв╫в╠в╟в╣взвРвПвТвФвЮв┤в╓вг г┌в█вггг
+гггёв╞в╚в╩в┐вбвзв╜в╡вов┴вгвавквовевжвЪвМвпв█вўвьвъв∙вєвшв╥в╔в╞в╡вевЭвдвЖвЩвив┐в█в·в√вЇвггєв╫в╡в╗вЧв▓вФвАвлв┬в╛в│в╕в┼в╙втвггфв╙в■вг╫в├в╘в█в╧вквввЕвГвйв▒вЩвОвЕвЖвФвавов╡в╟в╫в╤в└внвавХвФвНвив┤вЬвмвЪвКвЖвРв▓в║вчв╘в╩в╫в╥в╔в▓вЮв╛в─в┴вжвпв╛в╥вЇвгг■в═в°в°вїв█в╚в├вгв╗в╣в╝впвпвпвнвЯвzв\в`вWвHвJвXвZвcвbвXвTв_вvвЙвЪвнвдвгв░в┼в├в─в┴в╔в╘вэвгчв╨в█вг▄в╬в┬в╣в┴в╝вЭвКвжв▓вФвГвМвйв╡в├в┘вшвгг г·вфвывщв╫в├в└вЭв╕в║в┤в▓в░вовквквйв▒в╗в╔вшвгг¤в в·вщв╒впвквнвзвев{вРвШвЬвЬвЩвлв╗в╔в╞в┐в╜в└в┤в╕в└в├в└в┼в─в╤в╘вЄв'гг°в┌в├в┤всв█в╫в╧в╩в▒в╔в╗в┴вйвЪвЩвЫвйв╨вЇв$гЁвсвгьв█в┬влв┤в╠в╠в╟в┴в├в╗вЫв▒в║вдвдвмв╕в┬в╦в▌вїв гг√в╚в▓вевЦвПвСвРвПвЛв▓в╣в╛в┴в├в┼в▐в∙вгёвёвгЇвэв╘вев╗в╛влвУв▒в╢в╜в║в╝в┤вЧвОвевив┤в╞вївг·в√вюв▀в╨в┬вШвзв║вавХвевЬвбв▓в╬в╤в▄в╠в╚вовзв═в┼в┤в─в╚в╖вЕвzвoвVв]в~вЕвЖвВвИвЪвщв╓в┬впвевЯвЪвЮвзв┼в╞в╠в╪в▐вьв	г1ггггг╚в█втв█в═вжв┴в║в┴в╣вЦвМв╕в└в─в╚в╨вювг,гггрв╪в╘в╕в╘в╒в╬в╟в┐в╕вЬв▓в╡в│в┤в╣в╛в╩в▐в■в!гъв═в▄в°в▄врв╕вбв└в╥в╨в╟вйвГвжв╝в╠в╔в╥всвг■в╓в√в вьв▀в╫в╤в╫вЭв▓вГвЖвБвВвБвОвйвкв╢в╫вЎв╫в╧в╘в╫в╤в│вЬвЩвКвЛвав├вчвгг┌впвРвmвWвfвЕвЖвЙвЦвПвГв}вЕв|вpвrвkвRвOвIвKвJвIвKвKв`вБвгв╪вяв├внвдв╩в▌в▀в╤вмв┬в┼в└в┐в▐в	г г╦в╩в╙в┘в╥в╜вбвЮвввавЦвТвРвов├в╜вбвЧвав░в╙в▀в╧в▄в▌вгяв▀в╤в═в╚в╟в├в║в║вЧвЕвЖв▓в┐в╦в╡в╝в╦врв∙вгюв╣в╦вшв╙в╥в║в┤в├в┤в▓в│вжвевзвзвдвпв└в╓вив─в╗вЛвЫв─в┬в║в░внвевСвiвhвoвyвБвЖвГвЖвов╚в┤вивнв█в╧в╕в╔в╩в├в─в┼в═в╧вувгг▄в┼в▓вфв╒вмв│вЪв┐в╓в╨в┼в└в┐в╚в╛вЫвЗвzвnв^в\в\вaвhвoвДв│вшвявфв█в╔вовФвЛвКв▓в┬вивПвvвnвhв_вlвyвyвЦв╚вьв╔в▒в┴в╓в╤в╘в╠в╩в┴в╔в╔в╠в╘врв─вивЛв`вYвXвfв|вСв░впв╥в┌в╫в═в┼вмвЬв╗в└в╜в╡в└в┘вяв▐в▀в█в╘вчврв┘в╛вовзвУвТвбв═вювывтв▄в█в╒в╬в╬впв╣в┐в╞в╢в╧в╓в╙в╒в╫в╨в╝вЮвzвsвxвwвvвНв╜врв╥в┴в┼в╜в╣в░вЛвЧв░в┤в▒в┐в╕вбв~вuвhвyвИвМвГвСвнвюв╥в╫в▓вЮв┼в─в┐в╛в╗внв│в║в╬вявг'ггг г▀вчвув█в╪в╦взвлвнв╛в╗в═вївсвтвцвюв╘в╚вйвtвGвVвБвЯв┘в▌в▄в╥в├в╟в╞в╔в┼в┼в╦в╒в▄в°вгєв╫вмв│в╕влвЩвКвГв{вtвlвiвcвfвiвzвАвЛвдвьв▌в├в╙в╬в╗ввв╧в╟вЬвЖвwвhвcвfвbв]вTвTвPвRвRвSвZв_вrвНввв┼вовнв╠вдвМвЗвКвЕвqвfвpвiвSвSв[вkвУвув┌в╙влв╨в╤в╜в╚в╜в┤в▓в╣вквпв╦в╠всвг+г"ггггг№врв─в╢в─в╜в╨вбвв`в\вWвВвzвcв\вkвtвwвБвУв╣в╝в╦в╥в╟в─влвИв╖в╣в╝в║вквзвЕвwвzвlв}внвШвЭвЬвХвСвЛвГвwвsвnвjвnвДвПвМвЩвлвЁвївьв├в╙в╥вйв─в╠в╦в╦в╧в─в╗в╗в╦в№вг▌в√вг¤в°вфв╖влв▒вув▄в╡вбвЫв═в╥в╨в╒в▐в╦в╥в╒в╪в·вг гЎвявщвшв╤вкврв┼в┬вжвмвЬв~вdвQв`вpвЖвДвЗвДвЖвЬв║вшвъвсв╓вгвЯв┼в╟в┐в│в╣в╡в╕в┬в╡в║в╖в╩в▌вЄвЄв▄в╒в═в╛в┴в╢в┤в╝в╣в╗в╩в╜в╣вЪвgв^ввЕвМвОвЫвявMгг╬вИвdвtвФвМвЕвГвФвФвИвОвавЧвСвНвМвев╩в╟в╜втв╓в╔в─в╦в╓вявгггшврв═врвьвщв█в╘в╬в┬в╚в╫вивзв└вЯвГвrвМвuвiвnвfвtвКввГвОвЧвжв╨вьв┴внв║всв╪в╓в▓ввв╕в╒всвївггув╡в║в▌в┘в╪в┘в╬вквХвЦвЧв┼в╔в╩в┼в┬в├в╢вйвев{ввВвДвЕвОвЦвЬвовуврв┴в▒в─вЯвпв╜впв▒влвжвФвiвhвhвtвЛв)г г█в├в▓вкв╞вг г№в▀в╩вЄв╬в▓в▓вщв║вуврв│в╤в╪в╧в┼в╕в╖впв╜в│вмвШвxв~в{вВвАвАвЛвЮвЭвЪв▒вув╧в═в╩в╔в├в╚в┌вцвўвг/ггг гшвшв┌влв┼в╢в█в╦в▌в┼в╧в╥внв╕в╨вивДвoвmвТвЗвДвsвoвrвvвБвЦввв╫в╟вевлв╜в┬в╜в┼в╬в╤в█в▌вювг/г(гг╣вбв╨вхв╓вдв╤в╘в═в╡в┬в╚в├в├в╚в╢вжвЕвВвБвАвqвRвZвзв▒вдвгвЭвСвХвИвЙвПвХвУвжв╚вЎв═в╖в╬в╬в╫в╦в╤вхв└вбвевВвНвТвИвЖвЕвКвТвХвЦвЧвСвАвДвНвЧвйв┬в▄втв┌в╥в╫в╫в▀в▐вєвфв┘в╝вЩвАвЛвХв╣в╔в║в┘в▌в╒в▄в╪в╒в╬вевОвбвЫвФв~вВвТвЪвЦвРвЭвУвУв▓в═в№втв╝в█в┘вувтвув╪в╧в№в"г4гъв╠в┬в▓вивёв▐вквлвив╠в╥вдвТвУв╞в╒в├в╝вгвСввВвЙвОвКвАв_вiвъвпвжвнвгвавдвУвЙвТвЛвПвзв╪вьв┌вшврв┘в╥в╥в╬в╗в┴в╞в║вМвМвХвЪвЩвХвКвПвРвМвПввв╡всвзв╛в╠в╘в╪в┘в┌в╓в╒в╥в┼в╣вТвХвЙвГвwвvвЬвкв╠в╥в╘в╨вЬвов─в┬в╠в█в╒в╘в╒в╙в═в▄втв№в°в■вэвёвывмв├внв┐вхв┌вевУвмв╔в┐вЩвyвГвЖвАвiв`вUв\вcвkвoвtвДвФв┼в┐в┼в╥в╩в▄в┘в╤в╧в├в└вгвtвkвДвЗвЛвЪвбв╞вжв╢в╓в╔вЦвНвЖвОвЭв┤в¤вгўв√вгшвьвггювгггшв▐в┌в╧в┼в├в╗вкв└вг%гг
+г╙в░влв╝врвцв█всв▄в┼в╘врвфв╙в░вЬвЩвНвАвОвжвмвив╣в╤вЁвчв№в▌в╨в╘в█в╒вцв√в
+гг°в	г%гEггчвёвг∙в╠в├вчв╓във═в╗в╛в╕в╝в╚в▓вЩвбвнвдвТвЕвИвПвЪввв═в╘вьвг№в▄в▄втв╔в╖в╖в▀вяв	гг>гг*гг╫в╙в╤в╘в╟въвCг2ггэв╪в▌в╙вгг╘в вг■в∙в╠в┘в▀вяв╓вжвФв}вГвЕвЕвrвnвiвcвДв▓влвЮвХв╠вшвсвквмвявг вЁвув╗вбвЩвЮвЛвЗвИвЛвев█вг#г	гёвг▌в╟вввКвФвЖвgвoвWвaвqв{вЦвsвfвpвrвrвВвxвtвМв╫в╚в▓в╢вмвдвив╙в╥в╔в╝в╖в╛в╜в║вЮвКвМвЛвЪв░в┼вэв┘в╤вивовЪвЦвКв{вРвdв_в[вРввОвОвПвФвдв┬вЁвхв╡вИвrв`вmв╛в╔в╤в╪вьвг╧вшвёвчвэвцв╘внв╓вивевИвpвзв├вМвxвЭвгвлвйв│в╣в└в█вг█вўв√вїв▐вшв╘в═в╤в╦в║в╢влвввТвДвов╖в▒вгвЙвkвКв▀вцвївцвтв╣в╫вцв▀в┌в╥в└вжв▓влв▒в└в─в╟в│в╘в■вг∙в╙вЎв▀влвквовквмвдвив▄вгггг┌в┐в▒вмв╕вїв═в╘вшв╘в█в▌вивxв|вВвЯвОвГвВв|в\в^вМвЛвКвКвЙвЦвквИвРвЪвЮвбвдвжвовлвбвЫвЧвЬв═вўвг∙вЎвьвЇв▌в─в▒впвФв~вавпв╟вєв3гўв╤вгг°в═вгг вўвєв╫в┤вУвvвcвxвВвйв╡в├вхвг√в╔в├в√в√вг█в┘в■в∙вщвхвЁв▌в═в▒вМвЕвКвЧвЭвбвЫвНвНвзв▌в╔в┐в╕в╪в╟в▄в╩в▄в╒в┴в└в╢вЧвРвНвjвив▌в3г%г:ггювтв▀вчвювўвювфвїв╒впвгв│в┴вЯвдв│в─в╙вфв°вGгFгг7г,гг╥в╕вкв├в(г+гггрв	гяв╝в║впв▒внвмвмв┐в╧в▐в▐в╔в┤в╜в┘в╓в╪в╕вмв╟вывг вг№вївщвявцв├вввЭвпвпвХвМвЬвевов├в▀въвгггг¤вєвцв▀в╨в┴в╛в▓ввв╢в─в╣впвйвев╕в╠вфвгэв▒внв╗вэвчв╓в╬в▌в┤вЕвiвmвjвfвiв\в[в_в_в_вpвОв╔в╨в┼в┼в┬в┴в┴в╜в╜в║в▓влвГвtвvвАвВв|вБвБвЛвФв┤вьв╪в═вАвtвkв{вЪв┬втвг
+гювтвфв▌в╤в═в╩в├в╢вЯвЪвавЯвЫвФвЦвСвТвСвСвСвЪвЩвжв╢вув▄в█в╤в╨в╩в╣в▓в┤вивбвйвдвавЬвУвСвРвНв|вoвkвoвsвoвwвЧв─в└в╢в▒вдвгвТвМвМвДвЖвЖвЖвОвЛвМвЕвЕвФвХвМвwвКв╞в▀в╫в┼в│вЧвПвКвИвЖвв{вБв~в}вgв_в]в\вhвtвв┐в╟вквввнвивФвЕввГвБвДввИвДвЕвЙвТвЩв╕в═вшв вчвївг√в°вЇвєвьвцв▐в▄в╓в╒в╪в╙в┬вввввЬвЦвФвПвКвВввБв{вuвlвuвqвkвvвЩв║вЄвшв╪в┴вйвнвавЩвЦвЫвШвТвИвВвБвoвuвxвiвdвgвnвdвXвAвEвHв]вpвпвавРвЛвРвКввВв{в|вvвzв~вНвнвяв╪в═в╜в╜в║в╢вдвгвЮвФвОвОвВв{в~вxвxвmвZвYвVвUвJвBв>вBвFвVвSв`вбвЯвТвТвМвЕв}вsвmвsвuвwвФв╠в▌в┼в╗вЎвЁвчв╤вшв╒в╣вЪвЧвЪв╚в╤в╬в╤вов╥в╫в╤в█внвФв╡в┘в╝вПв~вдвовгвЭвФвжв┐в┌вявъвтв█в╔влв╖вЭвДвЙв╗вСвШвЭв╢в╡в▒в│вшв0г гэв√вггг·вявг╘вЫвТвЫвШвивХвЧв╝в╚в┐вкввdвcв[в^вiвВвПв╝внв╛в╝вовгвевевгвЩвавев░в▒в╗в╝в╢вФвhв\вqвpвDв>в]ввжв═в╟впвХвзвЪвВвЛвЛвШв░в─в▐вгг∙в▀в─в▒вЙвЦвСввqвpвqвqвyв╪в¤вўвшв┘в┐в╬вхв▐в█в╓в╧в╚в╜в╢в╡вевБвqвeвiвnвeв]вIв>в;в7в?в@вIвFвBвGвXвГвбвБв}вvвsвpв}вВв╝вгг∙вув╧в╩в╠в┼в╣вЯвЮвав╦вйв╔в╟вовЛвНвЯв┴в┼в├в║в╜вХвeвnвoвwв╠в╓вдвХвСвГв|вЭвлвов│вмв╢в─вгг┌в╠вєвэв█в╛в┐в╧влвСвПв└в┬вИвнвмвавoвdв]вXвUвMв;вBвlв|ввавжвШвЖвАвЗвКвЖвЗвЗвqвyвМв█выв╫в╠в┐в╗в╖в╜в┬в╕внвЮвСвЧвФвНвnвmвuвeвkвlвiвlвtвФвсв╞в╚в╔вУвХвКвЖвДв}в~вpвqвhвlвnвfвiвjвmвvвЫв░вквбвввХвБв~вЗвлв╣в║в║в┤вгвЦвЕвoвhвsвuвqвoвvвqвkвlв~вбв╚в╡вйвЬвЭвЬвЮвОвYвMв^в{вХвцв▀в╘в╨в╗в┐в┐в┐в╢в╣в╡в│вгвЮвЫвОвhв`вeв]вbвOв?в3в<вг>г2г-ггг╫влвзвввЬвмвлвйв╩вюв█вввВвqвЗв╖внвzвiв`вgвnвXвRвQвTвSвtвЕв║в▒в╬в╥в░в┼в╞в╛в╗в╛в╢вмв▓вйвгвевФвЕвkвWвИвНв|вАвsв|вквшвьв├вивРвнвОв}вwвsвpвiвhвbвaвЕвов╟в╥в╟в╡в┤в▓вйвввЛвГвЖвГв|вйв╣вквжвЫвЙв{вyвЗвuвdв\вCв4в5в=в@в\вгвxвkвjвiвRвXвOв=в5вAвGвMвRвKвBвIвKв╤в╛впв╜в╝в╤всв█в╠в╫в▀в╫в▌в╘в╚в╞в┐внвдвававЭвХвРвНвМвБв}вtвmвfвkвcвaвaвАв┐в░вевдвмвЮвЩвавЬвЧвЧвЪвСвЧвМвМвМвГвvвwвДвХвФвРвРвйв┼вмвХвМвТвШвЗв~вИвЙвАв|вsвUвEвPвeвkвpвЩв┼в╢вивквдвЦвНвЙв}ввКвЛвЖвБв{вwвjвQвHвNвXвUвXвQвkв|вТв┐вивавЭвУвСвРвИвАвСвОвРвИвТвнв╙в╥в╗в▓в]вmв\вWвYвlвjвuвWвFв<в;вAв>в:вв°бв-в!вв
+вв1вRвКвyвrвДвpв^вfвdвUвQвPвcвjвiвАвевХвГвЕвsв]вgвkвrвiвeвlвdв_в_вUвOвHвBв*вв°бввввввв
+ввWвRвBвGвWвTв/в(в9вAвGвRв^вXвVвdвzвБвЪвОвЕвwв^вPв`вmвhвKв0в4вKвUвMвGвJвWвiвxвмв░вЭвЗвgвiвrвzвqвmвfвTвFв\вNвJвBв>вJвeвkвtв\вMвDвBвEвGвWвkвfвhв~вгв╠в├вовЯвУвЖв}вuв\вlв`вeвMв]в_вLвHвDв?в:в!вввввввввв!вEвdв\вSвOвSвsвhв^вTвHвIв[вbвkвoвuвЕвовевЖвГв}вКвБв{в[вDвUвiвaвVвWвTвSвVв^вiвkвkвmвКвбвжвХввБв~вpвaвbв\вbвeвWвLвNвKвXв`вmвzвРвдв{вtв|вrвxвuвxв^вOвJвJвOвJв9в@вSвSвOвlвВвСв{вvвuвГвГв|вzвmвmвpвeв]в>в+в2вeв│в╥в│вЭв]вPвIвOвZвXвUвQвIв<вAвKвBв3в8вsвЕвЗвУв╖в°в╬влвПвЕвбв▒вДв`вoвoвyвlвbвeвhвiвsвРв╠в▐в▌в═в╟в╩в╠в┴вЪвПвОв{вМвЮвЬвЕв{вxвpвmвlвkвiвcвcвqвОв╟в╕в╕вдвЬвЗвyвvвyвВвyвmвkвpвdвmвgвcвqвФв╫в▌в┘в╧в┬в╛вмвЙвtв~вОвЯвНвВвvв`вcв`вVвdвnвав┐в├в│вевЛвКвВвЕвrвEв'ввв;вrвжв╝в╛в▓вЮвШвjвUвHв\вvвКвЖвЙвВвВвoвhвWв1в&вHвVвqвЬвбвЩвввЬвЬвЫвдвЖвНвЦвГвwвБвrвkвmвgв`вhвdвHв1вOвКвВв|вwвnвcвkвiвdв\вRв;в8в7в-вв(вSвИв╓втв╪в┬в│вевивнвевввЬвФвДвАв~вwвqвsвlвjвwвrвtвuвvвЕвЮвЬвЦвЪвФвПвЗвЖвБвbвuвzвyвoвgвsввkвaвjвfвfвbвhв_вYвPвFв_вdвXв2в7вVв`вУв┼в┴в╗впвовввЧвПвОвГвoвcвiвeв~вЕвАвqвuвtвrв}вЙвЫвТвЧв┼в╨в╢вов╖в╢вввФвХвИвАвЕв}вoвZв\вWвdвsвЙвФвЧвЭвХвГв|вФвйвЩвЪвФвПвЦвКвЗвЗвГвВвЗвЮвкв╝въвув═вЬвcвTв\вhвЯвнвмвжвКвАвvвuвXвBв=в4в@вUвДвЯв╖вбвЖвАв|вxвuвАвdвFвLвVв]вMвSвXвFв╞впвивФвйвхвгг╨в║вив╖в▄вгггЎврв▄вцвшв▀вявЁвЇвфв▄в┬в─в╥в·выв▀в█в▐в╓в╥в╚в╥в╓в▀в▐в▄в▀в╫вфв▐в╨в┼в┬вдвЪвгвЧвЧвЬвЪвЮвзв╗в╓врв╗в║вЩв┴в╒в┼вувЁвъвьвфв╪втв¤вггёвёвєвЇврвхвтв╪в╬в┘в╘в╥в╦в╤в╖вКв─в▌в╦в╦в┼в╖вивавжв╣в├вфвшвяв┌в╠в╩в╒вув▀в▀вщвшвхв·вг!гггг√вщв╙в╤вг№в■в¤в г°вэвювфв╧в╡в╡в░в┬в┴в╚впв░в╝впвквйвпвмв╢в╕вЪввjвaв[в_в_вdв^в^вvв╠в├внв│в│вмвЦвЦвРв~в]вZвWвSвWв[в`в\в_вYвiвkвkвjвdвnвЩв═всв┘в╦в╗вЫвАвjвkвhвmвlвhвjвkв|вЧв╛в╧в╢в╕в│в░вгвЩвавЫвЗв{вpвcвeвfвgвdвeв\вXвZв`вXвPвdвvвгвюв█в╠в┬в╖вввИвvвuвtвeв_в`в_вdвwввив╕в6г1г2г2г)г#ггг гшв┌в╦в┬в┬в╕в┬в├в├в╣в└в╕в░в┤в╕в▒вЭвРвЙвЙв|вjвhвqвhвgвевг0гг▄вявъв═в╞в╠в╦в┐в╛в┐в╩врв9гBг1г*г.ггг■выв┌в├в┬в╫в┼в╗в╩в═в┼в└в┼в┼в▀вцвЇвцв╘в╧в╚в╒в"г>гг г°вївЎвчв█в╙в┼в╣вкв╣в█вKгIг>г3г4г6г&ггг¤в√вцв╦в░вввЪвЬвТвйв╕вЭвСвИвГвvвxвwвsвpв|вoв}вУвг╔вШвШвЯвивввЯвив┤в╪в	г вЎвфвцв╨в╖взвгвивмвлвгвбвавЮвХвЪвШвОвИвИв}вuвhвcвsвЦвювьв▐в╫в█в╬в┐в║вбвУвТвЭвавЩвЩввв│във№вювфвтв┘в╓в╬в╞в┴в║в┤впвЩвбвЫвВвЗвРвИвСвТвПвЙвЛвГвhв\вJвPв_в{в║в╘в╩в▓вевЩвжвЬвСвбв╞вгггївэв╙в╘в╤в╦в╔в╚в┬в╕в─в╞в│вПвХвйвнвйвзв╣в╛в╨вггявшвг%г2г.г*г гMг3г гЁвЄвЎвьврв╫врв╙в╘в╦в╦в╘в╓вщв▄вувгZг]г@г-гг√вшвсв╨в▀в█вфвчв┘в╠в╞в─в┌в╦в╦в═в┴в╢влвжв└в║в╡вивбвЮвРвКвКв╪в в┌въвцв▌в╚в░в▒в╞в▄вгIг+г&гггфвъвЇвявывэвсвцв▐в▐в╒в╓в▒в╣в┴в╔вфв╒в╩в╜вдввв│в╒в0г%ггг√вывчвфв█в╧в╨в╔в╦в╞в╢вжвав┤в╜в╬в ггўвявєвёвщвївг¤вЎв■в¤в¤вг г вггггг вўвЁвэвув╪в┴вФвИвПвзвгвЩвнв╟вгъвявфвцвуврв┘в┘в╠в╦в╝в╡в┼в╕в╡вжвНвСвРвКв~вДввtв`вaвdвuвзв√в═в┌в╞в╠в╟в│вмвЫвФвПвввСвНвЦвЬвЪв▓вггхв╪в╜в▒в▒вов║в╝в╜в╩в╜вивзвлвавЬвЬвЖв~вjвeв^вqвТвгЄвгєвёврв╪в▐в▀в╔в╟в┐вйвйвгвЯв╡в├в┘вг гчвэвщвCгAг=гIгGгOгJгEг.гггывювшвёврв█в┌втв╙в═в╪в╨вув╬вНв}вГвМвЗвКвШв╚вгчвчв┘в╓в╒в╤в╥в─в╔в╙в╧в┐в╗вйвквШвбвЦвЩвФвКвОвГв}вЯвг■вЁвхв▄вфвфвцв╩в╗в└вйвлвгвЪвСвОвЦвСвввпв∙в№вювщвьвсвшв╫в█в╤внвШвХвЕвАвxв|вЙвРвЩв║вгэв╟всв┘в╪в╪в┘в╧в╬в┴вввХвmвdвjвhв{вiвhвrвБв{вkвbвrвМв2гг-гFг;гfг"ггсвсв╫в╒вцвцв▌в╨вэвггЁв┘в╒всвув┬вНвiвГвКвzв~вКвЬврвггг°в■в гувсв╔в┬в▄всв╦в╩в╟в╧в╦в╟вщвг'гг°в¤вЎвщвщвфвхвъвювьв∙в╫вхвюв ггUгHг)гг,ггг√вгэвфв╘вфвфвъв▄в▐в▀вюв▐в┬вРвrвyвxвpв~вЗвНв|вДвпвгєвўв°вЁвчвшвчв┌вШв{вВвyвlвvвcвiвdв\вPвHвQвVв[вpгUгxгZгSгMг1г	г гёвЄвывывъвув·вювьвювг гыв╪в╤в└в▒в┬в┴в╦вчв*гг∙в№в вггЇвгггювЇвЎв█вЭвЫвУвМвЭв╞в.г1гг вгЎвЄв№вг*гг■в∙вггггггг\гpгcг_гOг1г!ггявсв▐вчврвўвЇв°в°вЇв¤вЇвыв╬в╬в╤в┘вївAг`гTг8г&г в╒в┌в▀в╨в╤в▀вхвёвхвэв┐вфв╨в┴в╥в▀вьв!гBгSг?г'ггцв╙вBг5г)ггггг°вєвыв▐в╓въвхв╒в╬в─в╞в╚в┬внвбвЪвдвЮвЮвЫвУвввивЮвдв╦вгггггг¤в№вгЁв▄в╔в∙в┌в┬в│в┬в!г[гaгRгUг+гчв√вўвёвЎвювїв№вЁвЄвхвьв╦в·в)г(гQгКгLггЎв(гггрвг°вчвг√в·вфвфв	ггг¤в
+гXгZг;г"ггг¤вг№в√в∙в√вёв гг√вггЁв╩в╢вевУвПвРв╛в№в>г-гг■вгг√в1г2г5г4г6г(г
+г■вгг¤вЇвЁвъвявъвфв╘в╚в├вЯвzвvвВвШвОвМвЦвввУвЗвЗв~в{в{вЖвзвсвггггшв╬в╢вЩвжвНвГв╖в▓взв┤в┤вжвав∙вггг°вывўв гЇвхвтв╤в▌вьв°вг гCгKггггггггггг·вг■в&гг	г▀вквмвпвЩвФвЛвИвгвгг	г
+г г г√в°в°въвуврв╨в└в╖в╝вив│вХвuвВвЫв╕в┐в°вЎвьвювггєвсвувгггъв▀в█в█вхв╘в╙в┼в╖в│вквЯвУвУвСвУвТвЮвевпвбвивнвсвгївёвцвчв█в╔в╛вЦвШвЫвмв╡в╕впв┤в╗впвжвавЬвРвХвЦвмвхвьв╨в╕вЗвБвНвХвМвАвИвЛвМвЗвМвЗвАвvв}вЦвбвгвквнв╧вшв╞вев│в▓вЩвввЪвПвЯвввШвЫвЯвИвМвrвXвPв2ввввв&вTв░вбв▒вевбвбвТвЦвШвХвСвЫвгвЫвбвмв╗в╘вхвгhг`гRгWгwгfгkгqгQгqгsггг!г$ггггювївЇвхвыв¤всв╥в╟в╨в
+г4г8г6г/ггггг0г!гхв╞в╦в╒вщв╧в╘в╪вфв╬в┌в╕вЮвСвРвВвХвзв▓в╬в#ггггєв┘във╥в┬в╡вжвЫвРв╔в∙вгггггывшвєвтвьвъвчв▐в┼в╛в┴всв╕вЧв│в─в╟в╠вЇв∙вЇвїв№в°вєв·в°вєвэвЇврвЇвсвэвывЎвхв╓вЯвввивкв┌в°вЎвэвювюв╠в9гг9гkгvг]гgгFгг гг ггггг
+г№вгЇвгўвчв╓в┐в╛в╠в┘врв╒вЁвг&гг#гггггЇвўвўвЄв°вэвсвфвсв┬в╖выв%г г'г"г&г,г%г,г!ггггг№вггг°в╘вцв╔вбв╟в╓вшв%г4г0г-г"г$гггыв гггг√в$гpгIгDгRгVгKг#гг	гг	гггггївггггг¤вхвЇв г■всв╣вФвмв╔в гггггг!г┴в+г2г-г#г,г г*г*г'г$гггггг	гэв¤вг▌в╗в╙в┘в╤в┘в╞в╪в#г8г1г0г>г=г?г0г.г-г$гBгGгUгMгtгqгnг]г_г]гVг_гMгPг>гг#гггггггггшв┼вдвов┤в╜в┐впв╛в█в█вггЁвъвггггггЁвєв▀в╥вчвхв╪в╚в┬вЎв г4ггггггг∙в√вггг¤вявыв╩в▓в╞в╔въвгЁв┐в┬вюв-ггг	г гюв7г+г+гггг1г%ггггг■вгЎвЁв	ггг	гъврвэв▐в╥в¤в#гCгFг7г7г!г-г"г$г"гг№вггг·вг╣вУв└в└в├в┬в╡в═втвъвєв4г/г0г>г8гMг-г&гг'гг8гЖгwгkгiгjгOгVг6ггггг
+ггг#г@г'г%ггггггэв╞в┼в╛в╣вЁв.г$г,г9г/г0г4г&г9г/г;г3г/ггївЄв█в▐вЄвьвгYгfг[гSгKг1гўвгггггг'г!г"г"г#г$г"г/г+г'г г,гггг1ггєвгЎвьвьв¤в)гmг*г&г г$г%г$г!г.ггг.г$гггггг√в┐вшвчвувщвг*гг	гггггггггг	ггхвцв┬в█в▌въвцвєвг,г*гггггггг#г*ггггьв╘взв└в╛в╧в╓в√вг,г%г*г-г$гг	г°в■вўв·в№вывыв╨в└влв╦в╨в▌вщв	г?гCг7г*г!ггггг8гAгDг;г?г:г7г1г(г+г.г/г/г"гггг┌вцв╛вев┐в╩в╫в▄вЎвг2г7г/г+г&г)г#ггггг вЎвэв▌в┬в╦вфвївўвгг<г,г(г%г&ггггггггггёвцвмв└в╩в├в╦в╦в╠в╘вAг6гг"г"г#гггггггг'г·в╕в╬в╨в┘в▐в┘в╫в▀вг+г7г0г'г*ггггггг¤в¤вЄв┘вмв╜в╔в═в║в┌в	г:г/г*г&г!ггггг?г3г8г/г6г9г9г4г.г6г*г3г*гг,гг·в╙в╧в▐вявїв█в█вївOг@г;гEг:г3г!ггггггєв■в	гЇвхв╗в├в╞в╙в┘вцвгgгOгHгNгFгDг?г1г(гг#г ггг·вєвхв╥в┼в┘въвг4г+г0г"г)гггг■в·в√вчв▌в┐в├в╠в▄в╥в╓в▌вЎв-г*г<г-г6г,г,ггггггггггг№вьвхв╚в▄вывг.г#г(гггггг
+г¤вг гKг6г-г,г+г гг!ггг#ггггггЎв▌вюв╪вуврвг=гFгQгAг<г6г7г,г-г"ггггггЁвшв▄в╒в▀вг6г2г2г(г8г*г*гг%гг г!гггг-г,г!г	г°вЁв┘в└в╓в█в┼в╖в┤във>г ггг(г гг гггюв┼в╦в┌в╘в┴влв┴в╝в╘вг-г'г"гггггггггггївгщв╟в╥в╠в╦в╧вг/г&ггггггггггўв8г/г,г2г!гг*г*гггЁв▌в╞в▌в▀в┘втвщвщвг&гCг7г#гг,г/г@г/г1г(гг+г3гг/г*гг'г0ггєвгRгNгFгAг%г<гSгbгHг3г,ггфв╚в╝в╙вцвгЄв√вг	г,гBгDг9гJг8г5г8г7г7гг!гг	г
+гыв╪врвфв╧в▐всв╧втвсвЁвгQг@г<г5ггг/гг№вївщврв╦в╥вшвчв╦в╞вяв%г;г1г:гCгBг&г1г3г+г'г+гггг∙вЁвZгTгPгUгPгXгKг>гFг5г г	г+гVгkг{г\гEг\гFгVгRгPгIгSгHгRгFг7ггBгFгDгEг#г·вшв╠вгGгФг[гHгQгVгVг]гSг]г7г`г<г3ггэвювфв вгюв▀в╚вцв■вггcгNгEгHгMгQг4гг&ггувсв▌вцвЄвўвгг(г'г	гцвггг■в-гWгHг@ггGгDг=гг¤вщв╨в╔в┘в╒в▐вєвг[гBг;г>гAг=гг,ггEг4г
+гюв╠всвявюв▀вGгVг`гJгUгVгSгRгOг:г]гbг5г'ггг2гGг\гcгfгxгaгeгiг\гSг`гEг[гfгEгTгcг^гДгзгcгrгiгMгZгEг^гBг1г?гKгNгTг)гггг#г г вг	гявЎвфвщв	гївєв ггг`гPгHг0гBгг4гг вггггг!гг
+ггBгeгMг`гAг,г)г&г,гггг¤вгЇвгщвхвхв╓вЇвёв°вювг8г7г9гг
+гЁв■въвЄвъвувьвёвг в в*гsгeг[гoгrгvгsгkгMгTгAг"ггггггг6гВгoгdгUгkгdгJг4г`гdг_гXг4гBг=г-ггггг7гUгAгIгEг;г8г9г4г2г(г0г)г3г-г%гг¤в√вггггггЎв·вг6гEг>г6гDг4г'г г(гггггг%г&г2гг=гaгoгjгmгSгFгHгDгeг_гZгKг)гг г∙в$г;г,ггггггг;гdгKгPгMгGг@г7гггггьвЁвЄвївгFгггггцв╤в°вїв∙вгггггфвгг°вг4гcгTгQгSг2г3гг гыв┘вфвфвсвївггггг∙вгг.г_гYгRгVгTгGг>г-ггЁв▐в╪в	гЁвївывг2г4г:гIг@гCгGгJгBг<ггшвяв№вггг№вгггявывг,гMгHгJгDгAг9гCг;г>г-г+гaгЙгuгlгIг0ггг
+ггг∙вўвг
+гг
+гFгSгIгFг[гSгKгBг1гCг'ггг-гЄв█вщвг2г&г%гггєвюв√вг3ггггCгCг2гггггGгJгbг-гг╩врвгЇвг	ггчвЄв▌в╝вНвПвЙвЙвЪвБвlвuвЬв╧в вЄв■вггг+ггггЇв°вг,г<гaгsгnг_г=ггг·вщв вївщв▄в▐в▌вювсв▌вчвєвггяв╘вдвРвлвРвrвГваврв√вгыв гЇв гёв вг√вЇвггGгUгUг"г(г#ггявївг гггггггг
+гггггг'гггггг№вггг в№вьвьвг(гGггг·вўвггггг	ггггг$г.гг(гXг8г2г*гг!г!ггЄв№вггг	ггг·вЁв╥в╝в}вuвЩвЬвГвИвПвив╗вфв■в(гг·вг$г7г-гг	г	гг"гггггг
+гЇвг1ггчв▌вгг·в√вЄвюв°вггЇвЁв┘вг*г.г%гAггёв╫вув╒вггївЄвггг°вўвг$ггггг'г'гггггггг&г%г гг<гJгRг+г!г гг█вЎв	гггггггг#г,г<г\гzгRгQг0г2г?г.гг√вювггггг,ггєв▐вєвўв вЎвцв┤вЖвЧв░в╛вўв вювг	гёвЎвгггг¤в■в¤вггг¤в°в╩в╞вав╣в╧в▐вгггЎвЁвувЄвъвшвхв╬в╙в╠в╖в╢в┬в╩в┬в╩в╓вг-ггэвёвюв■вяв·в■вггъв╬в"г°вгг"гг%гггг√вг&г4гUг|г]г8г:г+г
+г√вг'г&гггЎв г г
+г вггг№в╧в╣вйвбв┐в╔в╖в─вчвцвгггггчвєвЁвшвтвтвъв вг г°вг·вг#г'гўв╧вхв№вЄвгг°вггггг	ггг+г9г]г:г$г%г0г<ггсв■вг·вўв№вг	гсв▄в╤в╫в╜всвЄв╦вЫвСвов╦в╙в┼в╚вэвфв╫вгг№вгг∙в.г.гAг8г)г/г г%ггггг!гггггггг#гг╒в▒в├в┌вщвювгг$ггггг%гггг'г7г&гг в√в▌в╦в╧в╫втв·вггггг
+ггг&гггггг¤вЁвЎвгг4г:г+г!ггг√в№вЎвгг	гггггг╘в┤вЦвМвЮвСвШвзвЫвЦвев└вэвЁвЄвЁвўвгёв√в°вЇвЁв▌в└в╡вав▓вкв╡в╗в─в╟вёвэвєвыв∙вЎвёвёвїв вг ггггггггг	гггггЇв·вхвєв√вявтвЎв∙вг&г"гггггггг	гЇвывггг%г3гnгbгvгjгhгCгFг=г.г$гг г#гг%г!гKг<г6г]гIг г*гг╫в┬в─в▌вг@гgгaгMгFг+ггггг(гFг=г2гQгИгАгГгaгLг=гг∙в"г4гг	ггг)г-г г+г)г,ггг#г*гEг7г3г7г0гївггг
+г вэвсвтвфвЄв√в∙в·в▀в2г$г6г!гг!ггггггг√всв╝в╛в╟в╟в╠в┼в╞в└в╛в╗в├в╒вюв&г.г0г!гг-ггг гггг$г1гZгXг?г$гёвг¤вЄвггївг	гггЎв╘в▌в╞в╞в╔в╧в╬в╦в╔в╧вїв$ггг
+гггявг■в	гггг·вхв▄в╬в╠в╬в▄вг.ггггг
+гггг	ггЄвфвг¤вьв▄в╤в╒в─в├в═в╬в├в├в╛в┴в┐в╝в┴вувгггггггг0гг"ггггг	ггггг#г%г0гZгqгJгг
+гг/гг/г+г4г!гггггггг¤вгг·всв╞в¤вув╟вгв└в╙във3г"г"г1г0г(г&гггг-г'г1г-г9гmгOг3гггггггг!г"г"г%ггг!ггг√вўв╫в╚в┐в╦в═вквдвпв┐в║в┬вгг■вгггггЄв╙в┼в┬в╬в╔в╚в├в╖в╕в╡в▓в░в═вг ггг¤в∙в№вггтв╤в╒в√вг	гггггггг гщв╗в┬в║в╬всв╥в▓в╧вЎв6г;г&ггAг+гггггг гг¤вг·вщвюв╫в╦в╚в╨в┌вЁв√вэвЇвг0г0г#г&гг в г∙в∙в▌в╔в░в╢в╠втвг(г#г г'г/г ггггггг	г■вэвявЎвўвчвюв∙вгггггг'гггггг#г!гг№вгггг/гkгRг>г2ггг$гг■вэвьв гггг$гггчвтвцвгггг1г>гMг?г4г7г)ггEг_г=г1г4гUгNг>г-г6гAгKггг5г4г*г"г7г8г.г,г(ггхвг*гг:г=гGгOгIг:г7г)г,г5г9г2г$г$гггг7г гг■в ггггг&г3г5г!гггггг■вгггг°вг вхв═в╨във3г(ггг4г7г0г1г'гггггЁвщвсв├в╜в┼в╛в╞в╨в╦в╪в√в%ггг*г!г6г<г+гггггг=г-г(ггггг	ггївЄвївсв┼в╫вцв╨в═в╒в▐вэвЎв)г6г=г6г0г.г%ггг гггггг	гг·вггггг	г г<г;г2г6гEгDг*г)г,гг#г гг+гoгВгsгTг6г ггггг"ггг0гггг вчвцв°в'гHгDгjгnг[гlгCггг&г)г!г(гBгAгг<г?г1г3г!гг╦в╟в╚в╚в╜в┤в▒в╩вшвггггггЇв вгщвывЁвшвшв ггBгEгEг)г"г"г1г;гг0гJгIг4г"гTгУгeг?ггг2г7г0г:гBг=г=г.г2г гг7г5гг(гEг5ггЇв2гYгNг3г.г%гг$г2г ггггггїв╘в╔в╚в╦в╙в╠в└в║впв└в╓врв∙в-г%гг%г3г%ггг
+г
+ггг╥в╣в▐в█втвсвЄвг+г1г%ггг&г)гг	гъвцвывЇвїв№в№втв▀вгггг г"г$гг!гг%г'гг°в№в°в╪в╙втвєвювявтв@гjг]гEг.гггг°в∙вгг@г`г{гmгfгSгCг?гGг9г4г;г9гBгEгHгHг=г9г-гOгtгдгАгyгNг1г5г0гFг>г@г,г1г/г-г)г$г&гг2г8г2г.гг°в╩в▐вяврвўвг√вгKгBгEг,г/гCг(г-г-г$ггг
+гггггювшвгVгSг?г=гQгCг:г5гBг.г+г4г?гCгOгMг+г√втвьв·вєвгJгcгKг1г3гIгKг@г-г2г2г-гг■вг9г7г/г№вЄвЁвївєвьвтв╘в╫вшвчв╥в╤в▄вхвёвгЄвявг.г3г9г*г5г#ггг√в▄вув█в▐в▐в╘в╔в╓в╘в╘в╬в┘в█вфвхвхвїв-г3гCгггцв╟в▌в┐в╩в┬в┴в┌вг3гOг@г%г*г*г)гг"ггг г&г-ггг№в┌в╚в╩в╦в╤в╧в╦в╟в╢в╝в┴в┐в╘вгггггггхв┴в╚в╧в╬в╠в╦в╥в▄в█в╧в╒в▌врв├в╔вцвг#ггг▌в┬в╓в┴в╚в╟в╠врвцвъвсв°вьвсвївЄв▌в%г.гггг#гBг~гpгZгZг6гJгOгCгXгVг<г[гLгYгQг]г[гTгRгОгЩгУгУгОгКгCгг4гEгEгDгRгVгPгIгZгbгJгWг6гг∙втвфвъвёвЁв	гQгRгWг]гXгPгSгGг=г5гBгWгAгг┘в▌вёв°в¤вўвЄв■вгг1гPгIгUгPгHг5гIг:г г╩в╕в╙в┬в╞в┴в╨в╬в╓в╫в╓вєвг$г ггггггхв╬в▀врв╪в▐в▐в┘вёв┌вуврвсвгЄвёв¤вэвювсв▐в┌вхвчвсв▐вявювщвг5г!гггггггыврвщвывтвцвув▌вЇв┘в╟в╘в▐вг2г8г1гRгQг4гPгPгPгXгGг(г"ггЎвгЎвЇвгг!ггг:гLгUгEг7г1г+гг
+г"г3г;г1ггюв┘врврв╙в╬вшвЁв№в¤в√вгDг6гггг в■вўв▌в█вхвывщв┌вщвфвщвївгг:г)г0ггг г*ггг
+ггхв─в┬в╘в╡в╜в╩в╤в╩в▄в·в·в вгггъвявъвывшвЎвўв·в√в√вг г1г(г,г"г"гг гг∙в╥в┼в█вщвтв╪вфвюв▀вфвг.г,г)г/г)г)гггг∙вывёвюв╬в▄в┌всвтвёв▐вщвЄв∙вєв°вывхв┌в╢вйв═в°вхвчвяв¤в▐втвхв╓в╒в╬в▐вщвг<г.гг!г7г0г&г"гггг·всв╫в▐в█врвхв▌вшвўв■вгг4г)г$г"ггггёв╚в║в╦в╟в╩в╨в╬в╞в╛в┌вхв гьвэвЇвчв█вшвцв▄вхв▐в┼вЎвг0г+гггг"ггггївхв└в╩в═в╠в╟в└в╡в╖вдвЮвЖвВвИвОвЪвкв└в╦вЁвтв╠в╟в╟в╦в┐в╟в╞в╚в═в╧в╞в╦в╞в└в╝в╜в┤вУвНвСвЗвwвzвyв}вРвЪвдв╚в╧в╞в╞в╜в╝в╖в║в╩в╞в╚в▀вгг'ггггьв╙в╧в╟в┼в╕в╡внвЯвмв║в▓вжвПвГвКвЕвРвОвqвБв}вХвФвбвПвИвСв╕вфвъв═в╝внв╢в╔в╙в─вгг)ггёвъвївєвггLг]гZг_гQгhгTгHг;г5г2г5г$г"гггївЇвгЎвўвЇвяв в вггггггг"гIг5г5г2гггэвхв▀в▀вщв█вЁвгQгJг>г9г5г/г6г(г"г гг&г8ггъвэвЎвг в√вггўвюв∙в∙вєвўвгDг+ггггггг·вцв═в╙в▐вшвъвывЇвггBг;г7г7г,г)гггг гювэвшвцвшвъвЁвчвўв∙вЄвггюв№вўвЁвювЇвгЄв▐въвёвг·вцв╒в┴в╛в╡в┼във
+гг¤вшвьвэвсвсвчвЇвггггг-гTгBгEг;г>г'г8г0ггтвєвг&г гэвювьвєв√вўвгївївфв┌вювг3г&гг"гггъвшв▀вшврв╪в╓в▐вувчвэвыв┌в╒в╠в╜в╢вевБвДвПвЩвмвщвёвївяв▐вшвЁвывщв√вг·в·в	гCг+г&г!ггг	ггЁв▐врвцвтвывъвхврврвхв▐вчв█в№вгггггг■вггг
+г°вюв г ггг\гAг0г)г#г:г8ггяв·вг г#ггтв∙вггKгBг'г"ггггёвЁвювявюв√в∙вщвёвївывщвщвЁврв▄в▀всвшвг√вєвьв▀вхвєвъвывЁвтв╪в╩в├в╧в┬в╞в└в▓вмв╡в╠в╙в╦в╩в╨в█вывчвфв╒в╥в╬в┐в╠в┴в┴в╕вйвввквквмвлвбв╕в╟вхвьвг■вЎвгг ггувшвьвъвывЇвЎвгг+гAг■вгг гг$ггг$гўв▐в┬влв╧в╨в╠вфвггггг√вёвЁвсв∙вэвёвюв┘в╠вывг¤вгг"гAг'г#гг вЄвўв в√в
+ггўвэвэв▀в╥в╨в┬в├в╦в╤в╩в╚в╒вэвг вг г√вєвЁвївЎвг№в¤вгггггOгoгwгrгbгQгXг<ггэв╪в╫в▌врв├в▓в╜вщвьвыврв╙в─вйв║в╓вЄвшвхвтвЎв°в·вўв·вг
+гЇвэвэвшвывювцв°в	г&г.гггг&г	ггггг@гnгVгSгYгRг_гdг`гNг.гг в°вг-г+ггг·в гггг$г&г7гkг4г6г.г/г2ггг°в ггєвювЁвггггўв╬в└вововКвБв~вСвЗвРв╟вгув╪в╘в╞в═в╙в╔в╤в╤в╬в╦в╧в╪в╔в═в▌в№вггёвєвьвьвщвЄвюврвЄв°във┌всвчвївўвцв╚вев▓в╙в╤вёвгг√в°в√вгЎв▐в╘в┘в╟в┐в╖в┴вжвввЪвГвЎвг#гг(ггггг<гFгxгTгdгIгNг?г9г<г;гг5гг
+гггггг
+г№вг▄вчвг.гhгiгEгEгBг.г"гг√вгг	г∙в+г$г2г7г2гєвввввйв╥вэв г2г+г1г?гSгCггггг+г5г.г,г3ггг
+гьв─в╡в╝в╓в√вгг вгггGггЇвггг.ггг╚вавЩвЯвпв╜в┐в├в╛в▌вг¤вфвчвЁв═в╠в▀в╫в█в═в¤в2гDгJгWг;г!г▀вцвывчвхвьвщв█в╣в└в╫вгLгЬгFгTг(г(г"г°вївггг·в·в°в¤вггггGг[гVгWгiгLг&г·вявєвувг"гэв▌в╜в╛в┼в┐вов╟в▄в╓в╫в╣в║втв·вїв·вЇвЄвэвївўвЎвъвфвёвявувшвфвхвувув▀в╙врв╓в╓в▄в╟в║в├в№вэвювюв▌в╔в║внвЪвОвХв╜вЭвгвивввзвгвШвЩвЩвВвzвЙвЛвwвБвгвувўвтв▄в╟в▌в╓в░вЯвквПвТвЖв╞вэв┌в▌врвэвєвщвувЄв∙вг"г+гг!гCгAг&ггг■в вювгг▀в╬в╠в╚в╨вггувгг
+г г%гDгMгGг)г$г&гггггг-г6г?гOгWгOг'г0ггщвывєв∙в°вювєвъврв╧в╝впв╞в╠в║вжвТвРвЙвЙвЩвЩвЮвввРвЗвЛвРвЧвУвЫвЫвЯвовЎвгг√вЄв╓в░внвпв╚в▄в¤в∙в√вг(г"г г г╘в┬в╩в╒в┘в▌вхв╤в╨в╫в┼в▒в╕в╦вЄвгxг$ггггЁвЎвгггггггг8г)г0г8г'ггггївьвшвявъвюв∙вг,гGгOг2г'г>гDгг&г+г+г%гггггцв█вшвьвщвщвывэвЁв№выв ггZгYг\гiг)г=гDгг
+г'ггг
+ггNгНгlг]гcгtгpгnгoгcгHгSгPгFг0г*г3г,гг г,г/г>г3г@г(г"г в°вг]гyгlгKг\г`г4г.гсв╛в╟вцвшвггэвцв¤в¤вўв г°вївьв∙вг	г!гэвчвггггKгXгcг8гггггг$г6г+г,гг¤вьвувъвэвєв▌в■в&гHг<гFг&гг#г!г г<г4г$ггг#г)ггыв╢вов│в╝в▀в┌в┼в═вэв╘в║в┤в╛в─вхвгг·всвувЎвЄвёв▄всвыв вявув╙вєвг¤вўвЄвув┘в╗вавЮвавпв╜в╚в┴в┐в╜в╕в║в┤в╗в╩в┼в╒в╧в╡в╠в√в>г!гг0гггг<гггггхвсвювювггг3гVг@гQгkгeгkгbгhгVгZгTгJг#г!гг	г!гг	гг!гг■в∙в	г¤в ггг в вгггг.г7гKггг3ггг"г'г(г?г<г"г¤вщвъв№вгггг!г2г6г8г4г+г#ггг
+г вЇвщв╒в╥вЎвг°вывггг в■вг[гZг3гг<г'гг&ггївг
+гггЁв
+гг1гJгiг#гггг#гг№вЄвгг	ггЇвхврвсв╞в└в┼вжв║вдвевШв╕вцв+ггггг(гг3г5гHгRгOг*гг0г=г0гAг2г
+гг■в╬в█вщвьвъвтв▐вувсв╝в■вOгdгKг1г1г<г.г%г№вг(г гЄв■вўв┌в┘в╫в╔в╕внв╡в└вЪвЛвНвХвЯвШвЬвЭвЮв▓в└врв№вЄвшврв╨влвев╛в└в╖в▒в║в╜в╛вЦвЗвЙвРвПвХвЪв╜вшвчв▀в├в╜в▓вЬв░в║в┐в╪в╓вхв║вОвzвЗвРвжвзвбвзв└в╦вхв┘в█в╒втв╛вмвевпв╛в┼в╕вгвЬв═в┐в╨в╙в═в╫в┌в╓в╙в╤вэв	г^г\гFг:г$гггяв г1г
+г▐вцв╒в╛в┼в─вг%гг вггггг
+гг█в№вг╒в╫в∙вёвщвшв╤в└в╦в╦внвЭвЭвЙвавевЭвЭвйв╝в╚в╕в┤в╟вг°в╜в┤вев│вкв╖в╧в╞в▓вкв┐в╔в▀вгггЎвЄвгщв╠в╤вювтвцвєвцв╣в▒вЩвЪвзвЦвЛвОвЩвРвЩвбвЪвзв╫в▀въвфв╨в═в└в╟в╕в├в╝в╛в╞в─в╖вкв▒вНвгг°в╓в╓в╬в╚в┴в┐в╬в╖в░в╖вев├в╦в╒в(г(ггг	ггчв╬в╟в╩в╞в┴влвквзвов┤влвов╜в┐в─в╨вёвг в√вгггг/г1ггг#г9гPгPгQгMг@г6гJгSгNгKг1г=г-г;г"гггг*г)г!г)г'г4г1г@г7г*г3ггЎв─в╗вувггггг+гггг°вхв╓в╬в╛в▌вгKг`гSг:г,гг г·в√в г$г%г$ггўв╒вэв
+г#гг!г%г2г0г*г.г3г;г7гKгOгHгPгHг@гFг2г8г)г3г$ггЄвєвъвїв№вїв∙вёв г№вїв╓вюв
+г9г]г0г>гBгEгLг;гггггЄв¤в°вшв√вёвЇвЁв╘вщвфвхв╥в╔в╛внвгв▒в╚в╓вювгщвггггьв█в▐в▐в╬в╨в╞в│вгв╛в╫вцв╒в╥в▐вггг г"ггггггєв▀вчвтвявЎв
+г0г5г3г9г ггюв╘вцв·вївьв▀в▐вщв╦в┼в▐врвхв▄в╩в┴в▓в╝вЁв√вчв▀в╠в┴в╖в┐в╛в▒в│в╟в╩в╢в╞в╗в╗в┘вэвггўвхвхв╪вцв┌в▀в╥в┼вквЧвзв▒влв─в└в┤в╣в╬в╩вщвЎвг гьвфвэвївЁв▌в└в└в╟вовЮвбвзвмв╢в░в╕в╦вэвггг¤в	гггяврв╪в╝в╜влвивбвЫвовйвдв▒в║в╦всв¤вгг°вьвЄвчвтвщвхв▀в╬в╟в┼в│вдвЯвввгв│вжв╢в╔врв√в№в°вывЄвггIгaг`гHг$г%гг г+гг▀вгщвсв╩врвЎв№вцв─в╢в╣в╒в╔в╞вчв■вг%гггггг№в вгЇвщв╓в╘в╔в╢в╤в╖в├в╒в▄вг,ггг■в°вювювўвўв вёвьв┌в╤в┌вшв┘в╬в╘в╔в─в╘в╔вхвггг¤вгг
+ггггўвєвг№в╘вывєвг	г¤в	г+гCг@ггг вёвъв√в·в№вўвёв╪вчвЇвывёв·вг\гSгcгaг,г%ггггггг∙в╘вчв∙вЇвэвївївг&гRг)г:г[г_г`гKгeгYгgгdг[гTгNгGг1г-г@г8г6г3г,г%г/гг0г>г:ггг*г(ггг<гxгnгkгfгXг\г?г1г)г"г$г$г9г9гBгHг2г5г4гCгPг8гGгnгyгoгfгXгLгSгJг4г0г5г+г!ггг#ггггг·вг г%ггг2гjгZгZгLг<г7г6г9г/г*г3г0г2г6гEгnгoг]г]гQг_г9гFг;гг
+г>г2г7г0гггггггггггггг!гfг∙вггЎв гтв╙в┌в┘в▀в▌в╓вёвтвг?г.г
+г#г/ггг*г0ггг$гггрв╦врв°вггсв▐вцвявївгPгCг(г*г!гг%гггггггг┴в─в╜в╠в═вэвг
+гг'ггЎв¤в·вгывшвг°вюв¤вгьв╩в┼в┬в╩в╨в╒в═в╓вгггггггггївг
+гг/г'гг╚в└в╧вшв)г'г√вцвўвгсвЎв№вшв╦в╞в╜в╞в╣вмвевЬвМвyв|в╞в╬вфв▌в╥в╔в╨в┴в▓взв╡в╟в╤в┴в▓вбвЩв░вдвОв╥вг"г)г%г$ггггщв▌в╬в└в┘врв·в$г0гггггїв■вг"г#г$ггэвўв▀в▀вхвщв╠вмвйв╦вvвpвdвcвpвgвTвQвYвЧв▌всвтв╓в═в╞в└в╧в╟в╘в┘в┐в╧в╙в╓вёв*гг&г,г?г2ггтвсвчврвыв╨в▓вувг¤вяв▄в└втвївгг<гHг:гг!гг!г!ггЇвъв┘в╕в╝в▒в╞в╧в║в├в╤в?г├впв░в╜вщв╛в╙вхв▀в╓вг№в∙вг<г*г гг!гSгггггг▐в┌в─в┤в▓в░вРвБвЛвдвов╠в┼в╥вгг°вггг∙в┼впвШвав╖в╜в╓вг▀в▐в г°в1гLг;гёвггг*г)г+гг·вг	гЄв гєвхв╔вчв╧в╪в╜в╒в▀вЎвгггївявувфвэвггггьв▀в╥в█вяв╒вЇв°в в-гIг(г)ггггг%г!гг гг г√вгLгTгCг)г/гXг▌в▀вщвювЎвхвгг(г/г'гггYгFг;г!г#гbгoгbгHгEгLг=гг в▄вфвьвювьвёв■в¤вгггггггг%гггггювюв¤вг гювьвЇвг_гLг гг4г;г&ггг/г2г3г"ггг¤всв╓вцвЁвЁвэвёвьв∙вг4гCг0гг:г9г/г*г∙в▐в╫в├в┌в¤вЄвшв█вывг@г;г3гAг3г2г гггЄвьв┌в╪в▄вувфвєвЇвувэвщвъвЁв┘вцвчвг7гNгeгVг4г╓в═въвъвёв¤вггг+г:г.г(гг$гггг,гMгFгMг+гггёвцвёвьв∙в
+ггKгEг7г3г?г9гг!г*г1ггг>г5г;г;гBгOгВгГгTгKгKг$г*г7г"г8г/гг1г9гIг4г+гJгг#гг%г@г&ггтвэвгSгLг)г#г&гг;г/г2г<гг№вг г-г=гcгSгLгLг`г4г гг√в·вьв▄в▌в▌в╠в┼в┌в─в╞в╧в═в╪вцв№вгЁв∙вгг	гювЁвчв√вг$г
+ггг+г8г4г#г.гGг5г)г'г!ггг ггєвэвЇвўв гфвхвгг)г=гVгgгHг*ггг%гг)ггг вгггёвєвЇвЎвывўв■вЇв∙вгг1г:г,гггггг!гггг3гYгБгtгIгJг6г+гг%г"гггг■вгггггг¤вювЎвЁвтвЇвтвывївг¤вг г.г-г/г!г#г(г)гг&г5гLгfгkгcгiгaгHгг√вгяв∙вєвўв г°вьв гЎв√в,гAгUг2гггг	г.г)ггщв▌в╪в╓в█вщвчвєвг№вївг	г
+ггггггггггшвюв■вчвывфв▐вувЇвхв╥в╟в╞в╠в╟в╗вмвов╟вЇв*г гг	г■вэвцвшврвщвщв┌вывьвївЇвг$гPгVгEг4гAг8г(г$г гг·в√вєвєврвшвщв╒в─в░в┐вцвєв
+г	гг"гггг√в■вг√вївщвтв·вЁвэвЇв·в вявгггг·вгўв	г
+ггг&г/г;гQгCг3ггєв■в'гггг%гггфвгщв▀в╚в╒вфв╩в▐в▌в╠в╩вувгг	г1г0ггг	гг■вЄвгг╙в╧в┼врв▐в╙в╪в╪в╘в╘всвцвгггєвьв·в№вЇв╔в╒в╦в┴в╤вчвывюв	г%г#г$г%гг1г.г:г3г5г.гггрв╩вувёв°втвхвсвщв в■вг,ггг.г'г=г4г&г#г+г*г/гг╙в╩в╤в╘вчврвшвюв
+г4г╤вЄвсвшв█в╔в╤в╥в╦в┐вкв┤в─в╛в╩врвЄвг.гггг·в∙в╔в┬в├в╗вквйвнвов╦в╟взвев┼в╠в╤в╦вивнвЭв╚вявЇвювшв▐в▄в┌вчв╚в├в╬в╥в─вовнв░в╚в╒в╓врв в"ггЇв╦в╞въвцв█в╟в╨в╗в╗в┤в║в║в╡в╟в╣в╖в▓в╖вШвPвrвРвГв|вУв▐в▄в╧в╜в╦в╤в╝в┼в╛в─в┐в╞в╠в╧в└вмвпв╜в╛в┼в╠в√вявувсвчв▄в╬в╫в╩в┬в╞в█в╩в╨в╨в╚в┴в└в┼в├в╦в┼в┘в╥в╨в▌вщв	гг вшвчв▀вчв▀в▌вєв№в╥в╚в╗в╩в┬внв┐в╛в╞в╛в╜в╗в╦в┬в┼в┴в─в┬в╤вывтврвявэв╘в┘в╝вйвмвмвпв╗в╕в╣в╓врвцв╪в▒вбвпвжв▌в╤в╟втвЄв▐в╤в╚в┬в╦в╓в╖впв░вкв┤вивов╖в▓вЭвЭвмв▐вгєвэв╫в▄вхвув╓в┴в╣в╬в╒в╘в═в▀вєвг$г-гOг+г0г6ггг!ггггюв▐в╒в┌в╥в▄в█вдв╢в█в*гг втв█в▀вёвЎвг1г7г?г8гEгLг6г7г$г$гг'ггъвщв▌в╤вывгЄв¤вувщв·в*г_г,ггUг+г4г5гг!г.г в вЎврвьврв▐в▌в╪в╬в╧втвшвг#г7г!гггггьв∙вг╫в╦в═в═в╘в╘в╪в╩в╨в═в╩вивхвцв╬в╔в─в╥в
+г	гЎв╪в╟в╢вЮвэвув╨врв┘ввв┤в╤в╪в√в+г г$г*гЁвг'г
+г°в╥вєвъв▌в╓вЄвг∙всв╤взв╬в├вавФвьв#ггЁв┘в╧вывЇв г№вцв╠в╣вЪвлвдвавмв╥вггг
+гг#гггг/гgгnг:г&гг,г.г+г3гг%г*г г#г5ггг$г°в·вєвўв█в╬выв█в╣в╚в╙вЄв?гPг:г	ггг▐в▐вцв╙врвхвьвявёвгщв┼в╤вув°вг#ггггг9г0г=г'г г$гг#ггггггггг0гBг,ггъвЎвг$г
+гг вЄвївгўвггггггггяврвьвьв╥в╪вЄв·в╠вовЬв║в╝в╞в╣в╗всв°вг?ггг гг
+гъв╔вёвг╫в▌вювцвшвзвЭв▒вЕвовдв┴в┴вюв-г#гггггшв┌вївЎвг∙в·в°вЁвЇвъв╞в╞в╤в╖в╜в╓вггЇврвщвгщвсврвмвнв╖в╟в╠в╦в╕в╧вфвг5г&гггєвЄв∙в√вг гЁв┌в┼в▐вЎв┼в▓вкв╜вдвов┴вдвЭвЩв┴в╨в╘в╦в╫вЁв▀в┘в╧в├в╜в╣в╣в┐вмвЯв┬в█в╤в─в╠в═в╧в╥в╓в╘вщв┌в┘вувувювївFг.г1г0г;гггг■вгг+г-ггЄвёвъв·въвєвг[г=г#г!гг1гггг·в	гг┌в°вЎвгг2гRг(г#г7гlгbгMг%ггDг6ггЎв╥в┌в┌в╚в┌в╠в┤врвЁв╫вфвфвщв¤вэв·вг8г)ггггг г■вьвювг¤вг
+гг,г,гггггг%г'г2г:г&гBг2г	гг■вг гггєв╦в╚в║в─вюв.ггг$ггrгVгGгnгOгgг]г0г-ггг#г7г3г
+г¤вггЇвўвг°в╓вхвтвсвювг гчвювювг=г@гDгDгFг8гггўвув╘вэвчв╘в╥в°вгг-г@гmгkгkгkг7ггг*гBг)ггг■вьвэв·вгггггг(г$гг&г8г-гггг∙в°вгрв╬в╨в╬в┌в┴в─в└в╩вцвгггггг г
+гггг¤вэв
+гг№в╫в╨в╫в┌в▀вЇвєвг7гг╨в╪вэв/г#г7г-гг5г5г5г,г0г0г1гггггг3г.г°в■в вцвявгFгWгYгBг?гJгbгnгQгNгKг,г!г&гг2гDг[г гг·вявывчв▀вьвЁв вг&г5г2г2г-г:ггг1г!гг,г6г6г*гCгRггггг(гFг^гQг@гг.г+г"гггг∙в·в в·вфв╓в█вфв█вувъвьвфв№в2г гг$г"гг вщв¤вггсвтвёв╚впв╦вувчвЁвг6г?г^гBг>гLг6гг<гг"г,г9г7г;гLгOгAг:гDг*г!г%гггг вг
+гг@гfгmгWг)г(г'гг*г7г;г+г:гг ггг(гювювцвг┘в┬в┌вув▄в╤в█всв°вKгJг#г8ггггг°вЄв№вг√в·вывфв╦в▐в▄в>г7гг"ггггг гггЄв▌в█в┴в═в╙в╝вавЫвав▒вЮвавмвдвВвЫв┴вгг¤вгЄвяв■вгчв╬в╟в┬в╖в╗в═в╦в╡в╓вг.ггггггг№в7гHгLгEг9г гDг<г$г!гг
+гг)гг.ггг,ггєвЇвцвЁвгVгOгZгAг*г3г9ггг'г)г)гг&гггггг5гYг3г%г)гг3г;гг,г3г(гг"ггывхвїв вўвг■в
+гг┐в┼всвшв<г6гг"г5гAггЇвївг·вг#г%гїв└вьвцв√в▀в█в╛в─вхвг/г#г!ггггг·вгг■вЄв▌в╨в╧в┌в╥в╝в╞в╟в─в┬втвгBг)гтвг ггг=г>гBгAг7гBгQг6г-г<гггг	г вгг+г!гг'гBгEг)г/г2г6г4г.г!ггггг#гггг■вггггг1гGгFгEг$гггг г-гг'г
+г вгюв°в г	г	ггювЁв▄в╠в▌вэв8г;г2г?гIгIгг:г
+г■вгггггг#гdгГгrгEг'г!гDгAг<г&г г г(ггггг(г*г вг0гSг;гг*гHгKг3гDг'гггггївЄвг.гїв.г∙в°вгг гг▀в└в┬в╤в°в№в∙в·вєвг5гgг`г5г5г:г г"ггшвтврвёвївъвщв╞в╦в┌в╟в╤вЇв╬в▌в▐в╠в╝вовав▓вавовгвЬвШвшвггггёвЄвфв╞в▀вЁв╫в█в╥в╞в╚в╙в▌в╔във#г(г&гггггггёвёв▐в╝в─в╡в╞в├в┤в╢в▄вёвївфв▐в▐в┌вшвггггЇвьв▄в╨в┘вёв╝впв╟в╕в░влв╝в
+г2г!гггєв¤в вггг гг*г3г:г0гггггывгг г╪в╙в▀вхвъв▐в╫в┐в╤в▄в╒в╒в┌в╪в г4гг вувцвэвяв·в г гЁв╚в▀в■вг√в▄в▄в┘вгDг+г.гг√вг&ггяв▄в┐в╡в╜в╥вфвсв┘в■вёвхврвгг!ггггг в╨в│в▐в╥в╔в┘в═в─вьв╟в┼в╤в▀в╥в╓в╟в╬в╕в╩в└в▐в	ггЇвЄвяв¤вг№в║в█в▄вэвув┘в╬в╛в▐вгЇв╪в┬вувгггсв·вгг№в#г ггггяв¤в¤вёвявявЄв№в┘в╩в┴вьв¤в╬в└в╣в┬в╠в╘в╒в▌в▀в-г2ггг г
+ггывггювув▓вгв╟в└в╪в╚в┼в│в▌в╝в╫в█вєв;г(г"ггггг вявчв▐в═в╜впвлвбвжв╜вив╬в╝в╖вэвг%ггЄвчвцвхв▌вшвювъв╪в▐в▄в╗в▒в╖в╕в═втв(г+г,гг-гггювсв╚в╛вявг╘в│в╢в╚вг&г'гггг
+гггг гггьв├в█вывг%ггэв┌вЁвЁвьв╓в╞в└в╡в▓вбв╘в┴в▒вквовпвлвдвгв╝в╥в в/гггггєв╩в╧вщв▐в╧врв╒в╞в╦всврв┘в╟вув╫в╝в╥в╒в═в╒врв╪въвюв№в▄в┌в╒в╨в╤в═в╘в╦в╛в╞в╜в┐в╒в	г1г г0гг¤вчв▌в╬в╬в═вьв╧в╦в└в╟впввв╣в╢в╔в╠в╢в╗в├в╔вщв вьвєв╤вьв┘в╬в╧в╨в┌в╘в╔в┬в╜вдв╖в├в╝в╛в╞в▐втвэв№в°в°вэвївцв√вгггЎвЎвёвг¤в гЎвцвювївщв╜в╩в╓в┌в┘в┴втвювг,г@г4ггггг"ггўвяв√вявэв▄в╨в═в╫вэвсв╛в┤вЭв╢в▒вкв╛в╟в╥в╘в└в╙вувэвгївшвчвтвПвМвЦвЖв┤в╖внвлв╛в╛в┌вшв╫в┼в┼в╥врвэв▌в╘в╦в╛в╣в╢в┌в╬вовйв└в╦в╞в═в╡в┐в╤в╒в╬в╞в╪в╙в╩в╚в╡в╙в─вов┐в╣в╜в╞вєв╒вВв\вaвСв▓вчв█в▓вивевквжвЬвЮв в┌в┌вгыв▄в╙в╬в╒в└в╫в▐в┘в┤вмв╛в┴в╒в╣вРвАввgвYвUвGв=вIвIвTвSвbвuв│в╥в┴в┐в╝в┐в┬в▒в╛в▒в╣в╥в╒в┘в╫вьвг¤вївьв▐в▐в═в╔в╛вкв▓в╢в╚вмв╣в╢в╕в╟в─вкв▒в╩в╧в┼в▐втвювыв╒в╝в│в╡в▓в│вЯвОвДвивдвев╛в┴в╔в╨в╔вфвгўврв▄в╙в├в╔в┼в┬в╚в╚в╦в╣вов╡в┤в║в│внвзвов╡в┴вшвг(гг╩в┼в╠в╧в╨в╘в¤вЄвЎв¤вг	г
+г√в·вёвшвтв╒в╔в╩в└в┬в├в╥в╬вэвгQг2ггсвхвтвцв▐вцв┌вювщвёв╙в╦выв▐в┐в▒в╨в╔вчвг'г-гг*г9гHг5г¤вг	ггяв╓в▒в╖в╨вэв▄вавдв╙в╣в┌в╡в╕в└вхвхвHг&гггггггггггг%гг$г?г_гfгXгUгQгSгMг@г'гггтвювгявЇвьв√вг!гггяв╧в▌выв в'гWгQг9г+г.г$ггяв╨в╙вэв▀вэв∙в°вфв┘в┘вцвщв╠в╢в╨в╥в╔в┐в╜в┬в╩в─вхвЄвчвэв╫вувтвэв¤в■вывэв╓в╘в╙в╨вув╪в▄в▐в╠в╨в┐в╚вхв╠вяв╪в∙в/г+г*г$ггггЇв¤врв┐в╨в╗в╠в╛в█в╥в╥в╫в╛в╛в─в╝в╕в┘вув█в▄вєвїв∙в╓в▀в▀вцв─вчв█в╘в╘в┐в║в╤в╠вЄвЇв╓в╙в╨в╞в╦в┴в┌в╞в╪в╦в┬выв█в╒в╖в┘в═в╘выв┌в▀вєвгг	г·вхв▄в▀в┌вюв╤в╨всвЁвчвєвЇв╫в╪в█в╒вывєв▐в█в═всв╚в┬в▄в╠в├в├в╙в═в√вгггшвъвыв┘в┬в█в▀втвыв╟в╩в╥вцв╧вДвНвРв{вpвbвhв]вNвZвKвKвFвoвЫв╟в╒вмвЭв└в╦в╕в╢в╥в├в╔в╙в▌вфв▄вэвувьвсв╘в╪в╒в└в╔всвов╔в┬в╗в╗внвЯв┤в═в▐в█в╙в┼вщвшвув▄в┌вчвюв▀втв╖взвпв░вЯвТвзв┬вЧвбвувтв█в╪врв▐вьвув┘в▌в╒в╤в╓в╘в╢в╙╧▌╔╨щ╫╠┤╤╞├╧└╦▀5с╪чщТ╗┬┌▓░╘╤хф▄ш┐┤*Їш∙╓▐л┘▌╙э█ъ╤▀ъ╒и╣д╩╠╨ц╬╨■хсс╙їы╩┴─┬╩┘┼╠╣╬╟╢яюсц├┌╘┘ь┬╒╖о║╫═к╥╥╙╤х■┼Nц╙ъ█▄╠т╧╤¤▌фў╫ш▀ъ╨ьщ╠чЁ╬а╓▓т═╟█Ё▄╥▒╠єъє╔╞еЯу┤▐╪╧пш╫┴р╒╬╖0ў┌╧╒ф▄▀├яЄ┤щ╓█╣╨╠у┌у█хЁт╧^p├▄┼╔щ╬сяцEк╡╤╣╒ъ╨═╞ёц╔╙▌щ╧ы│┤з─║║╖╧═╙а▄чуЁэ╙╤╝▄∙ыту╘╒██╙╫╨─╦ёъшТ▓╙─╞п╠дщ▐█╣╒юч▐х▌ы╟хд├╘╪╥┌╪▀╙─╦Т┘цт╦╧э┐сфТп▓╬╚╤░╫хтч╗┌╬г▀┬ў▌╒┌ш╤▀ї╦ГJъЭ░╝╬│╪ь▀э┘▐╧█m╨═─╞╛╥╞╤Є╦х╪ў╩4ц▌╬ь│╧╙т╘╒╡Ёю╧Їё┼ф√┌╒╬─╔╙╓┼шс╧жA┌┌╓х┐є╘╤╪ёсфь4йЭп╧╟▐─▄╛ц▌┌▐╒║рЭЦ▐т▐┼▀╕Х▀╛╒╔█┬цц┐ы╫█▐═╥бQъНао╜┴╧╤ўшуёВй▒╩съц╫╦═╧╒╔ЄЇщ┴є╘су║╔Їсёё╔╒═с╥ш█щ╠═ф┬f│├▒╬╧▄ч╦─∙╚╩Ї┴ц█┌╪┬▌▒8╜зП╠╤▌я▐у╞╧Ё╬с╘╪╒)п■╝┐╬бм┼р╪╢┌▌╤Ёчам╨└░╠┘╦Ё╬╛м╬░у▄т╟┘╒┘°▄┼у▀
+чЭ╝│╝с╫╩ъ╪ц┬╒┌╤ь┘╞т╟эу╧▌шы┌шЎэ═╜█и╒щ╥├m╓╘х╩х┘т╩▐╥╨╗ыы╗и╖╓с╞╒┬╓йъя╒▒пwТ╛д╣)ял╟┐╪╤┌┘с█л3ь╫ ╧х┴ЁЄi╒┬еЧ╬з┼╪╝▌└ў▓т	╨▐ъ╥ц┼я╫кя╜╬ы№Є╦р█╒┬╠│╒┐жг▄╓ы█ь╒█╕ў▄╓№ў▀▌╪╩и┐▀с┬█╬н3╒╫├ъ╗╠тс╙с┌Є█╘щ5 жЛ╕ч╗┐═є╚¤╨Є╓╒╬╨╓°чЇЁ╬!╚╢╜╢╫╞▀Хст╧▐э	щ▌┌мн╥╟╜у╦│┬├6√╠╓═р┘ы╠ю╫фу┌ї╠рR█w╣ш█х╬╖╗▀ъ┼─╒╒ы▌╠рё╨╥┌▐╤▌▐┘ы┼ц╜¤▌║╔║╩Тн╨ц▀╙┌я╫√▄╒∙Х╫║╬║╨╧┴ХЇр╬╫╥▌▄▌х┘╓═▐▄ч&во╚эЇс▀╠у┌ср╘Ъu CЁн╞╕╢я╔╪╒╖№▄╦┴╙ф╣я┘ш╞╝▀┌х╤с$▀
+┬▓╣╧ь╥ы╗╞фэ╫┐┌╬╦╟ч█ї╘ы┌р▐╨∙╘ц═╦┤сў·g╖╕┐,┐▀▄┴╥╙▄эч▐фц╙╪(├∙┴─╞╦├┘Сu─┴еёыї╒шЬ▐╧zmъ╡TGеF)оХс╒!╪╚─°╗И─▐╥хяху▌╔╠▀╓└└Кштх║ъ1┐к╦эО└руцё▄ьъ╘╤Ўт╒╓┬ор┼╬─╢цу┘ч
+╠┼▀╟їщя▌╞▐ C?Ї■╧┌Є╬х├¤сє┘╕░n╠-Х▐!sпЎэ╒┘╩m╖ю▀h╩цЕ'╙╡OЄё°Ў└ч╟║└╦∙╧▌▌╙Ї█╘╓╦╛бB¤%╬ ╜№╬▌ф¤╔л▄7Bf╨╜╫Ї╟eф▓ге¤ц╓ю╠░°░╒п╬╒╦¤ЕзЎ╥╣Ъы╖┴Ї└╗ЮtТ∙├ё═█═|э╤фIя╥ХЛяьт╥'╢л╠т■╘╩Ї╥°Дї3оЯT╚█ъ5│└Єєёнтъ├═у√я▀√╧оїсЮBЄ0╡В'ў·ъ╩█╥╥<┴Y╒ї╕┴с╘ос═┤╠╡╕Ш╔▀╪┘╙├═╤▐ыц█ф╙╧┴жпофуmGк╛ц╥ы▌╥┼Л╨°░▀шъ▐╕
+Шсс╝л[
+2еюы╘¤kж╓▀╙°Ж╒╘уыц0Y▒╥═─B▒∙╙шг╝╚щ"ы┐Тє┘7ьлоy╔(Єъ╤▀▌т║Щ┌∙Ы═╨┌Wm'ЇWщ╬Э|Ё▀Dфыф║╗П2╝┴·)<s╙ЪБ╜О;ц¤Бi┼▄нS╛є┐ў╟╧▀═╧ыя№j¤яйЗЗю■╒оэцръ▀╓▐юЄ╥╠┬цшБ╜J╥ъ═▀╠(=ЭГу╞ё╪л┘ПчП╦{╗шў╜Ь█▌╜┘╘┐Є╝√╗╥V─╢Л▓р═╒▌╢┼с№═╘¤╩├т╓╢ьЭъъ╙к┌╡д┐сл▄╓▄ь▐Х▀9р└Ї▌ FлЮ№╓╡¤ф╪Э║Бз▐╟╫-NSї▀°ц╪╩Ъё╧ш╨этУЄ?бЭ'№∙▌ч▄Є╚╞╙Ч╜╒╙Фю╤Чд╨Ў╛н─Ї·╬╘ю╒╫рLЄъ╚─Ж:х·хahW▐╒Цfж▄╠─ ┼╟▓▄pвУ┌┼ы╧╓╧Км├	ўl╨`!(°█▌╧╞сф╟Ё>ЖТU▀	Qи╦пО▌╦╥Бэ·╞у┘#С┴ў╕╙╠у╘╧╢▄╫╓░█╨┌ц╓ёї┴ъ╣▄e╩кtq`&Ї┘°с▄ы═·Ш▌)┴╦зц╬у╓Z╩J$т┐э┌с╜У═╜О=ё°сшу╡▄дШ┘╚Ц╜╦■пк┬┼▀ї▐╠b╒vwУ_С]ЙЛo¤Г╖эъe8╪╢S╙е%рЎ╖├
+оХu╩╩ър]э▐ўзЛЁ
+▄∙╔ыД╘│Й╔}ю╬QХ▓р╡╛Ш╦оЭщютЦг┬╟╔╙Н
+╠║п╔a╖Юкв╗Єр╒ы╓щH¤ч▄·└Ющц■шЧяЎzй▀╠▀╤┌g[▌ьшы╡Єэ▌╔щ∙u╒а║╖╖╠єт╘р╬┌┘┘т╬╥╔╩ы▄]Цюц▒mЁ
+М╢╕╢╟орўуь┌═у╫ё ╬▌рЎє╙фу▐┘╪ьуэ┘а╞йбz┤Л┤┤уa╘═┘у ┬╬бФ╥Ф"ЪГЄp║ ╕у─∙╤╧у┴▐ш╬╙уе▐ц╚чъ╧╓┌╨┐╤А┌╔Яи╠╦ЩКп╙╟└эк╔т╠╚▀╝┌Бчы▄╨эуз╔└лМЕ║√р╣ЪЄ╘Ї╨}є╔П┘╕8=·П8¤"═ь▐┼Тщ┌№▀ЯФ{╛▀┌ях√╨ъа▀qЦ▀щВ*}╬ч█╡с┤╙Т ┼эй╬юр╧2я▀є╘т╫╚╝╦╥щФЬd*ЎяЙЦл╠т╒┘╨╤ю┐┬Цf╦╬┐ч┘рс╡╠E▀НЪ┐мgM╙ч╚а┬у╟ю▓у├╜уЕе┘┬╣б▄1э├ф#╙╒╨╫с▐уэ┌╕▀ё▀═▀фЁ ЧС╢м╬┌▓─єЎё╤ю"м╨▐╩▐┤б∙╘юў├ю┴Шэjd╫╬ёЕT└╕1┐╓╬<║
+$╥╢ёйтИх`╢ею┘бп╫ х┐╒┌╙╪╝▒╒Їю╓╢чf▄▄Ц╙оЕ╜рЇсїє├фс█·Иm╗ш¤╒сёш╠╨э╘Ёjк╖║{┘юс▌╓┘┌┐щё╩╫╧є╢╠Є╥и╙куъ╢ыв╝╒╟э╧╩ччиА¤в╗┌╜Ёєш┘─\Уг│╝╫╙╠ЭWЕF*Q╗╘фeГ╤╔╫╢г^зК¤щєqoф╖║заъ ў┌╟┘─I^{йb╗╔╤█╦gп╬ю·Ъ▒╞п└╨эяk═ц$н╚▀█~▀
+▄╟ї╟╢х╒╟цъ╖д┌╘╤▌  ╦╒Ё/ий═╗_╧7mХJш%WЎ╒
+юо╓╕юm┤ЯА4╘╨уЎ╒╤я╟╚ ьЪз╣Е.з░Й╞ц	╪чл+▌н▌┘с▀╫ ^EВ▄╔╫AkеЙ▄ч█й▀╧ЛЮ╞╥╒╦E▄╖хK▐цш╛Щ·╙ ╩└═╛╒╓╟│╫╔╩	╟╙┌їв┐╞й╫╧╩╛░ЦЖ)╜ЕM╛kєЇ╥╩▀■ щ┘╦▀ы╩Фа░z!Тя╘╦
+йщ*xшмХ╗ ┼╪.p▌╤сЄ╨╟х├з■Nу─╫я─ШэдЫqx╫Dm╩%║¤°1ГЬ╢╖┐аёъ°я╗╤ БуЕ·▄Д┘─∙Ўс(XЧА1.л╠▓_Їщы╥╨ДпЗ╘█Ё/єэ╔ф°╢З█├ыщє╧╔╢ху k╬╫└Ўic╣╔╙р╤д╪Н▓w■╥╥╛╔зuЁЭу▌╬zхV┌є├v∙v─╚ЯўўE▓O■Эж╪сх╤·с═ЙiТk▐┘╫■╙┴·╟9ЎбФ%ф─зРтэЁi╧тучYTы╟Ф┘ч╨ї╩Є▀ч╘р╨э╘│J╜╡╙┤J∙^┌╓R┌зN]№░УК─╢├с%╢qХ╨▀уїMУ[▄ы╜┘┐р ═лh!Ъ`FtO─▀V╧╡e╩B5╫▌нjЁ┘╒т┼╜╙▌эн╠╗╓■Ж{ёы▐сг╓l╗╢с┘ц	uk▐ц╩╦}ГKх╙▌ЄП─с▒nцтёў▀╔э╒╨ф─*мp8╘И7ш╙╢╘#╘┴ў ║▓"┐ДД 7▌╙┐╖м╙Ў╥┬ў╔░шzНи╠сш▀╖┐ы╫Ї╗хьш─ТсоТлитХ▐╤╡Я┴8ГJ╤∙с√Ёнў┘·\иOЎ▓д рў╥їЁ█ыB┴╖╡┘├╧┘п╥сщёмьш┘╤мл╘╘ф╚╣┘т┤т═▀ч╩█╫ь╓▐╠э№E^У╨╙ы╬°║ц▐Є╧▒їЄ∙Чи╩╞▀ъэ╖╦═╩█╬╟┌╘·Ї╪┘▄√╪█ўиЪЬ║Ў╓Ў█єш╓Ёэ╤ъ┘1∙ЕИH╤Ў·╫ю│тр╟╪ф╥╓ц╪╘╞ьч№▄Ў╪р▀ы▐╫ё║╒╨╘▓│┴█╡╧┐╩ю╙ц┼╓х┘у▄║с▀▌тчG▒┐█╘▌╢э·╤яты┌┴чхЇ╞╫°єыц▌▒й┐р▄╪█Ўц └╖╓Ёёт╙єr╕┐┘▌яъф╜┘·ьырф°ф╬▌▌█ймя└т╞┼╤▀ё╧╠╥▌хч┤╜Ёяст╧ч╟▀ш
+▄╞▓w ╥╓Гр,/оОм╗к╪ъ▌д╪■┐█╘ю┤D▓╩╡i╕╛╔ZW(█ы╚щс▌ът╜┴╦ч╙4гХи╩╤┐ш▐╫╨╬шЁр╛ы╧dл╧╘├╤є╪╔╞ю▒я┴√%вЇ▌Ў╒°╙╩╪Ё╡Ф┬╛╣ц┬ш█№у╠¤юЛЖ[╣╙ъh┼вз╓ч╤╓╟еэ█Gиzщ8▐╣ц│цт╩Ї╥ф╚єс╣ю╫$L^╓╟╧██╤┬Ц╪╬▐iя·╕OU╝Ёф╬┼э╓┘╒AцуцнЙN╒3┌Q│є|dї▌¤оh▄№╓░l▌Ў┴┌╪°Z┐уZ╞еSE╦Р¤F╣к╘ц┬╨ИС┐┴┴пё█Ы▌┌ ▒Ю$ж╚ы═ъш+}О░Хо╙й╫ц█▀╜ф'╥З┌¤Т╒╦р№∙╡Сн╪┐а├Їю┌ЕЫ▌Сц╪┤▓:▌╧▐оЬэ№%╤р цтЁ╫▐╬┴ўTV▄╙ ╦╢ў▌Oї╗р*▌иGoЬаCWvтх╒-╖╚╟Aщ╩▄х╙╝ёьЫ╫├╖╠╓╨╕█╫╛╬шс°Ев░╛╡й┌Ў╢ф╦╗▐█хf·юp;╫╡I═╘╕!▌┴т╝ЬЁc╓╝-°╒J╔▀чJЦь▓°ЎЄ╨Э▄Ё▐рю ╡▀э╡я}гм╛е▌с▀▐╔0щлc┘╧╤╞┘ъш╥▐─щт╡┘Їю+ч╓╠╩ъ├┘▐╠╖═╬╓∙м┤ф√╔лх▄
+чю∙¤Ж╩║Э╖█ф╟╘│хщ░└·а╢о╢ж╛т▌├▀юц╤цўф╨р╨█гЁ╫ъфут╞Е╗╝┬с╫хутц╚э─х∙wйИ х╥хэт▐ъ╪т▌¤я╦тсц┐·∙сц▒╙ст▓я╞┬╚щ┘╒▄Зд║Ръ ╨╒╙╚·щ╢▀╔ь╫╧╓уКЦШры┼У│╬╓■╠чсыgдн╙╓╦╣┌╞╥ю█фр└┘р╚╘╬╨°х█,Он▒╒╨╒╕╓ї╗═∙рцЄ▐ує:z╛╢Ю╩╠с└є ▓фы╪╫Ўшч╨▄ыцє∙.Ёы|╣╜╫╘л╓╠╜ёюь у┌с╬ │МТ╨щюъ∙╡сч╟╪█▌.Б╢╛ц╚ў╛Ё└шхё▄2иохх╨Э▐ЇNn╜╒╦сЄ╙√ц└E└┘╪╙╗█┌▀ўNqзуу█╧┴тЇ╜╜┼∙фЎъ╦┬╫└┘хф╒З╔┤╔╥╙╕║ї	єЎ▐═╠╫Ўцец╟┐Яа╣ї╩╪ц┘╧╫╔╝∙2~зЮ├╔щ╫═╖┴╗╥уИє_╛г┬╗╩Є╧╗√С6ю╔▌Ї¤№°┘╩ча╢▐╔═╦с▐└┼ь╔┴╡╕Ў¤▐■╥ъ∙├Т▒∙╝╪т║ьт╬▌╓┬┬ўф&ш┘ЁМб╩г▌╤ъус╔╨№у╔╤▄
+╣╚▌щ╥╥▀░├ыц№╙┬█ы╩╜рщВж╬══└Б■З─ь╦╤>╧┬═;Ч▐(║╩Р╒Ш┬╟╔Ыщ█ф╪∙сц┤Єjвkd╙E╧┐╝╥ъЩ┼7фс╞╦┐я└Ё├к├√т╠)	│Й╗Ў╧╨╥└¤Бї	ч╬┐hШз╬┐ыМму│уяэц═з╛·вёЯ╥▌юдх*╨ у╡─nб╦┘┼тшъР┌их■щ%╩т╓█║█эЬ┤┴т╙─l):э╔г╛e┐┘╡╚р╧┬ъЖ╗фгш┐К|У░├│Ж└─№▄зЇБ│╧Л╣+фф╥┴╤╖ч┴╧ь▄ёq╗б╙ьт╛│М╩G5╠─├ь╠┬Є▄?бФ╙▌┌┬╔▌Ў╔┘а╔*╗═╬╜ч╟ўЁ+|Їа│┬╟█Їя╦дЄмъ├╠Лщўxы┴╫у▐▒┘Pвб╩я╧╧▒х'┬$ ▓╚ё║┴х╩п√;у эт╟Р╢╬┘╥х╖▀ц╩╒╪┼╫p╘е╘ыГ╤╓у░╤B■%Ъ╩щ┴┐т	║╕фвКЎЫў>тл2&┴╕Ёп╧тЁж╟∙╡э'╔╕ё ▐є/╦╜╟сЁ с╪хыеМ┴ ─Шп╦їр╗╜┘╧ъ╙┴┘│▀
+┤є▀+oХ╤▓┐├Ё√ю╣▌хэ√╓▌*o/ц╞▌¤▐▒╚ш▌╡х╩>╘═║щ№▌═▄юrзл╒┘▀▒▐хьц║╓╨┘т▌ш┌¤╖фвиф▐╪╫╬▀)3kб╝э▌╔╦╓щяр√!╪м▐сч┴ю║щ|Щ┬б╗╣▓┤ч╓╬	█╪╝э▄ёле ўdбг╡рє═2ьщ═▀°╞ўся═∙√▄∙o▒┤╦╝ь╤┌ё ╨ ┌╙¤	▌┘ ╘└ №█тqн╘─▌ёэ╪ё┼ьы▌╤р╚∙┐╨╟з╢─№ }╛дёо╔я╔╙╙ф╫¤Ёт╘├╟▐√ьц│шЇ╥фїdж┬ўЄ┬т┐═яЇс═╠т¤Bu┬╨╓┬╫°╘и°Йч▄█╘Q|з┼┌╫Є╕М╓щ┌ЎЫЄ├с;╕ЎрэGС~ь8╙"╩█╙Ё┌ч╒╪╥╡4▀╓а▄═╓┌нЄ┘█╗▄эvOй══╥И¤ъ╩ЭDыЁ┤J°╫┴╤ргхц╘╩ ╫ц о│└Ымш├╘└╚╕─ьй█▓Gmг├╒°т╤╘┴тМ│чїЩ╤╫░Ф■ч╪ч╙■ЇслнЇ╡╧ ╬╥├┐▀ч╫°╦їA^пе╞Ъ▓;зя╛їЄщ
+╚ЗрЁцё╦▐│°п╤у╬ЄЁЪё·▐└JЭ█║ыЎъ┼▓ц▌├╨чг|э╕╒ЫЦЩЫу═╧ф∙ы╛╪їжю╤с╛ўь▌╬Ўц╞■^Р║з╫▀сю╠═шя▀э╥<.п┌х╞└╜у5│╩·│уц╤╤Dх╬Rщ╓v═ЙК╚2▌╤щў╒ў╞¤■ф╙ў╖л│╠┘╡┌╒╒Тў АгЩ╥▄┌▒ь╒╡╕■3U╛╥▓╟╦яо╡║√ь╧▐Отху╧╤с%╣┼NЮX▓д═Eч╫└╙э┌ч√х├╩■3yб╦с╢▄м¤╟╚└┌├црЄ╖шїъуф▐·AЭ╘щъ╬ы&э▐║цх№│╤№Є╬╛&═счЬ═┘Єх▀╪Ы╢SСН└є╤╪В╒╬╬и╟╣Ч╣▄╔╡┴█Ж▌╪#┘┴ё▐·√у╔хщh╣$б╦Б╠рpю╔╪л╨ъ▀╖╧▀ ■b╬╞л╛═▌ч╫Э'є═W3Ь▀╘ч╥!Ы┬╜ц╬.
+р╞▄┬╤чых╦┌Б╗▄ж╦┌н╧т╪т╔	ё#єМpпшЖи┌╠%╖х√Ў╥▄R╚п°]d№рв╚╬╒кЄк╣х═ч !Pгкхье3= Пши═ЯЎрТШЄAд│цтK║(Yч╨╘╦╬┌╛бёэ╨╓██;┼#┘▒█
+Їы╗ж┌║█ ·Сє╔ь╙Ў¤╬╧ь─Ф
+█═╔Uд╒Ж╩ЗК├█╠╤┼╗ячЁЁёуev°|СP╥й┌╩╥ї┤-Ы┘┴ї▌ўЇўjат┘└iў╓ўя╠Nё═╒╖)╡Mг┘█s9_з║Щ╔■╧йm┐кM╔╞▀)ох▌H▐М│х┘с▐	╣Їзч╪Ёсй╣·штн╞Lєяї╫Ь╗▌∙/AЦе▐╘х╫╨°■╬р╣х┐╝"┼ю│ (ц▄xЪ╣╫├о·▄▐#└щў▐;Мщ┴ў▓х■╬╩╡▌Ї┐╒┴якцз╚оя▌	╒╘╓ъ√ъ┘╪┌■─┤╪)Ё┌9lт ├Э╧7┼єц┘╧┬╓р▌┘ЎЄsя╤╝умфє╒¤kГ╤╛UЁ─╜║у╣╞1╙P┐╓▌╞▀╟№&WЦИ╫┌∙▄ш¤╓▌Б╗Ї╛┼▐)Ф╨ё╣╗М─Щ╒└"╒┘ює╫ц',╞<с+ї░ ╤└Є▀w╓╬┌╜?сЭVхи	q┘╔╪▄▐╫╧▐О¤╖╧7╒┌№V▌╚ъ╠╟B╩Ў─]╡г┌Ьk╚╣▄о°╒V╝ф┬▓й╠Ж▐ш╤█ё╧╤фр+╛·ю√№щ╝sйВъя▐└√фш├┴ў╩btUQт▀Хё,╛Є▌╒°¤╕ифимхц╡╞╞╩E	Ы)1Р,▓л┐╔╫╟	┴ї╬дЇўb▄╖╒┬║╧┬с┐фю═п+ .уоКЛг∙╗Ає└╩╛├j╛┐╔┬╤т,Ё╕┼,Ў▄1|╥уь╩ц╙O▐╫└■╙Зbе▐m▐е"═=╠ьх═"МИ╙╕ьбm┘ь┌ф█А╠т┬╢╓┴п▌:!╘▀Ц╬∙ЪиЇ╠ащ┬╘╫г╘у┌╙╚┘═├к─с╕╞ч)%▓)╠╗╩э║▒╞·э╦Ъ√сЎ	@┘╝▄╝Ш─Фpъ├═╤  ╟чы╞▌D═й ш╛щИЛЬ╕╤┴с═цч╓╨ЛЗэд╣щрж■┘фЪЩi─Ў╛ "Чм╣█┌!╔├└▐в∙Ы╦_╘ў┴╧╕)ш┼╣▄ўЎ║Сє/╣╜Ъ█!Oу╛╥Юu90┬>║╫ъ╢ъ№┐=▒ч╕"ї█│┬aмЁн┌▄щоy│╧ёЁчЄт╖h┐─ цJ&Ўўз╟─∙╤┌щлN═
+│└┘{Ь▀{Їьлу┌уу┼ьсЖо° є╖йв╚Ю┐Я╦┘твъВ▌ь═3°├[ ╝╔╠А&╩═фKЦ√┴И─╧Ую5щ▄┐С╡║┐▌у▄▒>╣о╟╫Ў╣вхя█Є╗Їщ╠)H┬бЭOюш╨╒з╙тщпфЧаўєв╨с╝╚эъФ▀пc└╜╝ч┬ў─├ж╔юєхёE╩ЯВХ╔ц╕Ч┌ё,╧цШ.╒┬╠├├эm╒Ї╠!√ьОфэ╖─┬ш░▒n╨ц·┘└╦╘т
+╕ъ╟╠нE┤═╥┘$▐№ю█Ё▀ая╟х╗ЄW┤кtс┐цей
+ч╦сЄ╡с▓▀шя"=┌цэ1Ч╡┐╛з╦ ╧╧┼╜═6└:zж╘чж╝э▄сї┌╔╗╡Є╘╘рїм╘╨╦ё√cцє∙Ю╔╞╟Ы
+э┌в╖╥┬Ё╚╖╦■о┼╦ч╬раьY╕ъ┘╩Ў▐є╡═ъы┴ТVрфч╛─К╦ха│╝▌ны░ї╩═ў▐е°л╨iR√╥шщє┴─з┬┐ц№№▓╙╙Pр√РЯu
+┐╜╜YЗ╕▄ь+дл┌щ└я▐║ь╩╓ї╬├ъей│┤╟Ухv╡┬эсб╨│№ў─╔╪ыпя╦╬ў 
+╠к│╡Р╤ў┐щчоЮб¤в\у╓ё┬╧¤▄╞Cчш╫╚╘∙╜═╒▄тY╕╛yущЪ╝╤Р┴╞╧╓▓╒╖g#ЄН╛┌■ЪЦг∙╩ю┴ю├З╦°Ы═З▄┌▀Ын╓─╔Z┌█╞"р▄╒▓4щЁС╥¤▄╪шфЎX╡╤Oў╖═╘#ъї▐╟г╥╗╤$∙%f═
+Х╕їє┘╟рЎъ█╪╥╙╨Э│┴я╘ъ┼└╒█Ъ┼─╪╥Кб╓╫жщ░хо╕┬┘б░ ╕У:ёЧ■╜╞┼YУ┐√п╨╛┬┼·■╕сх╢╣з╬▌▓ь▀°у▌лУ░EQiадх┌ш∙J▀єюъчяЪ╕BЇкхЙoAщЄК'в╦ю░ ┌r╩∙fЪEСЄl·53│Йб╬╛у░╕№╙╫╓└▌ц╒▀Чїш╚ш╪ёЧ ╧HимХ∙е┤Gзэ▐эЕ╦╧ї ╝щ
+Ї└┐Е┐∙╧¤х·ж┴╤∙й3┌урp├цЇ@i╫▌йе┼╫═║ ┴▓═ссрСў_Ч▌╒ркЮаS│
+═°┘╠▌бш╥╬чфSn╢╪гКL│2Тя■╥-с█Kь╟щш╢n╫уШWр╒│+ЬТнD─└о ╪└гЄбУ╕╒╠ъЄ║■Q¤╓┴╘УёўнЁ┌jЭ"$╬ЕюЁЇЄ╪▄└ц▌Я╣╧╫Щ╬ъЇ√ъз┬х┘О#╜ъь╨°о▐╤ёЦЬ
+ч├▒тш┤ы╖эPЙч┘∙╒шч яп╕&їч├ъ│щь╘═╔┬┌¤дЛв╙к╪ёцЄыЁ╒,ш╔╫№Ё░s╚╦█тУm╓К╙ыВ▀╗╤?/хаЫ№.p▓7lшїй▌╟╤с▌╫╤оэ╓ЬO$є ╫B╤╕┤┘╨зьжо╕Т╙╤╨Ь╫╥·▐чГ╣╤╪Ъ┌S▀╥╨╘м╬╘▄ъх╕╦╛!ФчW└┘№<нЄэ┌ю■┐L▓╟╫   ╛▐ыu√8╪ч ▓√√qЮ╟╜┼╖─┘├ ▒╚▐╢╤╧ ░ъ╒╡∙ыйА╬─2бы╔Ы╝┴╒т┌╤╣0#Kєхп╛зд╫Ою╗Мт2у▄ФШS	·бu╦эе  є╓╞зкt║їЙн!Гх_Зв╛Г█u№╓Y┼┘АУ¤╫╬сё┘╫╤∙╓я╛л╔▓$SН╞ Т╩╓щ╒└йў┤їy▄тЮ∙ с■д──╔╝┬█ы╘Є╢K√П─Ы┴▌┐vтє╝┌кз	Ў┘·й№╨█/∙Н°┐╓У▀ДА┴╚Спт╨┘*╘╩н╬їбх┐г┤├▒╣Ц┘└ц┼>▀9d}|Ё█╦▓╤∙═╙аЦ┌
+▄└▀Щъ░╓ўлж	мB▐°яьєє╞╛√▐
+ь█╨┘.р╝кт╛эw▌ўТ┼Ь╡Ъ▐G
+╦p┼х∙▀xЁэ│ к]▒╚чт╚║к┼)╧ЎнъШ╔╬хХ╙╢┼┴╜ у╕├┘╨тэ°ы▓оUСNAWх╪n╥5╒
+#вб╠ ╙┬Я╖┴─;т┤╙╚╡Ю╞┼Ў─█╘ь╣Ёь╙О├╓*─╠┤юк*╚р╚╤ЭJЪ┼ёш▌┴Эк ╞Э╖є┼ГЬ╒Rц═┘Q∙╨X*╩Е╨╒Wз┌╘j┴бд▄ы╙фчя■vвъs╕ёя╣╤▀=о╨ЎпАО╗У┤∙╡z;х∙Д╘█╠р%{┬ЎргA+╦ ▒зч Юл║яыГ│ ╧жИ╙х╜╨│TвЭ!▐╡т│╤╚Ё|╧у╠з*┼ZЯЮ┬╘э╫═ЪОц╨═Щйд■м╦╚°°╤¤:C└Я│Єр?▌┘╕ф╜оЁя┼╛─╓╪ьш╧∙п╒ъ╒▐Ф╔┘▀═╘╓╙сў╛J░╥█ХХ Ф▐╦╥чОшф▒╞╠╨╨УV│bя─сй┌╘ю█тЫ╘√╢■нр╗є╟╟X╚╙о╠Рєъ8¤┘╥ює¤╧ш└▐ё╒∙Ю╞╟┐< ╚║▐╪╦я╘Gє▐О─б│▒·с╩f9┴v╕Q¤ыGБсў╓╪)╔╡╙╓щв╥╝А4 рзн┐╝Ц╡Ї┼╙▌│╟╠Щgшёъ╚╜у·╘├║ц
+ёэ▌¤Bп╔ъ┤и]N¤єн╞─У╦рт╬▒!ы$ВЧ▀╬пБо│╞╠ю╬▌∙єє
+▓c▀цєТ╛О├║Эс┬у5р║╖╓є:╜╔Сэ├щ┐╬т┬ЄЪ╫╦█┘·╨щч▌Щж╤Ь^я╧Йy┬ёе5яы╓▌╪Є╤є╫╖!╜▌ЮыфЁ°0л┴тэ╡°┘он╞┘ёц╬╧╦╢
+$┬&С╣1╟Я┬╨~╧─█е╤T╞Щцц√Ў┬с╚ю─╬█н╩█▌▐╬щё╟┴╘▌№▐Їє╖аэ│█├╤▀█┘▐║┬╨юЧх╙┘чпЫ╦Еёг┐╕║╬┘цЁє╒юуўч█фУЮ╓╫╩╩ь╜ч▐'й╝╡╩▒┐Л▓шк▌╢=яўў┤ё╖х╛ЪхИ'■═оэя╗┌Ё│*у╘нх¤╙Є~п╦ї╒═ї└зк°├фшЎ.Щ}I6ъщ╙юм▒╔фь╙┼я╞╨с╒┘─╩чдЪ┌щ╛ъЇ▄э░ъ╝хя█ї▐╠╧ї сўё╤Ў┼сн■лед╔╤╩╬щ┴їю╗ўЧ╤эА√╥їу╝у¤╓└Т╩╛▐▌╞╕┌Эпєрь'╠к╥О°ую╞o╛2╟Щ╕╤╩ўзЙG№Їс·└r▌№Iv┴─Ч~╕а▐├┘╒╬°пП┌┬╙щ╚─
+ы╒бЁ▀╝╛╦Ц╠Ю┼ +╠=n╞┐¤сЎ∙╙∙╡┬┐ё▀ж╫╧╔т┘┐тч▌╞┬ы ЎЭ╟у╪┘рЯбп4о├╦▄мЛЩо┘┌╚ЎЁО▄╩╥Є╔фу∙$fя╗#*ёйрЗЫд╜╫▒d[еЭ>▐√8═bЫ╞А╫╟▄сr╒%Пя╫╫╚▐╙л═╢уэшкЕ╘Х&▐ЭuК╩мш▌┘ъ╩╘Ў╙╜═┴Ў╩
+щЫмД║jк╘ц№з█╜╕·см▄∙╫щФ═┐оплЦс▄╥в═▐╤·ёц╙█═їЭl╦Ї╫В
+┐o
+рУыЄЩж7┐═╜╖	║=LdжЯ▌Щ¤о┬╡щ╡яA╗┼7╧╢╡Е═╩ж╪╔╥╥╚5▄│╥Цыж─EОaыЮ│;
+ уэ3sь9╚Z╔┬Ў╞╦╥∙Їщ█┴@ьї╣с▄Ї┐FТиП╧╤н╪Ь╧ё╙╘Y,Щу╚╡╦ў uгйх·╖е3¤┤ъ∙■	д═Х/▌╕┼┴ўт
+╗эДН╖└е┌╚еj╖ту╕ї█╘├Япу╨¤█ыъ╪■╘┬їц╥╤щ
+(┐Ъм№ш╕х╚═Ў╢ъЧ░╝ч│ЄзЕ	кh║╨Ё┌ёї▐яыї_МўйлъК6╒ЄvЙ╒)╞x╬?Ю┬╛Ї║╙┴вЦ╠¤фї╗_Р╦х╬╣╛т▌╦╘╜Ў	ч■╫╔▌Ў№╟╠╙Ўщ╚о╢Ў║┼╤ы╩┌лЁгD╔$тЮ"В╠ю¤═╓хЬЭялч■┘╢ию■╝■╩П╝▄нтЛ░▀шлс┌Э╡╞╝л■°▐ЄчДЪ╔╫▐▄ысцЁЎ╙╥└Ш╝є"╞∙ыЁЭ;Э╩з	щ¤Я·яф╫╤№ч╪щ╚├═б╞ш¤ў°╟№╞чї┤Ю╨ >пч╫╥т═┐┴Bтущ╪·Л╙¤°ў└ц№Ж┤ўx+№"╒╢├√┴■╜щъ░ц╫тЦУ┬ЛЎ╘═ш█│ф╟ўщ╩дУ╚Т[|3ШяЎЭ╨нСКыЎ░╧н°└v▌рнс║ш╫╧╫Уe№рем┼с│Zjъ╜╦╩╙Хв▀г╒╖╢∙╣╕щ╠╗їлм╥┌┼▌{╬▐!С
+╟
+цг╩╛Є╥T╪п╥ТпРц▓╧└хxz╧┤╨╤)█ц∙╟┼хю╚н╓яЬ╙╫∙▌■┤а╘═ю╗чрgLЬ╥▓╪▐с ▀f╦│┬╬╣╫Ў▌└■JC╚я╨бссє▀О╛ъяе▀█ящвк№┌╙ЦУ╗╚ы└V▄┘├фЁеыРїрЁ╝D╕я└┘│Ы`╪Ў└¤┘╬▄∙└є╤як╤╔═р╞Ы▒╧╗ч	є╧╘тЦ╞╫█ы╝╦╤·T╣╧▄ф╢+Чф█╫╗ўЎ╓┘ёyк█▐├╢└├╢╨╦╣aiЇтш┘╡чо¤(в╔╜╢┐█й┘╟┼╜у·╞Ю╧├╨Д╤╦jщч-°╨─м╢вцы▌чъ╫═▒ЎяЎы╝┌ю ═╤фу╟╓■╞█╫▌┴ш╥чу─эз╚▐я╦╓Кпўщ▄ЇкУoщщ╚╒	╞╪иzI■э╞хЄ▓┼с┬░i╔ь№уг┘▄▀ь╨чЇш╫╡ююшц┴┬┘│╖─ыс∙Д▄┐╖М└є╘╔─╣жШь№яякх █Щ┴йх▒┘█┴╞с╪╚╛╘▄ЁщЄ┬їў╚╜°ю╘ы┌ы∙щ╚·■░╚│м▀иц	Г╥Єцмщ░цИуь┘Їєщ╞яэх▓╜└у∙&;╥Н═─▐▌╝Ё─с│╠Ёце▄╛┌фшЭ∙ ╥Фёь'┐*ЦуЄ▓├Є╦Ъєь№ъ╚╤╗м▄фч╤╥ше╞Ы¤Г$√&╟Шў╤чИ¤
+╥ы3╗∙Р╛пюЮ т█╤╨ь▐╬╠f¤д┼│Ъ╥ЭР╤∙▄ ф▓╢■ьё▐╪╣є┼р╨У╕╡╔чв╢╦x■∙╜°√·╥ё╟▀хь╢ ╓/л╜╚╬╗сеЁ┤╤└%(уПчьз╥Я~╜╬ш╩╚ √щбЧ╜В,╧·╔є╟єє╥ыЫ╟▒│K╩К┌лНШAq2э╤П╟у╕хх#с	wЗЪй▓"╢═н╒Ушх╫єЄышцПЭ~╧т─╓╨╦╞¤▄▀╦у┌█╘ф▀п╒)яж╤╓╕к█∙┬д╜╘║·ы╘ГсщЗ=нє╩Е╙╫╩Ў╔й╙э╝ч╘№юЙbЄ%{╨гцфц╖┐╞▓ёсЕфсХ┼аиЭш╪цф╠5╕┐п▓╤ї4Їд╕▒╛ A█фєжЎ°ю╖┘╕ы▌tак┤юёўы║ъ╦╞0с╓чц>╕ў╜ъ┬сСТ╩▀zЪй▌╔╠ь┴┌╧в├у┼Х╨╨∙ў■ЩзЭ╨╢л╠хжд═mшкЗЬ┤╟·╩ў╜╛х■йю/ї╞ Ю╔ъ{Ё#Kжl╦┘Ъ▐▀є╚┌╫╝╬╖у?ФkЦ└Ж╘╡
+╫ ╚┐╕╟╝═╥Ё═$тр╤нЯ▀7П[У.;)┴ю┌╒╬╬╜сэўєэ╫█┌сюю═┘~▒У└┬ ·═╟Фтў═├╣▌у╥╘┤╝┐╘zю╥√┘д╝╒│▒	юЄр╫╛▐╒ю╓╠│~Ь:б+╟сюЎгЪ¤╥Ё╨щ°╘аsЧя#фп;В╧╘д┤ч■┘╜─╙▌(аYЁ░∙∙┬ўР┌╜╝т╟╗▀юЦ▒ВО▐ї╡╫▌Є▐█╡▓и И╦КЯЎ╣╙ыЁ═ў╘фТ▄╜э╢╬╙╓о╞C)RКЩнш╣▄Ў╥ЄкЭЁ╫╡╨щ╥ ■9ЫЬНТ╞ЎлчЦ4ї╠√тў╩├┴▌╛█▓шЮ╝и╔лю╠а┌╜√яр╖┬╘░э╪┌дЁщ░▌№╕█╔┼ы├╡ўы°бф─╪ц╒ф╫╠ёЦ█Л╠на╚▐й ▌┐╦╧┴єж╠┌┤z╢;╛╫╔
+╘├┘╡Ў╟╙·ъ	я├з┐╡єX╣"jЇС╨╟╔▐щк╬╒╓ъ█Ц№7мыМ0┌╪Э╢Бд┤█ью╕╨╙щ╬¤б█ЗЕфшвEу╤╒ЁGЇ╫┬дMК╔кш Ц№ООПЁЇ╫иръ(╞чп┬°vЕ╢у╢╟пь▐S тц!эЭ╗дг╫ь▄▀┤├ ┐▄∙ёМ╪▌т!┬уге═|с╓}'}а╧Q╤├уE╢г╔ЙШЭ┼єE─ы ч╔уЁЁ∙	й│╤╨╦1	▀Z5¤l╨╛я┤юх╪├чбї╢нх9╒уя`тЪ│шы~{шЄК]╣╪╜ўхыС╜Н─╘╩┬Х▒█/╦╤t2ИЄ▌╜ЙшЙХ╪{а▒ъ╝з┼ї█/┴6Шя╓цф'╟ъv├7ой╕Ў¤▒уК╥╓ё╘цпс═Tь╬ъпб╫ы╥Э╙Ц╒─Яб╠С╢Л╬■№Щаuч┴╡Ъ╞┌╗╪─╢╓╤зфуч─-оцЇ╦Я║
+┘5ыэ	─в╦─б╘Є╧|cдш#е┐ц¤╖╙╔╘╩┬[№╨╫є╞ЦЎf╧∙у└╨УЁ╞6ЫZє│Ў▐╤о▒√╝рзР/═(Uїт═Є╞║╟°├TW gч.╡Т,Ьq┐═┼Є▌▀Ў┘╛L┐х▀╬╓п╪╬√Ды√╪╤е▀ц╝е┴╞│┘╨╥╓ёпъЮЫэв╦■фуи▀ою■╔шЮ▐Ш╜▀ ═─┴╩э╟mщ╗─°t╬▀╙▌Ї╕L└╕У|┴p┌ащ▄х.╤■╞д▓╫ў7н║п,ш█юв▌╖Кє▌Дў╘│iчЯьфЮщЬ№╨╞╩╨╩Э√═ы▐║u▐╨э┴х┌бш╧╟┘╥ё╔	ўпL┐В╚√╩УЭй7сц╞╡┌╙арX√█;┘╜аЁШ╔О╢Р╧юўх╤╔┌└%Хюэы$╙╢╒│┌Щ╟╢╙~╒┴w)▌иєыЄЬщў╩╕нЁ▐ту╛ЎВ ╙Их╘░O╪ё─с▀ы з╘╬╓зВ╜┌╒Э┤я╬╒кх┘═П╡ъ╡щц№╒П хк╧aщ·в	Ў╥у█╗╢║тш█ч┐ЦХщЇ╞Жьў■╜ё╨┤╤│╟▐╬щ╕▒Сь╔!Ыэ ╜ё√┌6хпТ└ш$у╔ф╬█╕·в!▓_ня╗G╡кщ╔╔;▒╝▐ЯЯро▐ы╓#╚╨│фё┌чЄ	дU┤╗╫э═█Ь╚·╚╠╒╞╙ї╞╛▌хйъ┤УЩб ц┤█фшo
+╗√╔▄┴│╔g└Ж▓жяЁ╝∙Є о┬╬╤ыЁЧ┌w══░┬Шв╬╔╓┐ны▄/█Щ/╖╙╬═Їрщ╒ья╓їфРЭз
+O■сн├о5!╫Щ
+╗√"╩ЦэОЯШ│╓╗█9╕у·╙°┘3╦Ээ┌╓.ьў╜┌╟ш╒йъЇуВ╝Їк▄╓ЬM╥▀├▌О╪╦░Nй╩ё▄┴╕J~Чв╜}┴йч╫▐╥█ю┬ы╣чиеУц╙┬ √jD!к╡╫Жтю▒жї^юxЙхCхЎт╤╣иЛ╠т■╒╖Dh┘е╥╟╔╞╕т╨┐▀╖и▀я▌єщ╤	є╝!╩а╘█▄╢ё╠╬ эщф╨х$ЧмЁзD╘╘▄╤█╓■сч7╒л╗є▐▐┼┴╘чтzепсМ+jV▄л╔zсь│9г├╗tїПэ╠№у╔▒р╗╜▌╫р╗cЦ╟°╫║её╩щ┴═г╩╝ти╒√╟╒▓─╦ЗЦБ∙ы╔Ю╙к_┬┘∙к▓║╧сЄъи°╔▐╠Щё╒╒ў▌╜х-чў╝╙╣ж▌Є╩╞счхё└╝┴ўєы└ц╗█бчХ▒╫ф8·*емtЖ╪█╘рXЙї|Le╜fў{я¤яфiї╝┴йu╬ЪUЇу╫r║╬N№├#╗ў╬√╨Ъ╬мЖ1Ш╛╕╖█O■╥─&AоЄЁьЇ▒фшс┘О╙5╦еb│чЎ√	Ў╜зЇўс▌G[ы╨Ц║Хл┼Ў╛цьg╥&┤∙.зї╣┴yхз tЩс╢╞ь║╕╒мсє╛'є╝V▐∙╖╫╟▀╬цв  вОаЎk█Є╬╣єю╬├ї▒т╛c╜∙Ээ┼ьъ■ш╒¤!╘9░о$у┤┐ї┌╣уйэ╟иє╠╞╡ж√┌п"╦▓▓w═Э╚,Ю▄щ╜┐~Ў╠┼т╞╔yЕ╠╔г╖∙Й│▀╕В╒Є╒░й¤╓в¤╝▄пЯ╘ы╪╛─2ш╪Б┬┬╒у╟вх▄у┌а╠▀╥╟╥╔	ПйCТ╒Щ;7╪ЩЎЪPXХ╡сVЯб┤╬ш&╝┌°фш╒▐|ўП▓╠DdбAипэ∙├у╗эр╒№┬├╛ЇEYд7F#вц╪╖м№B3┼█ЄЎ╜Ф█БQ┴6Ё╣ э╒Ь[тQЧсь╫├№├╤▄┌∙ п╒ч4эу╫ц▐д▄п▄Ё╢▐╦█─oцОэт√|Єs(Э·z7лгм╪╞ ё╛VPuРфшЇ7╔╓9Ь╗(_ё║е0╔kИnлAщч╬+R∙Д(┴╦╚║∙ю╞╛┼ЄыфЙИ▄╦╧ЎЧ┘╩чїў╪фэ╛╪┐┬фб┌Уа─Эё#у╛╚ЩЦЩ┼╬°╬▐│ь╤┌■чzВ╝ь▌щеs6┐ё▒хИц╣э╢сє╪╫!─к▒М▓╔Те╓чЎї╕№▄ефйP╬┼╣·┴Ь├└¤╥л╤е╖Ьщgяш╟╘▀пm.┤╢е▓╨▌ш║╔╞└Хxu░┌рр▌┴ьГ▀'
+╒р│=╩x╩В&я(ЛП┤Ї╕є╙зч╗╥
+┘]н}смТл╘д▄¤П┴я╗эи╡┴з╞∙╙Ф╙╢П ычм╚░┤*ц■┼│∙╛╣╝╪р╥°╓g╥╞Я▀Л╞р╢с╤ЛИ!Ш╗▀°л│щ*╞чЧ┐и├Є╧!ж╥╞Ляяш╠Є╥╜ГЁЄы∙ТШ╝этц╛┬▌╠ёк╪Їт▀KХ┼╒цЫЄц╞╬▌f▒╤шг∙ +▄а┬т╛8Боп▐CЁх╔┴░н ╩Ыу╤╙∙╙╛Ўе╩╪\а╩ь(тт╓█╞Ю╪Ї╔∙╝же╥3╕о▄┼¤оў╓╙Ў▌┐╞И°№Є┐█ц№ ∙▄о┼ЩF╧йК╢║у╛э╙j$fх&Гг╗ёЮ╕█ч▌╧я╬
+
+ё╟Jlнх╘Ту╢нчЁщD╜б╗Х░ц 1ь/╬·м╨┌╬ЬHзЎ╤╙▓п°6┴нЇ╡╗╧фЕ¤юh°д■Мх╠ьт╞у▌╗хЯ5┘╘╩'сх╗╙ЁA╩6╧ц─Шф╟є╓]"юэ└╓▒Б qлKще┌>mЫй├
+ь╡ип╟├оПе╔ 3БЩэ▌╕╪єп┴╩▐У■█▓╧э╢црї─▌│Чйж¤╟┴юн▀┘╛·┘юФФг■Ъs8╗├к╙&┬щЎю╟х'"°Ўг╒ЇЖъЙЁGЫ╙Исў╙╚╪┤·╣аЫ╬
+├║S░5xн═°╙ъБ╠╥╓т√█ї╤єtв╣Ы╙╝╘  Э┤ ї√╢▀╦╣"Ыm╔ф|]Ў0┼Ящ│ю╝дF 
+┌¤╓┴е▀
+бЯ┤ўз ▓ч╩╥к°я┤─тqHФпо┬В▄▓№Ж╔╒╟6╣	╧╩є╔Р╤щю╤▄}ф┼№
+=влз┬┌Щ.1┘╦лЪ▀тф$Ё╕k;┬∙в╔г`▓б2╤й╨┐Т,▄╓ё╔$}Qм`╢·Ь╦╔╩ё╠─0├╥╡Cї╚H╢лчЁwр╩Гs╞у┬й╧┘Щs░ыpсы╞А[└г╩╜∙6ЮК┌ ╒Э═╟6┘╥═Ў│у45S╞щOHЖдй╓Л+╨╟├╣■┤╤кхл▓7╪─V▌u┬п▒ЄўЄ╙╩▓°хЯо╒u└рЫ╢╤z╞▐NП╦y.╥┌┘ pZб╬Xє+жмЮqh|Итыф╣Х∙▓╬*Т╕╖k┌■Ю╚╜Еч┐╣ы■╗ж°'▐┼┘ш,k╡р ен╤з▄рЁ▀+┬Ц┌╗k╪│┴╓╫─ъ╓█Ш∙Ц═к▀╣ц╓╧Є	Їч╘∙ъ╪ЙФ▀ ╒║┌пюДБёу┼йЫ├й┴░¤эц╒РPd╦Х∙║У╘Єў╝╡╖╙А│p2ўЄбяы╫╤╡п╚x╧;@Й╠Ёёю░єve¤чm№▀·╜┘∙ф▓═ЇиЧ╙н══─а╖╕▀л┤╗<╡┴▀УЄ∙├┌╣/т█ўт╙лПЮ▀Ёо▒с╤очу├пю·╬ъ╘ио╜ы╣?▐Аъ№╬┤°а─Ч▄╙╗┴▀ц╠ы├ь┼╘│шРє∙▐э1p╕╥█╩юущо╬UЬA╞╨╢├ь╟╬╢┘╟щЄЎзoЛ┘В╛Жж■┴▌╤╞╗ф┌И╥█╞>ЄЁяЎ╫┌Є┬╥гw▌ля╞╘щз╩█№2рс│╟│┼─╬┼▀r▌9╘Д<┤╢б═є┌л
+иъ╙Ш┴Ї╔сэ╝╓║Ё╤у╢*╒ъй╓e╢┬й╓╙▌ъ╙┘│╘┼╪╗├ч,сг╓яЛsы╒D№о╥╔╝иП╥л┤┘%╬Я╗░╧├Є╫■╡єЇз~╧°╒р╙єЯ▀▐6╖¤з%oЁ╛lЕгє■▐╟щ)ьь▓┐╫
+х-Ў╔├▒эк█▀╚ж╫У╫Ї┌╬┐лъ╬╨$с┴%╓▄мnм┌цЄ╙╒╡─¤Гп╬╓┌з┼w╘ё┌┤-/╔Ы\цуЇоЧ┌Zєлс}√╡Зс╒юBy-ЇV┴┤╫ё$│╦&Ч?E╗K╫+▐и╘%фЛ╤╒Ф╖Э	╖eEЎ`├отчS)ў1▄8░▒Ъo╒╫╤№л╘╦▄╩ё╜ў┬┌╓ьЮУёШЇы╙Ч╛Щ┐чр┐▓╨╢)ў╨яЁцє√-ВчТЎЇы3оfГфь└ь∙╒╪E╜▌юШло▐ дв▌ьш┴ш╚Пщxў╒+¤╫ЮЎНнЄЎ┼оя▒Є╕┐║▀╬┐°Ьфч└(┌yшн╧Дэ═{	E╘Лr'Q█╦8WЭЯЪ]┌╪Г╗ы═нL┌Р.гь╤ёчэя┘р╠лчE└/л?╥╗3Т#ох╧╕┘Ї,ёш°	мЮЄ╘┼3и┤ИХ╧бс╫?#aЁ├ь╟жд фмл4╔у╠Ям▄П┘┼1╖я╜▀╢╪з┴∙┬Ж0<щ░"│"╬ш╣Бы─ь9И$~э
+┴Cu6*·.┬zЛщ▄Ъл¤┌гЙ┬║яеп=╟ф─3╥═▒Щ╙╝╜╘╘▐Ё═Щ┬╔ўл╤▌Ё╙Т┘╞х{▓┼╖Ўл▒╔}╪ўrЩ╬ж▓▀o▒┴╬╖╟ь-хф╚▀└╧ЄMї╝║├P3ц┬Лбg+¤┐╔Ъ▌¤▀А═╜Єтят6╩<╕╬▌Ж╒╩╧┌ЎН│╬Ї╟оrвўг╥ чЯлЪг╠}D3уЭЇфз▄∙ЎЯБЪЫх─╞╓├л>╟╦ ц#Ї┬,@╣ Є╒и╘ жСW█▌нТBб╠о╟F╡Иz╧фП┐Б┘Х▄╬ы╓└:╧еЎ$█Ё╗К[ця░0Є!▒хд7┐║
+╛┐м┘жё╧ыаипЁMН'Х>ахфЗ▒Т▓ж
+ьдЗUsмт2╨╛═б░┤╤=■ж░ю▀╘╛▄
+сё╡╓РM▓фф>█▄├╕╞ўйЩ6УПхg╥ф╜╝╖+╪█╪├ЎщХП 9К╪╥р█┬k╩╓ы╠▐╦г▌╢шь√ц∙╖╘╔[Че╪ь┤р√юцл~╟╝▐■7▐╩Ну┬з┘╫Щ¤└·и╓▀Ў┘щц	┴┴ф█н┌x,W╩ФА╠Ўр
+┘!╙-чъьх№о╤я┘№╟╤┴ыЯzя╠╪т╦CьэъшР┐й╓рд¤╫Г%ё╘р╕т¤╘Ё ┘╨▀┼ы╒╝A▒щфх▒в╠P└▄╡гйжёэє╟╦с╝╓══Ъ░═╙Ц▀┘К│М▐т~N╩╦н╟╙ ╚╪╗┐Ш┌Ж┴¤щЎцЦ■ю╜█·ъ╘р¤┌▀щу╞ьк*║·ъ╞┼╤лє▐с╙зA╥сшСшЄ╤Е╒кЎ+w║ну╡▐р∙╓Э▌╬╜║╠э▄┼∙·┘╡Си(╫╟┬ї╒╨хєэ┼╒F┬╖╣╝g┘ўт╜ж╓╘№ ёЁЎ╜ыэ'Х/Д╩┬°у¤ўкл└┐╥╦¤¤ц╣█ы1█ум▄б╕╩фы╙╒с╒╞╓с╦╟■┌у╧∙▒╬╕ю╛ЧДс∙╢Г╫╫
+зчё▓ф╬╘ў╔w▀╤шр┌├Ьф┘С╞ █Й┘ж┌ц+╔╜с╖■╖>▒лє▒╖┐ц│ъє╖┌с·н▌╚╩╔Є┤ь╡0┼╟6╗TZGи╚╜)СЩ╙┌╫/ыжЧў╬╫│▒ tзЙ╔~ї╔Ё}W▌Aъ╔╓уЄ╨HЇя▐<╦єНo+Ль╩Ь■ьТ╡╠Bp]п∙@с╬Гс7Я┘'ьл╒nє╛=6хGЩ═8╓"√Є╔дЮ╓Ю╛э╢ўш╖╢й¤ке"■║╒Ўн
+╧дг╣╙╩Їш║эьъЁ┘ЦчBъню─м╘╝с╤яжлoя┤:╚╛дфRнм╨ЭЁъе╢ъ▄╫їы ыя╙пс-я├	Ъ╒Жф[╜ЦК2й╛╡░ ║#└┐№3hю╖╚ру▀¤╓D╨╠ў!╖и2ФїжТЪз▌uы╞╣╓▀╛{@дЫ6▄╩╓В╒uK┬С└▌ы▒¤o╜КvЮ▒╓ЄЄэт▀╘▐░1 {┘А#ф╦ПМ└╨юDЁу╥Т├╖╨∙╞╪зў7ШвЫвШвЩвЬвХвРвЩв╡в╕в╠в╫втвьвЄвгыв╘в╧в╛вжвавЫвЛвав╡в╜в┬в╒втвцвьвчвцвфв▀въвїв─в╢вмвЩвХвТвЮвЬвЭвЯвЩвЬвХвШвУвЧвБв_в:вYвpвПвЧвевдвШвЫвЩвНвЛвИвЙв~вЗвЧвав▒в└в╧в╙в╘в╫в┌вфвхвЇв┘в╜вовзвбвбвЭвЮвШвШвЧвХвЭвкв╕в╢в┤в╨в╒в╪в▌врвтвсвёв╠в╣внвжвавЧвЩвПвЛвЗв|вyвwвlвnвlвdвcвoвквивввЮвЧвлв├в╦в▄в█вцвэвэвхвшвєвг▌в┐в┐внвжвввЪв┤в╩в┘в█втвсвшвювёвывывювшвчвюв в╫в╞в╛в┤в░вмвйвзвквгвЪв▓в╞в╧в╧в▄вчвЇвывывшв▐в╙в╚в╟в╠вївЬвКвЖвПвХвТвПвЗввpвBв[в|вНвЭвЬвУвУвЫвжвЭвЦвРвЦвЩвТвЦвКвгвнв╕в┐в╘в▄вэвявъвЇвшв╤в╔в╢вивгвввЬвЪвЬвЦвЛвЗвГв}ввyвuвrвmвpвoвoвЮвФвМвШв┤в└в╚в╨в╪вэв гёв╧в┬в╖в╢в└в╛в░внвквЯвШвввйвпв╚в╙в╥в╒в╫в╫в▌вхвхвёв	гг╒в╚в╛впв╡в╕в╖в╣в▓вввЮв╣в═втв▄в╙в╓въвчврвфврвсвтвёвтв┐в░взвввйвйвевдвЩвЧвКв{вЕвЖвEвKвqвЖвХвЯвлвпвмвзвЬвЭвШвУвОв╖влв└в┼в╨в┘в┘в▀вьвувшвщвювцвєв┼вввЧвФвЦвЪвивевзвбвЧвХвЫвИвzвrвzвqвkвsввв╢в╠в╧в╫вхвЁвЎв·в·вЁвьвявг╘в╛в╢в┤в╕в▓в║вовлвпвпвзвбвЩвДв_вqвСвввлв▓впв┤в░внвивдвбвЭвЮвбвНвав╖в╓в╒в╙в╫в▌в▀вїв▌в╖вавдв▓в╡вбвЪвЫвдвбвЧвХвСвШвФвОвПвСвйвpвQвOвuвТвнв╣в╢в╜вЫвЩвФвЛвГвyвЩв╖в═в╒в╒в╥в╫в█в▌вхв┌във·в█в└в▒внв▒вЯвввдвевавнвйвЩвЧвЩвТвМвЗв}вsвmвkвgвfвaв║в╡вСв{вВв|вУвзв┐в╦в╠в─в╗в└в┴впв░вмвивбвевевзвовлвмвйв▓вМвfв_в{ввв┼в╜в╗в║в║в╕в▒вжвжвбвШвЪвФвФвПвДв^вOвTвBвRвbвiввСвЪвйвнв╣в╜в╗в╢вжвШвЦв╣в╛в┴в╒вфвывЄвЎвъвэв√вщв╩в░вов▒внвпвивквзвжвввЪвСвТвКвАв^вZв~вХвмвовквнв│внвмвквпв╡в░в░вгвгвввШвЭвЦвОвЖв|вoвhв]вNвFвDвCв╥в▐в∙вўвЇв°вгув┬в╜в║в╕в╝в╖в╡в╡в╣в╣в┬в┴в┼в╣взв╟в╓в╫вчвьвЄвЎв■вЎвггтв╪в╬в╥в┘в█вев╜в═в═врв═в╤в▐вщвЁв·в¤в■в√в√в¤вг▐в╔в┴влв░вов░вевЯв╔в╟в╤вчв╪в╫врвчвхвЇв№вггЇв╫в╠в╕в┤вЖвАв|вГв|в}вuвtв|вxвzвАвlвXв[в]вaвaвgвoвvвБвДвОв╕в└в╗в┐в╕в╢вевЬвХвПвЦвКвЗвСвГв{вpвoвnвsв▌втвшврвывюв■вгщв╙в═в╦в┼в╢в╝в╦в┼в╛в─в└в║в│вововЪвwвlвБвкв╖в┬в╨в▀в┌в╔в╞в└в┴в╢в▒в▒в▓в│в▓вдвЯвЬвЗв~вqвjвeвvвНвЯвбвнв░в╛в╡в╢в║в║в╢вквЭвТвпв┼в┌вчвявЇвэвёв¤вгг▌в╟в╚в┬в║в║в╕вов╗в║в╖вевЫвевквавПвlвyв▓в╠в╩в┬в╖в╕в┐в╞в╜в│в╢впв▓в▒вжвбвевЮвИвКвЕввАвДвАв{вtвhв`вbвgвЫвИвsвsвeвoвЕвФв╢в╙в╓в╥в╧в╓в╙в╦в╚в╜в╝впвЯв╟в╧вфвчвєвєвЎвгг▄в╦в├в─в┴в├в└в├в┬в║в╖в╣в╝в╕впвзвХвЙв╡в╩в╫вхв╙в╝в╝в╛в╝в║в╕в│в▓в┤в╦вшв╜в╘в╩в█вфвюв√вїв∙в¤в в	г█в╟в┐в┬в┼в└в╖в╕в╕в╢в▒в┤в╢в╡в▓вжвгвЦвДвЖвtвЛвзв╗в╝в╖в┤внв▒в╗в▓вгвавйвовмвововзвавХвЦвМвЙвЗвАв~вsвrвkвiвeв╒в▌в┌в╛в°вг&г-ггювгўвчв╒в┘в╪в┘вфв▌в╙в╨в╠в╔в╬в╦в▓в┐вЯвЯвлв╚в╛в╟в╠вўвёв▌вгг№вёвъвфвув╪в▀в▐в┤в░в╝вОвДвзв¤в4г=гг╥вювггїв╟в╛в╚в═в╕вФвФв╛в╦в─в╠в┴впвевбвЪвЩвдвзв▓в┴в▐вёвЄвювъвхв╤в╛в°вгг(гг%г+г,г*г+гг гявхвсвтв╫в╙в▐в╥в╒в▄в╓в╖вов▓в└в║в╕в│вевгв▒в╕в┐в╞в┴в╫взв╛вг.г!гЎв	г0гг0гггёвЁвчв▐вфв▀в╜в╚в╓в╪в╬в╦вавзвнвНввв	г#ггг'г0ггг┘в┘в┐в╬в╗в╨в╔в║в╡вївг№в┘вщв┐в╕в╓вг гггювъв┼в╜в╠в╒в╫в┘в═в╠в╔в╦в╧в╛взвТвРвШв░в▀в'ггЄвув╘врв╫в╙в╧в╠вввТв▓вгвОвфвг"г$г%г"гг╥в╥врвг	гЎвывчв┼в╧вчв╙вквевУвнв▓в▒впвЦв╗в├в│вЦвЧвпв╞в┤в├в╧в╪вщв вггївггЎв°вявявъв│в║в▐в╒в┌в╞в╗в╝в╔вявг√втвшвщвЁв┌вщвг
+г¤въвэвыврв┌в╗в╩в╗вФв▒вСв└вг!г ггЄвг%гг°вёв
+г№вэвьвЁв╥в▒вйвмвдвйвЫвПвФв╚вггфвфв(ггэвсв┌в▄в┌в╙в═вмв╕вЪвТвГвФвдвов╖в╔в┴в╒вшвэвювггЁврв▐в╒в╘в╥в╒в╥в╧в╔в┬в║в╢в┤в▓в▒вБв|вПв╢в╒в▌в┌в╚вдв╫в0гEггггЇвцв┌в╪вхв в¤вцвэвшвщвтв█в▌в▒в═в╧в╠вав╢в┌в√всв)г3г гг	гшв╦вывєвьвфв╟вг3г?гBг@г8г0гяв┐в╠в╧в╧в┌вг)ггг▄в├в└в═вхвЇв▐в▄в└в┤в┌в╧в┐вПвЕвкв╦вг3ггтв╫в╧в├в║в╝в▒в└в╒в═в│в╚в╠в╧в╦вЬвВв┐в$гг╔в╘въвг$ггг├в╕в▒в░в─вЩвпв▓в═вг(г3г%гЁв╪вгєвг╤вфвгЄв█в┴вХв▌вг5гEггцв▐във┘вцв▀вхвцв▐в▐вхв█в╘в╖в╝вив░в╘вг+г&ггг#гггЁвхв▀в╧в╥в╤в└в╣в╣в╕в║в╡в╗в┌вг5г*гг■вг¤вЎв╛ввв╙вЁвявщвшв╤вЩвав╖вжв┴в╔въвўвюв╙в└в╙вчврвувывъвюв∙вьвщв╪врв─вЫввв▓в╘выв▄в┐в╣внв▓в┬в╞в┼в┴в╔в╚в└в═вфвювчврв╧в╔вЯвЫвТвЫвгвгвлв┬в╙в╫врв╓в█вцв▀вёв░в╟в!г0г=г*гггьв├вхвЎвювЎв№вЇвшвхвув╥вЩв╚в	г#г'г.г*ггг<гг г∙в═в─в└в╠вювЁвявфв▄в╬в╛в╖в╦влвЮв╝вцв7ггг·вэвЄвчвьвыв╔вжв╦в▀вувюв╗влвЯвУвyвЩв╗в┬в╛в╦втв■вўвювювЁвувшвъврвйвЭвЭвавпв┘вЭвЗвrвdвdвевсвгг▀вувг╪вщвфвтв╜в▓вЫвЪвев╗в▓в~вЦв▓в┤в├в└в║в║в╟вхв·в№вёв▄в┬вКвгвщвCгггг
+гг гЎвЄв·в╒в┐в╡в┬вщв┘в╕вЯвiвав┼вчвг1ггг√вўвЇв╥вьвьв█вчвсв┘в╡в║в▓в┼в╪втвъвывьвїв¤в в вгг г°вєвшврв╨в┼в╠в╜в║внвЖвЛвЯвХв╩вг6гг	гг в°вївївыв╦вэвъв╧вов│в╪в┌в╒в╚вовБвУв▐в!г$г9ггггг°в┤в║в╥втвжвЫвКвЗв|в}вЗвКв▒в╦в╚в╨вг!г!ггявхвгггмвквйвгвЭв^вTвФв╓вєв▄втв╩вяв═в░в┬вшвг,г$гг&гтв▌вўв8г(ггЯв~вzвwвДвПвЖвлв┘в▐в▐в█в┌в╦вШвОвАвzвжв┌в5г&гггггг╢в╡в╚вывмв╕в╒в╧в╒вТвsвТвмвпв╟вфвўв¤вггг°всвфвХвЭвдв░в╝във╣в╢в╬в╜в╗вХвов╚в▄в"г$гг вївшвъвьвг гївєв▐в╢вжвкв╚вжвСвТвЖвГвЫвЛвoв{в┤в╥в╓в╫в╤в╨в╬вЄв/г!г	гггг
+гг∙в№в¤вэв╥вывэв╨в╝в┘вЁвгггг¤в вггггг■в в№в∙в·вЎвфв╡в▌в║влв╔в╓в┬в░вУвvвав│в╝в═втв в√вэвывтврв▀в╠в╣взвЮвгвлвзвХвИвДвИвАвuвmвhвaв`в[вZвrвИвзв╧врвжвйв╜в
+г&г3г)г·въврвщвэв█в├в╟в╨вёвгрв▌вшвкв╕в╥в│в╔в╥в┤вввЪвФвШвНвЛвЛвДв~в|вfвaв`вkвИвВвявывщвшвъвхвсв█в╫всв в╒в║в╔в▌в╛в┘вшв█в│вРв┤в┘вфвсвывЎв№вггггггг¤в╥в╩в╛в╗в╢в▓в░в╥в▐вєвгг7г9г!гг╪в▐вгг г√в¤в╣в╢в╩в▌във█в▓вНв}вhвЬвщв.гKг1ггггтв█вшвгг∙в╫в┤вЫвТв╡вувгггывуврв▌в┌в┘в√в°вўвув╞вявывфв█в╠в▌всв├в░вгвФвЧвХвЪвТвДвzвСвЛвНвУвнв╢вовквLг/гг	гггг	г
+гггггцвдв╬вг▌в╬в╝вйв╥всв∙вг
+гггг
+гг▐в┼в├в╔вїв╔влвбвЪвЪвОвКвЖвКвЫвЧвjвyвдв╔в▌в°вг└в▒вмв╖в╩в█в╒в█в█в█в╔в╦взвШвРввмв├в╟в╬всвЄв▐в┌в╫в▌всвмвЬвУвЛвПвЪвЧвФвПвРвЩвХвНвЛвХвХвНв~вuв~влв▄в√в╙вов╓в┌в╫в▀в┼вовввШвавРвwвИвГвв}в|вСвжвЭвЯвШвОвХвqв~вТвpвевЇв√в№вєвЎвгвЩв╣врв╤вцвйвЯв╛в9гHг(гг%г'ггг╨в╖в╬във√вчв│в╞вув▌в▌вЇвг
+гЇвфвхвьвчвьв вггггггг├в║втвївнвЦвав╥в▐вЁвгг&ггггг вггївёвьв▐вщв╨в╓в╩в╣в╡в│вквйвовзвдвгвТвГвgвХв╢в┼в▐вг∙вЄвывщвшвцв▀в┘в╔в║вжвЪвУвsвtвnвuвzвrвjв{вБвНввjвpвmвггггггггыв▀в∙в╠вчвявявщв╬в┬в╖вЭвевквбвzвЭв╛в█вшв┼в╬в╙вЎвюв╢в╘в╨в╨в▌в▒вТвдвлвФв╣врвъвЁвёвггсв╢в╘вг·вЇв┘в╜в╤в╣в╔в╪вЁвгг	гг·в№в■вг¤в▌вїв╗вфвЮвУвавевйв╕вЁвтв╗в░вЪвжв╘вцвэв ггггявхвгг√в└в┌вщв▀в╦в╠втв╨в║в╢в▒вгвквЫвЬвЦвuвqвuвpвiвЖвЧвПвОвФвОвqв┐в║в╗в╛влвТвнв╝в╟в╪в╟в╒в╟в╜в┼вЪвмвг8гггггг#гг!гг├в╘в·вфв┐в╣в╜в╣вмвдвзвбв▒в╖вЮвzв{вив╦вфв
+г╟в╚вщв√в■вювывЁвъв·в╧в┤вЧвлв░в▒впвквпвЬвlв┐в·вг
+г
+г√вкв╔в√в╘в╢вквбв╢впвгвивцвгггггЇвЇвгг┘в╪в┐в║в╬врв└в╕вквмв╛в│вжвевивйвквивививГвОвМвв}вСвШвзв╒в╒в│в╔в╥в╥врвг.гшвывг▄вЄвг гєв█в╨в╦в╗вевУвНвКвlвmв]вTвБв▓в╒в	г"г вэвївтв┘във╥вюв┌вжвХв╘втв№вг<г6гGгJг$г гывшвэв▐в╒в╫в╤в╪вцв°в▄в╣вАвАвmвpвqвoвАвМв]вUвpвЩвсвг гсвг	грвяв▄в╝вФв╛вцв ггг1г.г,г"г%г%ггївгьв·в¤в°в╘вцвьвтв╔взвШвРв╓в
+ггув║в╒вшвг"гюв╬в╞в╚в╘вг╠вггг∙в╔в┐в┼в╓в╦в┼в╥в▌в╪в╪в╦в╛в╗в╝в║вмвпвлвивНвйв║в─в╒всвївЇвўв═в╢вжвЯвив┴в╛в╥врвмвРвСвЫв┤в├вшвггггг∙в╦в┘в■выв╡вжвКвwвУвСв╢вєвггг"г
+гьв▄вцвгг▌в░в└вЄвшвыв╦вивЖвzвАвХвДвtвйврв г·в в г	гшв	г╬в╕в░в╥в√в╩вЩвИвШвЧвг,ггєв№вггг№вхв гЎвювфв╟в╢в█в─вЮв╜вўв в°вггггЎвювчв▐в▐вЦв{вБвЬвцвггггсвсвгг глвжв╬вгцв╣в╝в╔вНвОвнв┼в┐в│вtвЪв▌вггг в╫вЯв╨вЇв°вўв┬в║в╝в─в╛вЭвНвевпвВвжвУвОв▌вггг╞вгвзв╞вювг╬влв╕в├в╚вЛв|вtвqвmвeвrвРвЦвЦвРвжвпв▐в▄вгг№вг┌в╔в╣в╣взвгвЦвЯв╥вчв∙в в¤вьв╨в№вйвевевлв╗врв╛вёвёв╬в?гHг+гув▌вфв■в"г№вг√вявфв█в╧в╬в▐в▄в▐в═в┼в╗в│в{вав╬вгёвщв!г∙вфв╨в╒вфв┘в╜в╟в╠в╛вкв│в╜вгвЭв▓вчв#ггрв▄в▌вцвюв∙в╓в╔в╔в╠в├в─в├в╣вУввв╚врвьвщвсвувявЇвЁвЁвьвтв▄в╨в╥в┼в╠в▌в╙в╩вЬв┼вфвг■вггггэвгг°вгьвтвчв▌в▄в╙в╙в├в┼внвЪвЬвтв°в╤в╫в╪в╬вєв&г#г&г*г(г#г(г гггМввв▒в╣в─в╦в╔в╨в╦в─в╖влв░вввХвЙвЩв╝в╘в▐в▌вчвювЎвўв■вгггг√вЁвўв·в■всв╠в╢влв│вйвпвдвИвYвUвУв├в═в╠в╠в╓в╦в╪в┘в╓в╔вов╢в┼в╕вйввв╠вувчвэвэвцв┌врвфвчвювщв╥в║в╜в═в█в╚в╕в░в╕в╗в┤вмвЮвРв|вжв╙вёв№вЁвёвувсв╪в═в╤в╚в┼в╜в─в┐в▒вБв{в░вЇвгг	г№вЄвщвъв▌в╓в┌в╪в╪в╓в╘в╧в╦в╦вгг
+гєв▌в╒в╚в╩в─в╠в┬в╛в╖вов▒вмвивМвpвtвКвЬвйв░в┬в╧в▌врв╫в╨в╟в╦в╔в─в┐в╝в╡в╕в░взвгвЪвЧв╥вьв°в■в√в∙вггЄвэвъвшв╓в╦в╘в╚в╗в▒в░внвЭвКвyвqввТвив┬в╞в╞в╩в╧в╨в╠в═в┴влв┤в║в▓вевЪвТвТвОв└в╘вшвЄвєвЄвЄвёвг№в√выврв╓в╙в┼в┤вввввбвХвЛвЧв└в╒в╤в╥в╠в╧в╫в▌врв▀вхвшвщвчвсв▄вЎв√вЄвЎв√вўвЎвявёвъвтв▀вфв═вйв┐в╙вжвОвЙвевЧвcвQвyвдв┼в▀вфв╒в╨в╫вёвїв█в╨в╢впвЯв╣вг!г$гAггьвгэв в(гг вёвъвывюв▀в─в╕в╗в┤вйв▒внвиввв░вЙвPвpвЦвпв╗в─в╔в┐в═в╬в╧в╠в┼в┤вквивЩвИвХв╥вьвЇвївЎвўвєвўв√в г▀в╚в┴в┴в┤в╗в╡вЬв┤в▒вовжвжвЧвСвСвГввжв╠в╫в▀вцвшвъв▐в▌в╤в╠в╟в╝в│в╙в г/ггггг№вєв╟в▐в╤вявўвшвсв▀в▄вЧвАвЗв╦вЇв4г4ггхвшвявяв¤в·в в·в╤в╕в╖в╖в┐в┤в┤в╝в▒вевqв^вСвавнв▒в│в│взвмв╛в╒в╘в╔в╬в╚влв╠в▒вУвzвpв┴в╥в╦в╩в╨в┌в┌в█в▐в┘вввЩвЦвФвмв╝вЖвПвевдвОвzвcвдв∙вг выврв─в╠вРвЖвwв~вЮв╠в╙в╦в╦в─в║в┤вўвгїв╖в┴вывг╦в╦вув╦вив┐в╒в┘в▄в█в╦вЬвлв╛в╔в╘вхв▄вхв·вЎвюв║вкв┬в┌в╗в░вовжвйвЬвЗвYвyвгв╛в▌вьвывЁвювувфвфвхвтвйв┤в╨в┼в╗в╗вввЧвШвОвГвtвPвrвШвдвкв┬в▐втв█в┌в╬внвАвгв╔вїв√вг!ггув╣внв┤в╣в╥вўвывщв█в┌в▀в╓в╙в╤в╠в╔в╛в░вов▒вФвШвЁв(г)г+гг√вгг¤вЄв╬в╛в╢в╝в╥впвЦв╗вквsвнв╧в°вг█вгг	ггЁв╘вчвяв╙вЛвrв\вlвгггг¤вшвЁв╤в▄вшвювявсв╚впвгвйвлвзвЯвКвgвbвРвлв┴в╙всвўв√вїв°вєвєвЁвывюв▌вФвЗвДв╓в3гггЄв¤вгг¤в╞в╚в╠в╞в╘въвсвЭввв╕вРвАвЙвув(г/г*гг
+г гг°вгўв╤в╝в┴вхвфвцвчвшвтв╡в╝в╖вевЯвЩв|вdвУв│в╧в╓вЄвЄвЁвявьвьв╝в┬в╚вгвмв╝в░в╛в╣вмвЭвЦвУвРвЗввРвСввmвGв>вEвLвQвGвFв╘в╥в╪вфвцв▌втв╬в┴вйв╡в╕впвЭвмв║в╢внвЭвХвПв}вmвtвШвавнв┴в╤в┬в╖в┴в┬в╦в├в┤в╛в╗вав{вzвЭв▒в┼в╤вхвсв╪в╧в▐в▀в╧в╛в╛в┤вмвдвдвдвдв░в╝внвлвЪвКв{вfв`вuвввпв║в╞в┴в┐в╖в▓внвзвквЯвЫвФвНвбв▀вггг■в√вЇвщвув╓в╩в├в┼в┼в╞в║в┤в▓в│внвкв┬в╢внвЦв}вnвcвdв^в^вRвHвPвBвEвLвSвJвEвIвHвав╖в╣в╥в╘в╕в╜в└в╠в╜в▒вЯвЩвЮвЯвЭвЩвРвЙвАвvвXвQвiвУвнв║вмвдвмв╚в╫в╒в├в┬вевЩвОвПвzвZвЧв╢в╠в╨в╧в╒втв▀в╪в╤в╩в╩в├в├в╔в┬в┐в╜в┬в╖в╡вмвдвавАвaвИвгв║в┐в╩в─в╔в╟в╖в┬в┐в░в▒в╡в░влвжвФв]вЕвЮв└в╥в╪в┌в▀вхв╪в╔в╙в╘в╬в╔в┬в╝в║в╗в╝в╜в╝в╕внвбвzвgвYвРвлв╜в┴в╞в╧в╬в╙в▐в╪в╔в╛в┤влвнвbвoвLв@вXвИв▓в╗в╡вгвЧвЙвЗвЭвЧвСвРвЖвВвmв}взв╝в┬в└в─в╗в╠в┐в├в╝в╟в╞в╣вЬв╗в╘в╔в┼в▓вев▓в┤влвПв}в▓в╞в╘в▐в▀в╓в╓в╬в╧в▄вйвпвХвПвНвПвХвРвЛвИвsвRвМвдвевквнв╢в┴в┐в║в╣в╜в╖вЮвТвЛвГвКвxвpвkвqвkв[вRвcвЛвЬвпвововов╔в╤в╡вйвНв~вzвЕвУв}в_в[вsвcв]вSвQвeвcвdвNв1в=вOвMвLвNвPвQвcв<в'ввLвgвИвУвХвЙвАвБвqвoвsв|вГвЕв╜влвЙв{вЕвЯв╢в└в╢впв╝в┴в║вхв╧в╛в╗в╣в╕вавМвwвsвoв}ввв╕в╜в─в╥в╓в╔в╔в▄в═в╟в┌вфв╦в╙в▀в╟вмвКв{вВвvвkв_вTвxвнв└в╗в┐в╜в╗в╠в╗в╕в┤в╢в╝в├в╤в╚в╡вСвГвtвaвГвгвзв┼в╚в╦в╜в┤внв╖в╗в╡в╖в│впвТвЩвПвЗвЗвЕвuвmвmвbвiвjвhвiвcвQвSвdвgвcвjвoвdв]вХвнвпвпв▒в└в▌в▀в╚вєвявфвхв▌вовивевнвУвпвдвГвЧв▒в╛в├втвхвфвцв╓в╚в╩в╟в╖вЪвЭв▒в▒взв╗в╖в}вВвавwвмв╜вдвввов║в┴в╕в╘в┌в╗в╗в╡влвйвивзвевХвзв╡влвЪвЭвЦвnв&вв3в]вjвeв`в\вmвpвqвdвЧвЦвЦвcвGвOвCв.вHвКвдв┤в╣в╢вов┴в█в▀в╨в▓вйвзвЪвЦвЧвРвФвЛвбвЮвввбвЭвХвЯвЪв{вYвCв9в@в>в5вGвав├в╔в╨вфвчвфв┌в∙вЇвўвюв╒в┬вев▓вмвнвевдвМвНвмв┬в╞в╣в└в╥в▐в╢вКвyвГвЮвовЙвРвЗвГвuвrвmвmв\вxвавивйв└в╗в─в▐в▀вфв╟в╫в╗в╧в╪в╗вдвдвевавжвгвУвВвевйв╠всв╫вьвщвтвтв╔в┬вовжвУвЫвРвГвМвЕвЖв~вsвqвжв╗в╓в╙в╬в╝в╟в┘в∙в г╤вквйв│в╠в╛впвбвивввУввШвмвжвевжвЦвЫвЧвРвsвkвOв@вSвjв├в╓вцвўвув╪в°в▌в┐впвавФвнв▒в╔в╙в─в╦в═в┼вбввeв\вHвTвDвLвNв[вWвjвuвuвЖвЯвШвЪвЩвНвЛвГвyвов╟в╠в▄врвтвсвЁвЎвъв∙в▀вэвЎв╬впв▓в┐внвЮвШвввПвlвKв;в,в#вв*вRвlвrвlвqвwвЙвДвБвtвoвqвpвАвЕвЖвtвcвМвзв─в╦в╙вхвцвЇвгггув═вив┤в╖влвовнвХвЙвОвбвШвКвввvв/в*в`вTвввBв.в бвггёвг°вювЇвщв╥вув▀в╙вьвївчвхвювцв╧в╕вФвЪвьв√вг
+г·вув╬в┐в┤в─в▓в┴в■вг9г9г5г=г8гTгbгGгOг>г6г&г%г%гггг	ггхвув▀във╫в╟в╓в╜впвКв─вчвўвг√вг°вгьвъврвьвЁвявєвчв▐в┌в╣в|в░в
+гггг вЎвггг■в гггсвшвщвЁв▌в═в┼в┬в╗в▒вУв┴в╒вювЇвявЎвг№вєвївЇвївЁвывфв▐в╫в╨в)ггЎвъвёвЄвгг	г■в¤в¤в√вэв╣в═вг+г:г3г1г5г;г5г&г"г#гг∙в·вгггЄвєвфв╪втв╨вов┌вюв	ггг)г1г'ггггЎвявувЎв¤вєв▀всвЄвув╠в▒в╣вўвг'г3г8г/г)г!ггяв▀в╒в█в┌в╘в▐в▀в╒в┘във┘в┐вквЪвПв╞вхв∙вггг в№вшв╤в╓в╓в╒в╪в╘в╔в╒в╫в╠в╔в└вйвУвГвОв╚вчвъвшвсв┘в╪в╒в├в╗вивввЭвЮвг$г(гггггггЎвфвсв╬в╡в╛вэв	г#гг-г-г$г#г'г&гггг№в в·в■в
+гївэвюв▌в╧в█в╟в╖в┤вЯвквфв·вгггг г ггьвхвхвувсв╓в╒в╓в╖в▓вхв	ггггггггг°вг в■в∙в·в▀вхв-гFгNгNгQгQгUгbгOг)ггг,ггЎвЄвггўвг¤в√вюв└в√в'гOгWг=гPг2г5г/г-г$г&г
+г в■в■вєв в█в╓в╒вЄв°в■вЄвгг
+г	ггггєв╓в*гKг]гcгbгKгoгeг`гFгHг0г3г;гDггггггг$г■вЎвєвЁвув╬в├в╢в▒вЯв╗в╥в▌вёвгггггггг¤в√вЇв╫в╗вЁвггг■вЇвёв¤в
+гг4ггг°вгггггєвыв▀в╘в╥в╩вмвЪв╕вэвгг в гьврвщвшв¤в¤в·в°вщв█в╧в╢вбвув¤вг'г<г?гг$г.гDг5гг°вщв·вгг¤вёвшвювцв г∙вювгг√вщвхв╪в╔в╬всв┌в╞в│в░взвМв╔вьв№вг
+г¤вЁвгггггггчв└в╚вув╤в╣вШвХв╦в■вг1г2г,г0ггг
+гг
+гїв вювывывЎвївювшвув▀в╤в╞в┤в·в"г*г4г.г*гггг	г·вявшвЁвцвчв╞вЭвувєвЄв№вгг!гFг;г)гггг■вг
+г гЎвюв№вчврвхв▌в┬в╖внвбвХв╞вхвг<г@г5г вфвёв№вЇвЁвцв╥в╪вггггггггЎв¤в·вЁвЇвєвЁвщв╠в╠в┬вмвЧв╟вув гггг$ггггг┌вїв9гOг`г@гOгYгbгVг/г;гCг!гггггг ггг	ггггяв∙в¤вмвцв-гCгbгIг4г0г0г2г5г1гггг	гггїв∙вщв┤вшвгг'г.г*г5ггг(г%г#г!ггггггг√вчвтвув▀в╩вггг*г*г;гEг5г!гг#г$ггггг'ггЁвяв*гггггггггёвув┌в┬вивЦвЛвЕвЙвбвъвг1г;г9г<гEг3гггггггг√в█впв╨вївЄв▐вяв√в∙вяв·вгггггг гївщв┌в┌в┼в┐в┤в▒вг3гWг.гHгYгvгDгJг\ггг	гггггг вг■вєв╧вивЫв╠в╙в▀в№вгг г¤вгггггївЎв╪в╒в8г^гWгTгPгKг*г гг5гRгHгJг(гг
+гггг в¤вЇвївгг)ггг!г$ггггггггггєв╧вфвгHгnгWгhгfгLгGг1г0гг(г%гггггрвєвєв╟вцв"гLг1гг
+г г.г гЁвЄв·вЎвгггггэвтв1гNгYгRгNгQггцвсв√вэвгг■вхвєвг$гг#гшв в▄в▀в╬в┘в1гNг4ггггг
+ггггггг	гг∙вєвэв╙в╤във╝в╓вг%г4г!г	гёвєвггггггггщвювггКв-г'г(г#г!г,г!гг%г
+г°вэв█в┌в1гNг`г\гaгoгtг.г*г,г*г(г.г*г г"ггг∙вг"г╩в√вEгdг/гўвъв вгг!гг$г,гг#г*гг&гггг·в▌вгFгHг@гWгaгGг?г-гг$гггг#г!гг)ггггг╪в&гIгaг`гhгaг7гг)гFгKгEгггг$ггэв■вг	гЄв─в-гtгqгTг9гGгLгLгSгBгггг
+гг∙вєвыв·вгъвъв█в=г?г4г%г/ггг√вггг╤в├вг6гJгLг/ггггг
+гггг
+г	ггггггггщв╜впв▓вЫвшв,гSгVгEг,г-г2г)ггг"ггггэвгMгKгbг]г^гaгJг3г(гг(г*г/ггггг
+гг вггЁвтв│вєвUгOгHг7г=г;г2г/г(г+г1г(г#ггггг№в√в√в▌в└вг>г'гг/гUгWг"ггг■вїв■вг■вггг■вг в№вўв<г%гггггггг
+гюв╟в╣вёвг$г7гг√вЎвгг4г#ггг■вг ггЇвявєвтв┌вув┌в├в─в╡влв╚вг3гJг+ггг√вггёвєв г╧в└в║в║в└вдв╝вЎвгёвшвъвг#гг
+г г)гггггг
+г	г╒впв╢вФвОвЁвгг*г
+г
+гггггггггювЇвщв└в╕в■в4г&ггггHгEг`гJг'г*г,гг$г%ггг
+ггг$гг∙вёвmгaгОг_гWг5г9гг№вўвHгMгQгSгfгSгrгВг}гДгkггг&гг&г0г;г5г<г)гBгIгHгAгPгeгbгUгiгvгpгАгcгGг=г<гDгDгEгг9ггггг·в■в╚в┌вгг!г7г8г(гг	г в°в·вг√вг(г	г1гг^гuгlгnг~гДг?ггг∙в╦в├внвМвМвЧвЭвМвОвавЭвЪвЦвкв┬в╟в└взвШвдв г?г"г3гг	гггггггггг$гув╛в╝вцв2г=г5г2гг!г!ггг г"гг ггэв▄в╜в┴в╙вєвг&гг¤в■в*г&г/г!гггEгKгdгqгqгvгoгuгrгtгpгmгlгsгIг4г;г$г$гггггг%гггг	гDгQгTгoгrгuг|г=гFг:гг ггг·вгGгRгUгTгLг8г9гEгCгTгlгtгmгSг?г4г0г/гггг·в■вўв вггЇв╤в╣вевбв╔в╥в█вўв■вг°в	гг
+гг вгггг∙вьвЎв╙в	гггг+г г(г)г/ггёвїв▐в╨в╟в╓вївг	гєвг$г%г гггг,ггггггшв╙вмвмв╚в╚вхвгг-г5гггггг$гг#гггггъв╪в╒в╝вдвбвЧв└вув	гггггггггг в%гLгMгcгYгKг[гkгfгgг^гyгЛгLг3г!гг%г2г0г.гггг!гг г@гMгWг_гVгpгdгoг{гDг6г)гггг(ггг)г%г%г'ггггaгJг)г!гг&г#г&ггgгmггГгeгЖгkгг∙вгFгUгUг,г&г)г,г(гггг ггэв╪в═в─в┬в╜в┤в╠вшвЎвЎвЇв·вгггг"гг'г)г"г)гг°в┘вгSгdгiгpггMг(ггг г"гг гггггггщвўвцв█в╫в┌в╗врвЇвгг&г(г!гггггггггггэв╟в╣в╬вьвывгг№вЇв¤вггггг√вгг■в№в вЁв╚в┴в╝вRгTг5г9г'г*г'гєвяв╪в▄вхвтв╔вьвггг0г,г,г г)г)г%г"ггггг"ггївывтв▄в█в╟вьв гггггг ггг#г"гггг
+ггHгQгYгuгEг$гггггг'г)г"г/г"г"г3г*г)г'ггув└в╡в╝внвевЯвЭв╚в╙вэв гг г#г.г#гг%г!г(г#г гггг┐в┤в┌вггЁвъвьвфв·в вЇв
+г
+гг"гг!г'гг'ггггг8г9г2гCг<г*гEг{гЖг|гЙгКгЙгНгЧгЬгCг8г:г5г4г>г5гAгLг@г@гCг?г2г$гг¤вIгnгИгРгЦгtг`гMг8г-г0г/г,г<г:г;г+г5г#гCгTг]г~гБгИгДгВгАгbг9г8г/г.г8г4г5г@г8г<г8г9г=г8г?г(гг═в╚в═в┬в╣в╬вЁвг	гггггггггггггЁвЎв╨в╙вгг)г)гAгFг3г7г<г4г.г3г1г г)г&ггг)гг*гггг;г8г?гг▀в┌в═в─втвывывшв∙вг4ггггггг$г'г'г4г?гLгЄв╪в┌в╪в╨в█в▐вхв╬вЇвгг$г#г(г"гггггг#гг┘в╟в┴в╗в┐в└в╘в╠в╜в╪вўвг∙вгггггг
+гггг)г3ггрв╧в╧в═в╞в╕в▌вёвггг#ггггггг■в¤в√в гг╪в╩в╙в╓в╦в╜в╪в вггггг,г:г*г-г6г0г&г#гггггггг!г;г9г4г5гг▄вхв▌в╪в╛въвгггг+г1г4г4г1г9г=г8г6гIг3г9г7гг вЇвювўвг'г6г1г<г г:г&г г"г,г!г$гг.гєв╦в─в╤в├в┴в╠в╬вчвгўвгггг$гг.г&г*г-г&г(г$г/ггэв╒в╟в╣в╕вщв√вггггг ггггьв║вав░в╝в┬в│в║в╞в╨в╨в╤в┼в╪в─в╦вўв∙в∙в
+гг$г&г%ггг$г.ггг"г'ггггьвювёв?г1г∙вшв╤вцвъвчвчвьвявьв▌вг)г?г<г.г<гEгLггчв╒в╩в╠в╣в╬вЄвєв·вгг№вгг'г2г(г+г@гHг?г?гUгCг@г2ггЎвєвщв█в╫в╥в╧въвг*г2гAгEг=гBг=гBгAгAг?г;г7г8г°вявсвыв■вггг'гг$ггг%г!г(г)г:г:г5г0гьв╙вшв┘в╪в╫вчв┘вгггг1г$г+г$гг ггг#г!г-г)г'г+г&г%гг$ггггювтвaгaгTг[гXгггSгrгzгiгfгcгdгYг~гГгpгwгoг]гZгЖгдг}гИг`гWг]гTгdгБгqгpгPг_г3гг9гDгPгNг*г'гGгWг;гLгUг,ггCг6гг■вшв+гTгVг<гAг,г"г;г0г6г8г#г.г-г'гг∙въвЇвгггщвцвхв▌в█втв╥впвРв╛в┘вЎв▄в─в╓в гщвяв╔в╘в╠вЄвюв	ггггггг&г#г'гCгCг4г0г+г<г5г>гGг>г)гггэвув▄вувdг]гUгг√в3гPг^гHг}г^гRгNг;гHгVгVг_гeгmгlг]г`гpгOг(г1г)г?г7гBгqгuгKг<г9г-г5г:гIгLгFгVгUгTгRг5г$г#ггггZгЬгЫгИгвгЫгdгjг\гuгoгZгNг8гHгKггг	г∙вєв гэвцв▐вчв▄в┌вфвЁвщвг,г;г5г9г=г=г8ггггг вг;гDгGгRгIгMг;гOгMгpгMг;г3гг>гDгCгGгг·в№вцв╛в∙в
+г№вёвъвчвщв°в%гггг
+гг°вггг=гOгiгrгbгgгeгQгTг`гVгbгbг,гг
+ггггггг3г?г5гIгnгEгAг>гMгCгJгJг@гFг/гzгагЬгегбгггХгvгbгTгVгrгБг_гfг^гcгYгZг5гггггг■в∙вёвг0г$г:гBгGгLгLгBгDг8гAг=ггггг вшв╙вчвг
+г	ггЄв·в7гLг@гCгFг4г,гRгJг=г1гYг(г&г5гEг7г#ггггггг гг√вг·в∙вЇвювєвївЄвгг┌в┐в┤вЪвивСвФв╣в▄вфвтвхвг№вўвг	гггг*г-г6г@гFгJгIгCг7г1гUг\гWгRгZг@гггг°в·вгг!г"г г5гSгUгRг<гSгCггг%ггювг■вЇвЄвчв╓в╧вЄв:г[гwгГгsг^гQгIгUгcгbгtгmг;гггг ггг°вхв г&г,ггг=г:гAгUгXгVгBгPгGгSгCг5гHг?гDгEгNгEгLг^гBгггг3ггггггггёв гг$г*г$г!г#гUг)гїв╒в╙в▄вувшвювЎвывхвг√в√вщвєв#г)г.г-г-гг2гFггхв╪вфв	ггчв█вчвїв¤вгєв■вївщвфв
+г2г-г'гWгlгGгgгjгzгFгг1г9г#ггггMгpгЕгcгaг\гsг|г`г[гXг=гггг
+гг г■вЇвхв■вггг гфвг"г/г7г/г6г6гMгGгJгKгSгHгGгLгVг_гsгqг^гWг6г$г%гггггўвгг
+гг▌в╧в╔в├в╩вжвФвПвТвЫвЬвйв╡вцвчвЁв°в вгг¤в гЇвёвг¤вг,ггг:ггшвъв╓вцвсв▄в▀вгггг/ггг%г$г&г1г0г%г1г:гFг9гSг1ггггггггг(г"г*ггг═вЦв╟в·вЎвувхвявг"ггггєвгг
+г гггг г,г*г1г"гг8гDг+г2г
+гг в гг№в∙вггг√вэв■вгггг
+гг!гггыв№в°вгг√вг7гKгEгgгVг=г3г,гVгOгггггг%г'г%г/гЁв┴в║в═в╗в╤врв┌в╥вэвгг/г¤вгг■в в&ггггг#г,гFгZгPг/гггггг(гггггг5г№в)гJг гггг1г"гЇвёв┘в╟вшв¤вўвївьв¤вгг	г	ггггшв╝взвнвЛвСвев┤в╞в╦в└вёвєвывщвўв¤вївъв▀вэв	г!ггЎвєвчвшвчвЎвёв5ггг%г4гг'гэвггяв┴в─врвЄвгг¤в	гггг■в°в∙вг0г&г$гхв┘в╘врв╬в║в╒вфв▐вфвёвёв¤в╤вЄв■вгггг г	гсв╔в╬в┼в░вжвТв┤в░вев╠в┌в═в╘вчвэвьвщвхвўв■в·в¤вг№в гг&г7гIг?гEгRгMггг■в·вг∙в√вгг гггєвЁвьвЎвг╪в└в╕вав▒в╔в╛в╝в▌вївгггявЎв■в■в∙вшвяв╫в▌вїв╨в╨в┐вггг
+г5гAгг√вєвггггггєв┘в·вгг*г=г%г5г	г!ггггъв╔вбвов╠в╔в╪в╬вшвыв∙вггг
+ггггггэв╥в┼в╘вЄвгг№в▐вфвЇв∙вёв∙вггёв вгггєвЇвчв▐в▄в╒в┘в╧в╘в╘в┌врвшвъвцвЎврвєвявцвївувсв█вг)г.г9г@г^гNг3г3г2ггг
+гг∙вгггяв√вгг·вўвг╠в╓вївцв╒в╬всвг$гггяв▐в▄вшвЎв°вчвювяв№вЁв√вяв∙вЁв¤в	гг■вгг)гггггявфвшв▄в╫в╪в▀вфвхв°вїв∙вг¤вгг
+ггъв╧в╘вывщвъв╨в╤в├в╖вжвбвШвовквХв╖в╬вчвтвтвЄвгювьвувЁв╢взвнвгGг5гг	г√във▀в▄вьвув▐в╓в═в▀вув°вгщв┼в░в╛в╒вувЇвгггггг3г1г$ггявг гг
+ггггггЇвхвувЄвЁв▐вщв%г+г0г"г'гHгWгTгcгЕгZгг	ггЎвгг гг г%гг!г,гGг'гггьв█вюв·вггг*г>гг+г'г%г3г0г&г#гггг гггЇвг┘в╟в╣в╛внв╚в╠вшвявгггггЇвўвЎвшвсв╦в┴вэв▐в┘в°вг)г(гггг	гг¤вЎвгггггггыв┘в╔в╞в▄в∙в∙в▐вьв	г№въвєвгггггг	г
+гг г)гггЎвївўв╚врвшв╓в5г"ггггыв▄вЇвггг!гггггггг%г+г,г(г@г9ггўвЇвчв∙в√вёвгггг+г)г3г$г"гEгEгг'гг'г*г!гг°врв▐вфв█в┘в╠в╨вшвЁвгг#г3г0г,г,г)гггггг вЄвчв╥в┐в╔в╒в▄вЎвгг ггггг%г5г#гг,ггїв╪в├в└влвйв╥вюв°в вївг
+ггггггг√вшв╘в╨в╒в╬в╞в░впвЩвФв╖в╪вэвэв┘в█вчв▀врв╙в╬в╬в▄выв№в¤вг!г.г&г(г"г+г(г4гг█в╥в╔в▀в╓в╤в┘в╪вцвгг#гг¤вг"гггг∙вшвївЄв▌в═в╠в▌в▄в╪в╦в╕в╒вЁв·вёв№в
+ггг&г2г$г#г'ггг·в@г`г_гnгLггг¤вЎв в√вггггггггг!ггггювявЁвшв▄всв в·в°вгггг
+гг	ггггг вгг&г&гггєвчв╪в╦в╠в╬в▐вгг
+гщвг■вгг
+ггггггг1г7г#гг,г(г4г(г гггывЇвггггггг"гг,г:г/г7г-г=г"г г№вывгўв╟в╚в╣в├в┌вггггг(г/г2гг#гг#гщв╧в╒в▐в┼в╫в
+ггЎв╓в┴вувЎвюв¤вггг%гг%г!ггг2гг"ггЎв<гNгZгJгdгRг=г+г)г$г#г$г%г-г&г%ггг'гг&ггг%г+г"ггэв▄във╫всвшв%гг°вёв▐вщв▄в╤вхвЇв
+г гггггггг*гг№вщвувщвшвыв┘в╟в╔вЁв■вггггг/г1гг г г'г'ггфвгGг]г\гeгQг[гQг>г-гAг.г:г=г5г3г*г@г=г8г,ггEг%г9гг╘в┐в╒в╥в═вьвгSгfгHг?г<гг0г>гг
+г,гг<ггг6гMг?гOгbгvг~гYгMгDг5г>гYгPгAгXг0г г&г)г%г6гєвггггг1гPгVг]гJг9гггувїв)гIгTг_гБг^г5г8г?г9г:г:г4г5г>г*г5г7г:г7г*ггяв╫вувївгг>гGгEг6г-г/г-г!г+г>г%гг'г,ггЎв¤в ггг!г+г0г6г9г!гг)г$г-г(г'г(гггггггг¤в*гWг[г`гlг~гЧгГгnг]гBг6г9гFг$г-гNгbгHгLгQгUгaг^гjгГг7г г°вгггггггг
+гг	г√вювDгWгcг\гSг[гUгZгIгOгJгGгgг0г5г2г'г№в гг'г@гHгBгTг{гГгCг1г;гJг>г5г5гHгGг:гbгZгBг)г)гЄвггг(г,гBг4гг г&г.гг¤вєвїв№в¤в вгчв г■вёвггггг2г.г$ггггGг-г@г/г0г/г/ггфв┘в▒в╥вївггъвўв г	гЎвгггггг г+г в■вьвЇв г	гув╙в╧в╔в╔вювггг&г&гггггрвювщв╪в█в┼в┴в╗в░в╣в╓вЄвявыв▌вЎвювявшв╨всвтв┌вьвггг
+гщв╥в╪вўв¤вьвсвщв▀врв▄в╤в╩в═в╙в∙вггггг#ггLг3г5г-г!ггггггг·вщв▀в▌в╥в╔в└вг;г8гRгGг7гIг9г@гRгDг%ггггEгБгНг]гaгИгГгaг6г'г<гCгKг7г0г5г:г9гFг1гг%ггг№в вївшв╪в▀вгNгeг=гггг9г=г8г/г5г:г=г@ггг гЎвггггЄвЄв√в∙вхв═вюв╓в▐вэв╫вёвг вгг г&г#гDгг№вїв√вуврв№вЁвг%г%г г)г&г"г(ггг#г<г2г*г&г"г1г@г*гг#г гг8г)ггшвївюв╘вЁвг"г.г:г4г'г-г.гAг8гг#гггг■вюв╒вг-гHгFгCг=г;г?г=г,г)г.г(г*г2г.г(ггг
+гг·вгцв°в¤вгг#г%г?г8г.г3г>г8г/г4г'гг*г+г'гг/г"гг гшвувхвъвївЁвювхвшвгЁв┘в┬вЎвггггг$г"г.г,гЄвЎвэврв▄в╪вывхв▄в╒в═в╙в╞в╟в╠в в вгг6гг∙в╘в█врвўвчвчвфв█в┘в▐вфв╓в╧вЁвг-г7г"г3г0г0г8г ггггювївщв█вхвцвхв╬в╬в¤вKгIгг.г"г	ггг*г>г<г3гггг№вг·в┘в√в-ггг!гг(ггг)г"г&г∙в·вєвЁв№втвсв▌вцвсвг∙в■в▌в═в╘вхвггьвтв╪в▀вув╓вЄвгггг%гг*г/г2г5г0г%г3гCг7гг+ггг№вўв·вЁвявхвчв╨вггггг,гг)гHгг в■вєвьвєвхв┌в╩в│вчв	гг(г(г,г$г#г%г!г)г&г%г г>г2гг вёв¤вггэвъв╫в╨в в гггг!г&гBгг█вювювЎвєвъвьв╪в╚в─вьв¤вггг5ггггг#г&гг∙вщв╚в╟в█вчвюв┘в╙в╘вЎв╪вчвтв╥в╓в╙в╤в╥в├вйв║в╨вхв▄в╙в╬вёвгг	г)г'гг г▄в╚в╧в═вхвёвув╪в┘в╬в╘в┐в╢в│в╢в■вгггг/г.гюв┘в╙вфв┘всвьвфв╓в═в╠в╠в╛в╧в╚в─в─в│в┘в¤вгг-г"г√в┌в╠в╞в║в╣в╞в╠в╚в┤в│в▒в╖вгвжвав╕в∙вг,г2г)гHг&ггг№вёвЁв█в╠в╩в╦в░в╤вхвьвЎвгг!ггггг2г>ггЁвъвэвхвъвЁвув█в╤в▐вггггггг(г"гг)г6ггг▄в╙в╣в╘в√вєв
+гг@гAг9гг¤в√вєвыв╓в═вєвг	ггг/г(г$г,г$г"г*г2г@гGгDг@гAг=г:г%ггг■въвсв▐в▄в╒в║в╗в┐в╜в┐в┐в║в┼в─в╛в═в╨в╨вувув╥в╠в╟в╞в└вьвгггг!гг<гг	ггггюв▀в▄вцв№в$гўвсв╒в╬в╞в╢в┴в═в╜в─в█вггїв╪в═в▀в┌в▄в╓в╓в╧в╘втв╥в═в═в╝в║в╗в╡в┐в├в╨в▄въвЎвёвтв╠вггг%гJгEгMгMгUг[гeгJг7г;г0гггг"г#г¤в▐вювг'г3г'г0г7гDг>гAгEгNгOгdг@гг&г гггг·вг№въвгг"г(г(г!г/г-г*г1г?ггггг*г.гггг∙вЎв,г.г'г)г;г4г;г5г>г0г1г+г-г4г9гHг4ггг∙в∙вЎв№в г¤вцвг)г?г@г;г:г?гAг3г1г:гAг*г9г2г:гKг@г6ггг№вгггЁвювг гг¤в¤вгшв!гBг=г8г=гJгAг7г9гVгIг8г%г%г"гггггггггг√вг8г9гJгKгNг.ггг№вгг гггггяв√вёв▌вфвхвг/г4г4гGг>гBгHгOгQгXг@гDг\гUгггггг╬вєвгг>г,г*гггшв▐вЇвггг	гЇв√в·вЎвщвув▐в№вгг)г"г>г8г1г9г;ггггг¤в∙в°вЁвєвфвцвшвЄвївєв▄в▐вшвтв▐в┘вёвюв√вьв╓вKгKгfг*гг¤вггг,гг■вєв■в¤вггювївг¤в гхв╒врв╦в╖впв┼в▌вэвг.гг
+ггг
+г	ггг
+г√вг¤в┌врвьв┼вщвг0г>гDгUгKгQгг г вЄвг№вёв∙вївг√вєв╩в╞в№в)г;гCгUг>г(г,г.г6гAгJг;г3г6г/ггггэвгCгfгaгWг.г1г8гBг=г]г?г1г(г гг гёв√вЎвхвцвувцвув∙вгрвтвэв∙в·вг,г3г$г%г?г9г+г=гJгVгQгVгYгeг_г8г"г.гг*г;г2г;гг г гKгSгEгPгIгSгPгVг^г1г0гг г√в·вгЇвювтвчв°вэвювсв═в║в╠в╧в╟в╒врвувўв+г$ггггЇв∙във вЁвЇвггявюв╝в┬в┘вг2гг!г-г2г(г гївггггггЁвЇв№вшв╔в▒вмв─вювггггг°вўвшвщвывувЄвыв▀вшвьв в гЎв█в▐в┼в╢в╖в╔в╙вЎвгг■в)гцв█вгггг(ггг°в¤вгггггггггггўвтв┬в▒вгв╘в▐вЇв·выв¤вївЄвг*гг¤в#г'г9г гг=гEгKгIгHгKгhгlгeгKгdгsгSг;г@г?г-гггг/ггг
+ггг¤в╫вг(г г%г,гYг=гAг4г(г+г'г+г3г;ггг╤в▓вФв╥в г5гBгXг5г!г%г&ггг°вгггг№в√в в№вфв└в╗в▓вкв┐в╒в═в╔вЎв%гAггЇв╔вЮвЁв▀в╟в╕в┼в╩в╧в╓врвЇвьвявывъвъвЇвЇвЇвєвхвувфвг:гXгbгbг`гVгYгfгЖгxгQгггггг	ггЄв№вгггг■в∙вЎв╓вйвжв╕в║в═в▄вэвювтвфвцвув█в▀всвув╪в╨в╦вЄв+гNгГг:г вївєвшв▌вЎвгггєв°вгг	г█в╤вшв%г9г!г¤в╧в║в║вевВвЮвдв▓в─в╬в╚в╜в┐в╬в═в╘в╤в╦в┐втв$г/г1г)г%г*г+гFгFг@г;гг└в├в┴в╢в└в╒в╪вхвгяв√вг	ггггг	гг в═вцвэвг¤в╤втвсвщвЁвЎвївгггггггггггг+г"гггЄв╥в┤всв°вгЎвг№вяв°вэв г#ггг
+гггтв╤в╦в╗вЯв├в├в╘в·вг√вЁвгг°вг$гг¤в¤вЄвэв╪в║в║в┤в▒вкв╕в┬впвнв┘в█в▐врв■в·в вггг╓в┬в╦в─в╒в┌в┌в▀в╙в─в├в╚в╖вовов│в╢в╟в╣вВгqгsгsгxгГгKг?г$ггг2г$г г г(г*ггг в°вгггггг
+гг вггг!г$гггювюв¤вяв┌вхв в вщвьвювг■в√в	г$гггЄв·вЎвюв╒в└в╗в╝в╫в¤вгфв▒в└в╣в█вчв·вгггг∙вгггг в¤вгїв┘в╡в╞вцвг╩в╠врвъвг(г?гUгLг&ггггггтвъвхвЎвьв,гaгbгXгIгnгjгTгNгfгUг=г,ггг ггєв├вьвгггггг#г(г.г&гггг&ггїв╫вхвєв■във°вывув╘вггггггггFгг╒в╘в█в▄в╬в▓в▒вмв╠вщвьвг	г■вёвьвЎвггг'г"г гггггг■вЎв╫в╟в▐вувЁвггLгMгLг8гMг8гGг@г&г>гRг г/гFг3гIг╤в╠вёв°вг@г@г$г(ггLгWгDг,гггг(г%гг!гг■вёвЄвэвїв в вув·вфвєв2ггггPгVгQгeгnгWг:г8г<г+г;г/г6г?г;г*гAгLгJг8ггшв№вгг¤в-гYг:г<гWгIг3г(г3г'г#г,г=ггЇвъвцвєв°вгггг$гVгgгJг*г6г]гpг]г2гNгBг)г;г5г∙вЇвггггг¤в г(г+г+гEгVг_г?г;г2г;гг1гг∙в√в·вг°в∙вўвгг·вгг)ггггг:г!гBг/ггг∙вявг▐в╪вувгг■в°вг,гггггггг0г>г8г*г(г5г(г&гJгSгIгCгAгEггггггг¤в№вг%г(г)г4г@г*г3г-г<г,г#гггфвьв¤вёв▄в╬вывгг	г∙вггг+г-г(г-г3г7гг)ггггшв■в г√вггггг-г8г5гWгIг'г$г+гCгг;г:г3ггггЎвэв°вцв┘в║в╬в вгггггг*ггг¤вг!ггг¤в"ггЁвшв┘вэвг г√вув гmг5гг6ггг*г@г▒вйвшв$г/г%г;г:г:г?г0гCгHгггггг гўв¤в вггггг(г9гг╠в┼в┴в┤в╬в▄вфвэвьвювєвювфвщв╓в╩выв гєв	ггггг(гггг°вЇвхв─в▄втвўв№вЎвєв ггг	г вггг!г!г	г√в$г!г+г%г)гг5ггъвєвггг+г	гAг9г1гNг6г)г%г"ггшв╙вЁв■вгцв▒в▒в▌в∙в╓в╩в╦в┬в┼в▒вжвмвов╗в░в─в▌в▓вгг&гг8г;г0г8гHгBгIг3г#гггг гг$г г"г4г3г-гг.гAг5г+ггг*гг№вЁв г г°вЇвЁв∙във╘в┼в─в┴в№вг(г'г&г'гIгKгMгMгIг2г/г0г&гггг-г+гэв╪в╠в╔вЬвЫвлв▒вдв╢в└в┌вўвг вЁвёвэвцвъв▀в▀врв╠выв┌в└взвРвБвТвввСвавйв┴в╔в═в╙вэвсвггїв▌втвэв▄в┬в│в╔в│вввзв┬в╙в╠в┴в╢вЪвФвЧвг'г*г)г;г0г7г:гIг	г¤вг
+г√вгг№вяв∙вЄвЁвёвг#г!г,гг(г<гггг гггЎв■вг&г#гг№вЄв╓вшвггг)гг4г'г+г4ггггггггг
+гЄвшв┘вцвг%гг!ггг8г6г$ггЎв√выв¤вггг▄вЁв∙в·в в°вггг г6гг5г,г-гAгGгBгBггг·вггггфвчвггг$г7г)г1г.г<гг%г#гCг#г-г:г╔внвйвъв¤вг гг!гг■вг
+ггг ггггг√вЇвсв╔в╖воввв┼в┐в╘вхвувявфвявъвгг
+гггггг¤вг┌в╝в└в╗в║в╣вйв╝в╒вЁвг¤в№вгг°в¤в(ггг гЎв╒в╡в▓в▒в╞в─вйв┐вчвг
+г№в гг вг гЎвьв¤вг във╙в╟в║в╕вбв╕в┤вжвнвев╟в█вчвщв°в¤вг∙вгчвшв!г6ггхвювёвявЁв╥в╜вдвмвмвзвкв▒в╠в╞в├в▓впв═в╔всвувгггг$г%г0гг¤вўвгг·в╥в╒в╟в┐в╟в┤влв╦вг2г>г/ггг"гг√вггєвщвув█вувг%г3гCгHг5г"г2гNгAг;ггєвЎвгЇвЎвЎв┌вгггг гг#г>г5г$г3г:гBг8гWгXггггг в°вг╥вїв!гг)г,г3г:г3гFгMг?г(гг!г.г гггЇв■вг0ггщврвфв▌в█вїв┴в┤в═в┌в█в вув╓вЄвг)г°вшвг%гг·в√вюв╠в╞выв гEгGгTгHг.ггяв"г,г5г9г2гGгRгWгfгbг^гVг3г.г+г6г/г+г1г)г*г7г;г(г4г-г;гKгGг7гEгHг_гYгLг=г>г@г@г=г;г1г(г
+г∙в#г3г:гBг@г=г4г;г<г>г>гAгNгKг3г3г@г=г:г3г%ггг
+ггюв╫в
+г'г(г;гHгMг/г√всв╫в▄вЁв г*гггг°в┌вгг$гCгBг:гCгFгEг<гEгMгIгFг0г4г8гўвцвув▀в╫в■вггггг$гг4г'г*г#ггг/г;г7г2г7г3гBгNгWгGг1г&ггг#гг1г'г&г$гггггЇв╛в└в└взвзв╕в╝в┴в├в╢в├вяв
+гггггг г вхвсвЄв╚вяв(г г&г5г.г;г[гZгDг=г7г1г:г9г+г-ггг'г0гггг/г@гVгhгXгPгdгmгsгrг\гUг9г*гг г!г√в$г)г#г?г&г4г=г7гCг&гCгFгQгMгeг`гYг]г└в╗вЁвёвявявг2г,г'гггг вггг█в╧в╒в└в╜внв├в╝в╣в═втв█вївэв№вгг5гBг2г,ггг'ггтвёв╨вмвовкв╔в╓в▌в█вцвфвявцвчвгCгGгBг!г	ггявєв√въвсв╘в─в╧в╖в┌в╚втвгг!г"г+г$г!ггггг ггЁв═в═в┐в╤в┴в╓в█вчв┘в├вЁвггЇвЁвшвЇв√в вгг
+гг¤вёв╥в╓в╙в╕вг-г^гRгPгUг]гUггSгiгqгpг{гaг1гг7г9гг,гг9г/г)г!г,г.г,ггьвэв╓в▄в╫в▌в▄вєвтв╦в╦вшвэвггггг	ггыв═в═вг<г3г?г3г,г)г\гZгBг0г/г-г@г0г*г.г)г0г5гг▀вўвхвфв▄в╞взвев┤в╬вявфв¤в∙вЁвг вгггтв╙в╙в╞в┴вмв╛в╓в╖в┘вгг г6г*г(гг7гBгBг,ггггг вгюв╥в╤в╓в═в─в╟в┼в╫всв╬в╥вцвфв╤в╤в▐вЇвчвшв∙вюв°вгггггггггггггг°в!ггдв╠в▌в·в6ггЎв¤в г#г.гївувчвєв2гLгTгQгUгXгHгPгpгTгQгFгJг.гDг@гVгaгUггг8гLг(гг$гг√вЎв▀вцвцвувэвєвггсв╠вгgгXг!гг╤вШвевввгвлв╧в╫в┌в╕в├вмвЯвЬв▒в╬в├вцвг	гхвчв вывёв∙вгчв╨вгWгNгCгOгOгMгBгFг`г`гVгQгTгYгGг№въвывЄвяв°вггг3г;г+г8г,г8г:г5гг=г`гlгZгlгiг[гPгlгWгkгjгnгhгPгWг6гPг]г_г9г<г4г$г)ггхв>гЗг/гг$г%ггeгzгXг-г>г.ггг╬в╕в─в╣вбвЭв╒в&гIгmгfгBгKг?гFг+г■вг+г#ггггг%ггг¤выв√вЇв▐в╬в╨в╗вовгв╧в∙вЇв∙в√в№вгЄвєвъв╥в╗в╗вавкв└вСвЖвТвЮвбв└в╡в▐в╪всв╙вЁвЄвївёвёвєвЎвгBгEг?г-г/г=г;г=г2г4г<г:гг
+г5гFгTгUгJгDгeгYг,г3г'г#г$гEгKг1гIгAг<г<г8г6г2г,г	гЄв грвэв°вщвшвг0г;г8г/г(г+г<г*гг-г,г*ггЇвгївЄв╤в╘в╬в╘в█вхвьвчвївївцвг5г"г▄в╔в┬в╦в├впвмв╜в╠в╟в╫в┌в	г3г@г1г1г$г(г,гMгSгRг:г>гг°в)г4г$г*гMг3г8гFгMг}г|гRг8г.г0г=г+г
+гггг.ггЎв√вг5гIгIгGг7гCг7г,г=гQгIгJг:ггггрв├в╤в ггггг.г9г9г:г&г'г0г4г7г(гBгEгг№в√вгг·в№в,гKг/ггг)г&гг%г,г6г2гEг,г вфв┌вюв вывувювївўвєвщв▄вфвггг#гггггггг1гHгBгQгqгqгPг\гIг8г&г4гKгBг(г)г#г/г(г2г5гггг¤в√в·вьвўвхвшвщвЇвэвъвявгггг∙в√вг-г-г/г/ггг&г*г,г)гBг8ггггївгггггўвгггг#г-г<гAгGгBг2ггэв·в∙в·вЄв┘вїв гЄв гёвг·вївггFгKг>г3гг-г7г)гг√в∙вЎвхв вггёвгг	гг
+г	ггг)г0г1г5ггггЄвъвфв г·в▐въвфвЎвггггг√вювяв вг#г	гыв▌вєв°в·вяв▀в╞в╟врвшвтв╤в╨вэвг!ггг*г3г┌в┴врв▒в╒в╜вТвтвг'г!ггг=г+ггггггЇв╥в┴в└вЪв├в▀вчвЇвг"ггъв╫вЁвїв╛вЩвгв┤в╬в∙в г°вшвхв═влвйвов╢в╤в╒в╙в╦вёв"ггггг°вЇвггчв▄въвгэвщв№вг√вCг;г!гг)ггг<г1г<гCгг№вчвщвтв╧в╟вчвєвггыв▌вЄвўвывєв∙вгг#г)г·вЇвсвёвшвывцвявщв█в╥в╥вг
+гг г■вгг'г8г╨в▌в╥в╔вгвдвввКвTвРвмв╟в╘всв╨в┌втв╜в╟в╝в╬в╨в▐втв┴в╒в┐вевгвЭвrв▓в╤в╤в╙врвчв▌в╘в▀вчв╧в╙в▀в┴в╞в╬в╥вбвЗвzвЯвев?в'в>внв╢в╤вўв(г3г'г&гг∙вцвювхв▐в╤в╘в╛в╡вЯв╦вўвггг-гЎв─в╞в╘вчвыв╪вчв¤в·в╒в├в╞в├в╔в┤вЯвnвrвzвжв╝в╠вЄвЇв╘вёвёв╩в╔в╒вэвьв╘врв╩в┤в║в┐влвдвввНввв╖в┴в╫в╤в┘вщв"г2г-гLг:гSгNгLг@г:г<г9гYг6г╥в═всв▄в╬в╔в╫в╢вфв вгггг гггг'г	гєвяв°вывшв└в╛в╠в╜в╚в└в─вЧв▄вгnгlгMгHгHг7г6г8г6гг&гЁвєвьвївЎвгг*г;гг9г@г4г>г5г&г.г0гAг4г=г.г<г$ггггг гюв▒в┌вчвгг"г#г2гг3г<г7г4г&г&ггг№втв╬в▄в╫в┼в╧в╪в╤в╘в╦в╘в╡вжв╫в┴в▒вив╩вгв▄вЁвїв■вївєвг,ггггєв°вг&гггг∙врвщв в▄в╪в╥в╦вйвЦввLвhвШвФввв┬всв╔в╧вэвгг°вЁвьвЎвтв╩вїв6г?г$г!г(гг#г$гггггггєвЄвфвэв г╛вмвбвКв╫в■вггг"г>г?г*г+гBгггювьвЄв▄вшв╥в┴влвцв(г.г%г2г!ггєв гг	ггг"ггг·в№вгг■вьвув═в╪врвъв╓в╤в▐вщв╠в╓в└вшв╛вФвЭвЭвЛв╠вфв гг&г3гггггчвчв┌в╠в╤в█втв▄вЄвг╓в╔в╝вКвав┘в°вг	г■във╦в╬в▀вгюв┘вЄвггг	г·в*г8г%г∙вгггFгг
+г>г.ггггг▐в╥вчв╘вгЄв├в▌в█вМвtв╣вєвгггЁвфвъвг·в√в∙в▄в╞в╬вЄвгг!г+г%г%гг,гггггггьв·вяв▄втвўвъвув└в╩в╠в╝впвОв├врвхвшвгггг╖в╗в▒вХвЕвyвРвивжв╝вевпв╤в╨в╓в┘в╪в┌в▌вёвтв█вэв╘в·в ггг!г0г6г3г3г*гггггг
+ггг)г0ггггг%г#г2гг
+г%г-гївЄвьвгг	гг√в■вгЎв╨в┐в▒в┘вг)ггг4г'гEг%г4г3ггЇвявюв╘в╫вївгггюв г1гггггггг г,ггг6г4ггєв╙вёвг гцвувцвжвщвг№в
+г ггггггггfгГгpг]гPг&г2гLг5г-ггївг вєвг$г<г<г8гDгMг=гHгIгPгCгDгDг&г0г_г|гБгTгJгZгUгVгNгDг&г'гFгaг}г\гIг3г гггггг
+гэв█в╠в╪вхвфвсв¤в¤в гг!г'гг#г;ггг/г1г
+г№вггЇв┌вфвшвг гувфвэвўвггцв▀всвчвьвьв▀в▌в┘в▐в╪вщв▐в╓в▀в═в▓в▌вщвЇв∙вгг№вгггг%ггг╨в┌въвггггг"г7г<г6г=г9гг√вггўвг6гVгeгAг/г г*г/г)г+г,г2г$г"г1г&г0гг.гг вёвфвєвївфв█в╫в№вгггггггг!г9г(г.ггщвьвювгёв∙в°вЎв№вг∙в√в<г6ггггщв√вг4гг■вгг■вщвЇвфвєв╥в║в╦вгггггг#г(гг·вўвцвЁв┌в╘в╚вмв╖в─вїв
+г¤вг г#г%г гггг#г+г$ггггггHгPгEгeгFг:г%г в·вг г г№вгг7г@г6г!гг&г6г<гггггг!г.г;г;гBг5гггггщвщвг)г<г4гFгTг9г;г7гSгMгFг%г&ггг№в╥вчвхвгAгdг`гJгFгFгDгWг?г'г/г8гaгsгrгMг7ггг г вгггг∙вгг2г;г/г г$гг г$гг7гCг$ггг∙в╫в┘вюв5гFгKг-гггггггггг+г2г/г&гг"гBг!г=г,г-г2г/г6ггяв№в(г;ггЄв▄в┤в╘в°вг:г8г0г2г@г[гEг,гDгMгOг?г/ггЇвгг%гг.г:г@гBг'г2г*гг*гNг=гSггггг∙вгЎв вшв┌вшв╤в╔вщвг:г.гг"гKг#г(ггг,г"гг-ггяв┼в╫в)г>г?гNгpгlгdгHг5г*г%г%г-г3гггггггг·вхв╙в╟в█в┼вувўвёвгггггг$г1ггггэвгггг	г:г<г4г г@г6г9ггъв┬всв▄вїв├в║впв╖в╘вгг+г4г)г)г(г г!ггггггггг
+гг.г6ггг(г,г#гг'ггг;г(гг*гггЎвывчвЁвг"г4г*г*г,ггг'ггггггг%г)ггг¤в■вгёвчвггггг1г'г1гггг!ггггггггїв╥в╟в╤в╕вявг;г.г=г$г
+ггг*г"г%гг+ггєвггг°вг■в+г;г5г3г'гггєвївг■в╒вчв╓в╠вшвг(гDг&г8г*гггг#г-г2г&г¤вЄвЁвхв▀в┼във√вгггг	ггЄв вгг+г#гггг грв╥вггг
+ггг#гг$г%гг#ггг√всв╚в╩в▒в▓в╦в╫в╓вув╧вувгг
+ггггг1г!г&г<г&г6г г&г
+г'гггЇв╟вьвгEг8гBг9гг+ггг8г4г#г4г'г>г%г№вггївг4г╫в╚втв8г9г*гг№в╙в╓втв∙в гувЄвщв├в╞вав┼вгг"г$гггг&г:гг вяв┘в╙в╝в╠в█вув╢в╞внвЭвЯв│в╩в╛в╛в╞вэвув╙в╨в╒в┌в┘в¤вгєвяв▌в╟в╟в┴вўвгг#г-гGгDг7гг1ггггггг гфвшвЇвєвгггг)ггЁвьв╪в╙в╙вывгьв┘в╧вьвг╓в╖в─в╨в│вЮвСвЫвъв вгггг7г=г6г(гг!г/г'ггггг■в¤вггггг№вгг·вщв╫в▐вэвсв╜във¤вывтв°вгг
+гг*г=г.ггг■вг
+г в√в■вгёвсв┬в╜вшв
+гг&гг)г0г5гг
+гггхв№вэвцвсв▌в┘в╓в╡вЬв╣вквов╤в▀вчвёвг/ггчв╬в▀вцвъвЎв▀в╨в▌вєвчв╠в╚в█в║вав╖вФвuвзв├в╞в╕в┬в╞в╚в║в╝в╘в╗вЦвЕвЕвЫвЬвЗвzвsвwвпвшв+ггг*ггг┘вывьв втвтв╙в┴вўвгхв·вгшв╙в╥вЎв¤в втв▒в┤внв╗впв┬в╓в╪в╬в╘в┴в├в╡в╠в∙вг(гїв╤в┌в▐в╧вувшвчв═в╣в┘в╥в╓в┼в╫втвщвтвЇв√вггяв▀в гггггг2г,г$гг*ггFг!ггггггЇвїв▐всвфвЎвЄвєв╔в╩вївгЄвгг1г9гггггг2г3ггщвЄв╓в╘в╩в╥в╞в┤в╪в√вгўвьвг$гггг
+ггг*ггтвЇв√вывявЇвщв█втвтв■в¤вгЇвэв╘в╤в═в▀в╓врвчвтв╟вев╕вчвывщвг гЎвчвшвщв вг г	г№в╤в°вг'гг&г;г,гг гчвъв╫в▄в█вщвчвявъв┌в╞в▒в┬в╩в╟в║в║вйв╣в╘в─в╫влв┤в╬вчв°в°вявъвфв▀в┘в╝в╢вЮвЦвРвИвДвuвsвШвЬвЭвовнв╕в├в╟в┼в╫вьвыв√в№вювёвъв╙вЎвёв┌въвгг"г/г$г/г6г4г&г0гг¤вг	гЎвўвщв█в╘в╤в╚в╓вшвьвўв№вгггчвцвщв▌в╨в╢в╚в╙вчв┘в╪в╪врвфв╠в╠вхв╧в╤в╤в█в╫в╫вшв╫врврв╓в╓в╤в┬вЭвевов─в╓в╚в╛в▌вцвгявЁвгхв╨в▌в▌вувъвъвьв╜влвгвзвЬвЙвЙв╖в┼във╥всвчв▀в╨в┼в├в░вав╡вйвОвИвvвeв[вaв[вVвYв_вVвeвSвUвIвgвvввЖвЧвЛвКвЛвЦвив╚вдвПв}вqвfвUвOвQвZвLвCвLвWвIвdв>ввZвЙвЯвШвШвМвЗвывъврв№вг№в∙вЎвтв╪в═в╨в╫в┼всв╪всвчвъвўвг∙вЇвєвївьвсвфвцв╥в╠в═в╧вТвЪв╢в╧вцв°вгггэв√вг	ггг	г∙в°вшвфвывшвсв╟в┘в█вгг гггївсвсв в■вєвЎвшвёвявхвувфв╨в╙в└в╢в░в╠вцв
+гг&ггг·в°вщвїв	г	гЎв°в°вювцвтвсв╧в█в╨в╬в└в╜в╧вЄвггъвўвьвЎвув╥в▐в╙в╥в▄в╧в╗в╗в┼в╝в╞вгггг г¤в√всвывхв┌в╤в┘в╙вєвг°вггг
+гг■вцвёвшвсв█вчв╞в╬в╔в┼в╙в└вЯвТв▓в╛в╫в╙в╙в╩в╙в╤в╒в┌вцв╥в╫вув▀вхвювхв▄вчв┼в╩в┬внв┴в└в·в'гггггг8г-гг·вщвхвыв┌вщв▀в╜вовивйв╒в┘в╫вьв╫в─в╓в█вцвцвг вЎвёвг╨вув╚в╠в┼в╔в╫в▌вэв╦вьвувчвг√в╨в┌вщв#гсв╢в▐в▒вПв╣в═в▄в┌в╒вўвэв·вьв╛в√вгыв═вжв╟в═в▄вчв╓вєвёв√в	ггг0гггЄвгЎв▐в└вфвЎв├в║в┼внвЧвЭвЪвкв└в╩в╘в╫вчвъв╙в╫в╓в▐в▓в└в╦в╩в╥в╣в╕в└в┐в├в╘в╟в▄в█в┼в▌в╒в╫вхв╤в╤в╬в╤в├в┤внвев║в∙вЁв╕вЫвМв╡в╢в╞в├в╥в╬втвтв╙в╤вфвг█в╨вфв╜в╠в▄втв╙вЭвгвнв┬в╤вэвсвчвфв°вггўвявгг√въвЇвэвЄвївюв╦в╧в█в┘вщв▄врвтв┤в╟в╚в╨в╟в╘вювг№вўвгєв▀вчв█в╨в│вЦв▒в║в╟в╘в═в┬в║впвивдв╩в├в╧в╩в╧в╚в▄в№в▄в╧вггг
+гггЇвгг"г9г8гGгGгCгdг6г$гHгHггг¤вг&г гггщв█в▐всв╪втвъвёв┌вдв╝в╘вфв╫в╓в╓в╪вэвьвхв▄в╥в╚в╔в└в╤в╟в╖в╛вйв╥в┼в╘в╬в▌в!г0г8ггг г гсв╒в╬в▐вщвсвэв▌в╟в▀в▀вхв╩в╝вов
